@@ -9,11 +9,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.icon {
-  padding: 10px;
-  background-color: azure;
-}
-
 .icon-swap {
   padding: 10px;
 }
@@ -70,8 +65,13 @@ body {
 
 .icon {
   position: absolute;
+  fill: green;
+  opacity: 1;
   right: 0;
   top: 0;
+}
+.bi {
+  color: green;
 }
 
 /*
