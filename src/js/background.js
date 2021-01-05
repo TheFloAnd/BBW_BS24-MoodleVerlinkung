@@ -32,32 +32,3 @@ function random_background() {
   var random = Math.floor(Math.random() * img.length);
   document.body.style.backgroundImage = img[random];
 }
-
-function collapse() {}
-var coll = document.getElementsByClassName("collapse");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling.firstElementChild.firstElementChild
-      .nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-    if (content.style.position === "relative") {
-      content.style.position = "absolute";
-    } else {
-      content.style.position = "relative";
-    }
-
-    var icon = this.firstElementChild.firstElementChild;
-    if (icon.classList === "right") {
-      icon.classList.toggle("down");
-    } else {
-      icon.classList.toggle("right");
-    }
-  });
-}
