@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,96 +13,76 @@
     <link rel="stylesheet" href="src/css/custom.min.css" />
 
     <title>BBW-BS24 Verlinkung</title>
-  </head>
+</head>
 
-  <body onload="random_background();" onresize="swap_order();">
+<body onload="load_page();">
     <!-- Container -->
     <main class="container-fluid">
-      <!-- Row -->
-      <section class="row px-2 sortable" aria-dropeffect="move">
-        <!-- Content Left -->
-        <div
-          class="col-lg section"
-          draggable="true"
-          role="option"
-          aria-grabbed="false"
-        >
-          <div class="content rounded-bottom">
-            <!-- Darg & Drop-->
-            <div class="icons d-none d-lg-flex d-flex justify-content-end">
-              <div class="icon move">
-                <svg
-                  xmlns="src/img/svg/arrows-move.svg"
-                  width="30"
-                  height="30"
-                  fill="currentColor"
-                  class="bi bi-arrows-move"
-                  viewBox="0 0 20 20"
-                >
+        <!-- Row -->
+        <section class="row px-2 sortable" id="sort" aria-dropeffect="move">
+            <!-- Content Left -->
+            <div class="col-lg section" draggable="true" role="option" aria-grabbed="false">
+                <div class="content rounded-bottom">
+                    <!-- Darg & Drop-->
+                    <div class="icons d-flex justify-content-end">
+                        <div class="icon move">
+                            <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
                   <path
                     fill-rule="evenodd"
                     d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
                   />
                 </svg>
-              </div>
-            </div>
-            <!-- .Darg & Drop-->
-            <!-- Content Header -->
-            <a href="#">
-              <div>
-                <header class="d-flex justify-content-center">
-                  <img
-                    src="src/img/bbw-logo.png"
-                    class="header-logo img-fluid"
-                  />
-                </header>
-              </div>
-            </a>
-            <!-- .Content Header -->
-            <!-- Mobile Collapse Control -->
-            <div class="accordion c_border-0 bg-light d-md-block d-lg-none">
-              <h2 class="accordion-header inherit" id="collapseHeading-1">
-                <button
-                  class="accordion-button collapsed inherit"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse-1"
-                  aria-expanded="false"
-                  aria-controls="collapse-1"
-                >
+                        </div>
+                    </div>
+                    <!-- .Darg & Drop-->
+                    <!-- Content Header -->
+
+                    <div class="link-box">
+                        <a href="#">
+                            <div>
+                                <header class="d-flex justify-content-center">
+                                    <img src="src/img/bbw-logo.png" class="header-logo img-fluid" />
+                                </header>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- .Content Header -->
+                    <!-- Mobile Collapse Control -->
+                    <div class="accordion c_border-0 bg-light d-md-block d-lg-none">
+                        <h2 class="accordion-header inherit" id="collapseHeading-1">
+                            <button class="accordion-button collapsed inherit" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
                   Preview
                 </button>
-              </h2>
-            </div>
+                        </h2>
+                    </div>
 
-            <!-- .Mobile Collapse Control -->
+                    <!-- .Mobile Collapse Control -->
 
-            <!-- Content Body -->
-            <a href="#">
-              <div class="content-body">
-                <div class="preview collapse d-lg-block" id="collapse-1">
-                  <!--<iframe
+                    <!-- Content Body -->
+
+                    <div class="link-box">
+                        <a href="#">
+                            <div class="content-body">
+                                <div class="preview collapse d-lg-block" id="collapse-1">
+                                    <!--<iframe
                   src="/Versions/v2/index.html"
                   scrolling="no"
                   allowfullscreen
                 ></iframe>-->
-                  <img src="src/img/lms.hamburg.png" class="img-fluid" />
+                                    <img src="src/img/lms.hamburg.png" class="img-fluid" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- .Content Body -->
                 </div>
-              </div>
-            </a>
+            </div>
 
-            <!-- .Content Body -->
-          </div>
-        </div>
-
-        <!-- .Content Left -->
-
-        <!-- Mobile Swap -->
-        <div
-          class="mobile-switch icon-swap d-lg-none d-lg-flex d-flex justify-content-center"
-          id="swap_button"
-        >
-          <button type="button" class="btn btn-light" onclick="swap();">
+            <!-- .Content Left -->
+            <!-- Mobile Swap 
+            <div class="mobile-switch icon-swap d-lg-none d-lg-flex d-flex justify-content-center" id="swap_button">
+                <button type="button" class="btn btn-light" onclick="swap();">
             <svg
               xmlns="src/img/svg/arrow-down-up.svg"
               width="25"
@@ -116,109 +97,115 @@
               />
             </svg>
           </button>
-        </div>
-        <!-- .Mobile Swap -->
+            </div>
+        .Mobile Swap -->
 
-        <!-- Content Right -->
-        <div
-          class="col-lg section"
-          draggable="true"
-          role="option"
-          aria-grabbed="false"
-        >
-          <div class="content rounded-bottom">
-            <!-- Darg & Drop-->
-            <div class="icons d-none d-lg-flex d-flex justify-content-end">
-              <div class="icon move">
-                <svg
-                  xmlns="src/img/svg/arrows-move.svg"
-                  width="30"
-                  height="30"
-                  fill="currentColor"
-                  class="bi bi-arrows-move"
-                  viewBox="0 0 20 20"
-                >
+            <!-- Content Right -->
+            <div class="col-lg section" draggable="true" role="option" aria-grabbed="false">
+                <div class="content rounded-bottom">
+                    <!-- Darg & Drop-->
+                    <div class="icons d-flex justify-content-end">
+                        <div class="icon move">
+                            <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
                   <path
                     fill-rule="evenodd"
                     d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
                   />
                 </svg>
-              </div>
-            </div>
-            <!-- .Darg & Drop-->
-            <!-- Content Header -->
-            <a href="#">
-              <div onclick="window.location.href = '#';">
-                <header class="d-flex justify-content-center">
-                  <img
-                    src="src/img/bs24-logo.jpg"
-                    class="header-logo img-fluid"
-                  />
-                </header>
-              </div>
-            </a>
-            <!-- .Content Header -->
-            <!-- Mobile Collapse Control -->
-            <div class="accordion c_border-0 bg-light d-md-block d-lg-none">
-              <h2 class="accordion-header inherit" id="collapseHeading-2">
-                <button
-                  class="accordion-button collapsed inherit"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse-2"
-                  aria-expanded="false"
-                  aria-controls="collapse-2"
-                >
+                        </div>
+                    </div>
+                    <!-- .Darg & Drop-->
+                    <!-- Content Header -->
+                    <div class="link-box">
+                        <a href="#">
+                            <div onclick="window.location.href = '#';">
+                                <header class="d-flex justify-content-center">
+                                    <img src="src/img/bs24-logo.jpg" class="header-logo img-fluid" />
+                                </header>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- .Content Header -->
+                    <!-- Mobile Collapse Control -->
+                    <div class="accordion c_border-0 bg-light d-md-block d-lg-none">
+                        <h2 class="accordion-header inherit" id="collapseHeading-2">
+                            <button class="accordion-button collapsed inherit" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                   Preview
                 </button>
-              </h2>
-            </div>
+                        </h2>
+                    </div>
 
-            <!-- .Mobile Collapse Control -->
+                    <!-- .Mobile Collapse Control -->
 
-            <!-- Content Body -->
+                    <!-- Content Body -->
 
-            <a href="#">
-              <div class="content-body">
-                <div class="preview collapse d-lg-block" id="collapse-2">
-                  <!--<iframe
+                    <div class="link-box">
+                        <a href="#">
+                            <div class="content-body">
+                                <div class="preview collapse d-lg-block" id="collapse-2">
+                                    <!--<iframe
                   src="/Versions/v2/index.html"
                   scrolling="no"
                   allowfullscreen
                 ></iframe>-->
-                  <img src="src/img/lms.hamburg.png" class="img-fluid" />
-                </div>
-              </div>
-            </a>
+                                    <img src="src/img/lms.hamburg.png" class="img-fluid" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
-            <!-- .Content Body -->
-          </div>
-        </div>
-      </section>
+                    <!-- .Content Body -->
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer clearfix">
-      <div class="container">
-        <span>
-          <a href="# " target="_blank "> Bilder</a>
+        <div class="container">
+            <span>
+          <a href="impressum.html " target="_blank "> Impressum</a>
         </span>
-      </div>
+        </div>
     </footer>
+
     <!-- Custom JS -->
-    <script src="src/js/background.js "></script>
-    <script src="src/js/swap.js "></script>
+
+    <script src="src/js/custom.js "></script>
 
     <!-- Drag&Drop -->
-    <script src="src/js/html5sortable.min.js"></script>
+    <script src="src/js/Sortable.min.js"></script>
     <script>
-      sortable(".sortable", {
-        forcePlaceholderSize: true,
-        placeholderClass: "ph-class",
-        hoverClass: "bg-maroon grey",
-        handle: ".move",
-      });
+        var el = document.getElementById("sort");
+        var sortable = Sortable.create(el, {
+            handle: ".move",
+            selectedClass: "selected",
+            swapThreshold: 1,
+            animation: 150,
+            group: "store-position",
+            store: {
+                /**
+                 * Get the order of elements. Called once during initialization.
+                 * @param   {Sortable}  sortable
+                 * @returns {Array}
+                 */
+                get: function(sortable) {
+                    var order = localStorage.getItem(sortable.options.group.name);
+                    return order ? order.split("|") : [];
+                },
+
+                /**
+                 * Save the order of elements. Called onEnd (when the item is dropped).
+                 * @param {Sortable}  sortable
+                 */
+                set: function(sortable) {
+                    var order = sortable.toArray();
+                    localStorage.setItem(sortable.options.group.name, order.join("|"));
+                },
+            },
+        });
     </script>
 
     <!-- Bootstrap JS -->
-    <script src="src/js/bootstrap.min.js"></script>
-  </body>
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
