@@ -1,16 +1,8 @@
 function load_page() {
     random_background();
-    cookie();
+    /* swap_order(); */
 }
-
-function cookie() {
-    document.getElementById("cookie_Modal").modal("show");
-    if (document.cookie.indexOf("Modal=accepted") < 0) {
-        document.getElementById("cookie_Modal").show();
-    }
-    document.cookie = "modal_status=hide; path=/";
-}
-
+/*
 function swap() {
     var section = document.getElementsByClassName("section");
     var button = document.getElementById("swap_button");
@@ -44,7 +36,7 @@ function get_img() {
     console.log(img);
     return img;
 }
-
+*/
 function random_background() {
     var img = [
         "url('/src/img/background/bg-1.jpg')",

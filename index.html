@@ -15,16 +15,16 @@
     <title>BBW-BS24 Verlinkung</title>
 </head>
 
-<body onload="load_page();" onresize="swap_order();">
+<body onload="load_page();">
     <!-- Container -->
     <main class="container-fluid">
         <!-- Row -->
-        <section class="row px-2 sortable" aria-dropeffect="move">
+        <section class="row px-2 sortable" id="sort" aria-dropeffect="move">
             <!-- Content Left -->
             <div class="col-lg section" draggable="true" role="option" aria-grabbed="false">
                 <div class="content rounded-bottom">
                     <!-- Darg & Drop-->
-                    <div class="icons d-none d-lg-flex d-flex justify-content-end">
+                    <div class="icons d-flex justify-content-end">
                         <div class="icon move">
                             <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
                   <path
@@ -80,8 +80,7 @@
             </div>
 
             <!-- .Content Left -->
-
-            <!-- Mobile Swap -->
+            <!-- Mobile Swap 
             <div class="mobile-switch icon-swap d-lg-none d-lg-flex d-flex justify-content-center" id="swap_button">
                 <button type="button" class="btn btn-light" onclick="swap();">
             <svg
@@ -99,13 +98,13 @@
             </svg>
           </button>
             </div>
-            <!-- .Mobile Swap -->
+        .Mobile Swap -->
 
             <!-- Content Right -->
             <div class="col-lg section" draggable="true" role="option" aria-grabbed="false">
                 <div class="content rounded-bottom">
                     <!-- Darg & Drop-->
-                    <div class="icons d-none d-lg-flex d-flex justify-content-end">
+                    <div class="icons d-flex justify-content-end">
                         <div class="icon move">
                             <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
                   <path
@@ -166,44 +165,47 @@
           <a href="impressum.html " target="_blank "> Impressum</a>
         </span>
         </div>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cookie_Modal">
-        Launch static backdrop modal
-      </button>
     </footer>
-
-    <!-- MODAL -->
-    <div class="modal fade" id="cookie_Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="cookie_Modal-label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                    <button type="button" id="closeModal" class="btn btn-secondary" data-bs-dismiss="modal">
-              Close
-            </button>
-                    <button type="button" class="btn btn-primary">Accept</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Custom JS -->
 
     <script src="src/js/custom.js "></script>
 
     <!-- Drag&Drop -->
-    <script src="src/js/html5sortable.min.js"></script>
+    <script src="src/js/Sortable.min.js"></script>
     <script>
-        sortable(".sortable", {
-            forcePlaceholderSize: true,
+        var el = document.getElementById("sort");
+        var sortable = Sortable.create(el, {
             handle: ".move",
+            selectedClass: "selected",
+            swapThreshold: 1,
+            animation: 150,
+            group: "store-position",
+            store: {
+                /**
+                 * Get the order of elements. Called once during initialization.
+                 * @param   {Sortable}  sortable
+                 * @returns {Array}
+                 */
+                get: function(sortable) {
+                    var order = localStorage.getItem(sortable.options.group.name);
+                    return order ? order.split("|") : [];
+                },
+
+                /**
+                 * Save the order of elements. Called onEnd (when the item is dropped).
+                 * @param {Sortable}  sortable
+                 */
+                set: function(sortable) {
+                    var order = sortable.toArray();
+                    localStorage.setItem(sortable.options.group.name, order.join("|"));
+                },
+            },
         });
     </script>
 
     <!-- Bootstrap JS -->
-    <script src="src/js/bootstrap.bundle.js"></script>
+    <script src="src/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
