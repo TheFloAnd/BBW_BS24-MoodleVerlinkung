@@ -22,7 +22,7 @@
         <section class="row d-flex content-main px-2 mb-3 sortable space-1" id="sort" aria-dropeffect="move">
             <!-- Content Left -->
             <div class="col-lg mb-3" draggable="true" role="option" aria-grabbed="false">
-                <div class="content border-bbw rounded-bottom" id="content-bbw">
+                <div class="content content-animation border-bbw rounded-bottom" id="content-bbw">
                     <!-- Darg & Drop-->
                     <div class="icons d-flex justify-content-end">
                         <div class="icon move">
@@ -76,7 +76,7 @@
             <!-- .Content Left -->
             <!-- Content Right -->
             <div class="col-lg mb-3" draggable="true" role="option" aria-grabbed="false">
-                <div class="content border-bs24 rounded-bottom" id="content-bs24">
+                <div class="content content-animation border-bs24 rounded-bottom" id="content-bs24">
                     <!-- Darg & Drop-->
                     <div class="icons d-flex justify-content-end">
                         <div class="icon move">
@@ -131,7 +131,7 @@
     <footer class="footer clearfix">
         <div class="container">
             <span>
-          <a href="impressum.html " target="_blank "> Impressum</a>
+          <a href="impressum.html"> Impressum</a>
         </span>
         </div>
     </footer>
@@ -146,10 +146,10 @@
         var el = document.getElementById("sort");
         var sortable = Sortable.create(el, {
             handle: ".move",
-            selectedClass: "selected",
             swapThreshold: 1,
             animation: 200,
             group: "store-position",
+            removeCloneOnHide: true,
             store: {
                 /**
                  * Get the order of elements. Called once during initialization.
