@@ -15,19 +15,22 @@ Links to Moodle for BBW Hamburg and BS24
 # File_Structure
 
     │─ .gitignore
-    │─ Index.html
+    │─ index.html
+    │─ impressum.html
     │─ README.md
     └─ src
         │─ css
         │   │─ bootstrap.min.css
+        │   │─ bootstrap.min.css.map
         │   │─ custom.css
         │   │─ custom.min.css
         │   └─ custom.scss
         │─ js
-        │   │─ background.js
-        │   │─ swap.js
-        │   │─ html5sortable.min.js
-        │   └─ bootstrap.min.js
+        │   │─ custom.js
+        │   │─ Sortable.js
+        │   │─ Sortable.min.js
+        │   │─ bootstrap.bundle.min.js
+        │   └─ bootstrap.bundle.min.js.map
         └─ img
             │─ bbw-hamburg-Logo-RGB.png
             │─ BS24 boller[1] .jpg

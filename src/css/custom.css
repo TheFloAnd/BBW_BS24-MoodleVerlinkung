@@ -7,6 +7,7 @@ body {
   min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .icon-swap {
@@ -136,4 +137,5 @@ Impressum
 
 .card-header {
   background-color: rgba(255, 255, 255, 0.75) !important;
+  margin-right: 50px;
 }
