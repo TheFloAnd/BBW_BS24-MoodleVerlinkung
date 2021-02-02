@@ -8,7 +8,6 @@ Links to Moodle for BBW Hamburg and BS24
 
 - 2 Links
 - Drag&Drop
-- Position Switch button for mobile view
 - Preview (Image or Iframe)
 - ~~Animation~~
 
