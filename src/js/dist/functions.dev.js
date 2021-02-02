@@ -1,19 +1,16 @@
 "use strict";
 
-function load_page() {
-  random_background();
-  swap_order();
-}
+$(document).ready(function () {
+  //if cookie hasn't been set...
+  if (document.cookie.indexOf("ModalShown=true") < 0) {
+    $("#myModal").modal("show"); //Modal has been shown, now set a cookie so it never comes back
 
-function cookie() {
-  document.getElementById("cookie_Modal").modal("show");
-
-  if (document.cookie.indexOf("Modal=accepted") < 0) {
-    document.getElementById("cookie_Modal").show();
+    $("#myModalClose").click(function () {
+      $("#myModal").modal("hide");
+    });
+    document.cookie = "ModalShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
   }
-
-  document.cookie = "modal_status=hide; path=/";
-}
+});
 
 function swap() {
   var section = document.getElementsByClassName("section");

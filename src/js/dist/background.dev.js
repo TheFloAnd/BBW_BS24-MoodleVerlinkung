@@ -1,36 +1,5 @@
 "use strict";
 
-function load_page() {
-  random_background();
-  swap_order();
-}
-
-function cookie() {
-  document.getElementById("cookie_Modal").modal("show");
-
-  if (document.cookie.indexOf("Modal=accepted") < 0) {
-    document.getElementById("cookie_Modal").show();
-  }
-
-  document.cookie = "modal_status=hide; path=/";
-}
-
-function swap() {
-  var section = document.getElementsByClassName("section");
-  var button = document.getElementById("swap_button");
-  var parent = document.getElementById("content");
-  button.parentNode.insertBefore(section[0], section[1]);
-  section[0].parentNode.appendChild(button);
-  button.parentNode.appendChild(section[0]);
-}
-
-function swap_order() {
-  var section = document.getElementsByClassName("section");
-  var button = document.getElementById("swap_button");
-  section[0].parentNode.appendChild(button);
-  button.parentNode.appendChild(section[1]);
-}
-
 function get_img() {
   var fs = require("fs");
 
