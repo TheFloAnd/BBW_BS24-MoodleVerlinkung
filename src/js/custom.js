@@ -5,7 +5,7 @@ function load_page(page) {
     } else {
         random_background();
     }
-    /* swap_order(); */
+    //swap_order();
 }
 /*
 function swap() {

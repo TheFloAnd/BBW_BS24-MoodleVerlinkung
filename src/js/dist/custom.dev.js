@@ -6,8 +6,7 @@ function load_page(page) {
     random_preview();
   } else {
     random_background();
-  }
-  /* swap_order(); */
+  } //swap_order();
 
 }
 /*
