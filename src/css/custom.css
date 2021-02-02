@@ -44,6 +44,7 @@ body {
 }
 
 .border-bbw {
+  transition: all 0.3s ease;
   border: 2px solid #e30613;
 }
 .border-bbw:hover {
@@ -51,10 +52,11 @@ body {
   border-color: #e30613;
   border-width: 5px;
   border-style: outset;
-  box-shadow: 10px 5px 10px #e30613;
+  box-shadow: 5px 5px 10px 3px #e30613;
 }
 
 .border-bs24 {
+  transition: all 0.3s ease;
   border: 2px solid #85b004;
 }
 .border-bs24:hover {
@@ -62,7 +64,7 @@ body {
   border-color: #85b004;
   border-width: 5px;
   border-style: outset;
-  box-shadow: 10px 5px 10px #85b004;
+  box-shadow: 5px 5px 10px 3px #85b004;
 }
 
 .content-body {
@@ -112,9 +114,9 @@ iframe {
 
 .footer {
   bottom: 0;
+  right: 0;
   width: 100%;
   background-color: none;
-  color: white;
   text-align: right;
   font-size: 1.5rem;
 }
@@ -126,10 +128,6 @@ iframe {
   .content-main {
     animation: slideDown 2s 0s ease forwards;
   }
-}
-
-.dropzone {
-  /* border: 2px solid #ff00ff; */
 }
 
 @keyframes slideDown {
@@ -185,4 +183,43 @@ Impressum
 
 .card-logo {
   width: 10rem;
+}
+
+input > label:hover {
+  color: #ff00ff;
+}
+
+.form-floating > label {
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.form-floating > .form-control ~ label {
+  color: #000;
+  opacity: 0.75 !important;
+}
+.form-floating > .form-control ~ label:hover {
+  transform: scale(1) translateY(0rem) translateX(0.2rem);
+}
+
+.imp-link-bbw,
+.imp-link-bs24,
+.imp-link {
+  transition: all 0.6s ease;
+}
+.imp-link-bbw:hover,
+.imp-link-bs24:hover,
+.imp-link:hover {
+  background: lightgray;
+}
+
+.form-floating .imp-link:hover {
+  box-shadow: 0px 0px 10px 5px #0ff;
+}
+
+.imp-link-bbw:hover {
+  box-shadow: 0px 0px 10px 5px #e30613;
+}
+
+.imp-link-bs24:hover {
+  box-shadow: 0px 0px 10px 5px #85b004;
 }
