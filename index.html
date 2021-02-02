@@ -19,10 +19,10 @@
     <!-- Container -->
     <main class="container-fluid">
         <!-- Row -->
-        <section class="row px-2 sortable" id="sort" aria-dropeffect="move">
+        <section class="row d-flex content-main px-2 mb-3 sortable space-1" id="sort" aria-dropeffect="move">
             <!-- Content Left -->
-            <div class="col-lg section" draggable="true" role="option" aria-grabbed="false">
-                <div class="content rounded-bottom">
+            <div class="col-lg mb-3" draggable="true" role="option" aria-grabbed="false">
+                <div class="content border-bbw rounded-bottom" id="content-bbw">
                     <!-- Darg & Drop-->
                     <div class="icons d-flex justify-content-end">
                         <div class="icon move">
@@ -64,11 +64,6 @@
                         <a href="#">
                             <div class="content-body">
                                 <div class="preview collapse d-lg-block" id="collapse-1">
-                                    <!--<iframe
-                  src="/Versions/v2/index.html"
-                  scrolling="no"
-                  allowfullscreen
-                ></iframe>-->
                                     <img src="src/img/lms.hamburg.png" class="img-fluid" />
                                 </div>
                             </div>
@@ -78,31 +73,10 @@
                     <!-- .Content Body -->
                 </div>
             </div>
-
             <!-- .Content Left -->
-            <!-- Mobile Swap 
-            <div class="mobile-switch icon-swap d-lg-none d-lg-flex d-flex justify-content-center" id="swap_button">
-                <button type="button" class="btn btn-light" onclick="swap();">
-            <svg
-              xmlns="src/img/svg/arrow-down-up.svg"
-              width="25"
-              height="25"
-              fill="currentColor"
-              class="bi bi-arrow-down-up"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"
-              />
-            </svg>
-          </button>
-            </div>
-        .Mobile Swap -->
-
             <!-- Content Right -->
-            <div class="col-lg section" draggable="true" role="option" aria-grabbed="false">
-                <div class="content rounded-bottom">
+            <div class="col-lg mb-3" draggable="true" role="option" aria-grabbed="false">
+                <div class="content border-bs24 rounded-bottom" id="content-bs24">
                     <!-- Darg & Drop-->
                     <div class="icons d-flex justify-content-end">
                         <div class="icon move">
@@ -143,11 +117,6 @@
                         <a href="#">
                             <div class="content-body">
                                 <div class="preview collapse d-lg-block" id="collapse-2">
-                                    <!--<iframe
-                  src="/Versions/v2/index.html"
-                  scrolling="no"
-                  allowfullscreen
-                ></iframe>-->
                                     <img src="src/img/lms.hamburg.png" class="img-fluid" />
                                 </div>
                             </div>
@@ -179,7 +148,7 @@
             handle: ".move",
             selectedClass: "selected",
             swapThreshold: 1,
-            animation: 150,
+            animation: 200,
             group: "store-position",
             store: {
                 /**

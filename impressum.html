@@ -18,12 +18,15 @@
 <body onload="load_page();" onresize="swap_order();">
     <!-- Container -->
     <main class="container-fluid">
-        <div class="d-flex justify-content-start">
+        <div class="nav-link"></div>
+        <div class="home-link d-flex justify-content-start">
             <a href="index.html" class=""> Zurück </a>
         </div>
+        </div>
         <!-- Row -->
-        <section class="sortable d-flex flex-wrap flex-xl-wrap w-auto justify-content-evenly mb-3 p-3" id="sort" aria-dropeffect="move">
-            <div class="card border-primary mb-5" draggable="true" role="option" aria-grabbed="false">
+        <section class="sortable d-flex flex-wrap w-auto justify-content-around m-3" id="sort" aria-dropeffect="move">
+            <!-- BBW card -->
+            <div class="card border-bbw mb-5" id="card-bbw" draggable="true" role="option" aria-grabbed="false">
                 <div class="icons d-flex justify-content-end">
                     <div class="icon move">
                         <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
@@ -35,10 +38,14 @@
                     </div>
                 </div>
 
-                <div class="card-header h3">Berufsbildungswerk Hamburg GmbH</div>
+                <div class="card-header h3"> Berufsbildungswerk Hamburg GmbH</div>
 
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
+
+                        <li class="list-group-item justify-content-center">
+                            <img src="src/img/bbw-logo.png" class="rounded card-logo mx-auto d-block" alt="..."></img>
+                        </li>
                         <li class="list-group-item">
                             <div class="input-group d-flex">
                                 <a href="mailto:christine.schaerffer@pepko-hamburg.de" class="flex-grow-1">
@@ -111,7 +118,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="card border-primary mb-5" draggable="true" role="option" aria-grabbed="false">
+            <!-- BS24 Card -->
+            <div class="card border-bs24 mb-5" id="card-bs24" draggable="true" role="option" aria-grabbed="false">
                 <div class="icons d-flex justify-content-end">
                     <div class="icon move">
                         <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
@@ -122,9 +130,12 @@
               </svg>
                     </div>
                 </div>
-                <div class="card-header h3">Berufliche Schule Eidelstedt BS24</div>
+                <div class="card-header h3"> Berufliche Schule Eidelstedt BS24</div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item justify-content-center">
+                            <img src="src/img/bs24-logo.jpg" class="rounded card-logo mx-auto d-block" alt="..."></img>
+                        </li>
                         <li class="list-group-item">
                             <div class="input-group d-flex">
                                 <div class="form-floating flex-grow-1">
@@ -239,9 +250,6 @@
     </main>
     <footer class="footer clearfix">
         <div class="container">
-            <span>
-          <a href="impressum.html " target="_blank "> Impressum</a>
-        </span>
         </div>
     </footer>
     <!-- Custom JS -->

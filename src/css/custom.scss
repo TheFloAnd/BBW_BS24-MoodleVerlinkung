@@ -10,6 +10,15 @@ body {
     background-attachment: fixed;
 }
 
+.nav-link {
+    position: absolute;
+}
+
+.home-link {
+    position: relative;
+    font-size: 120%;
+}
+
 .icon-swap {
     padding: 10px;
 }
@@ -19,11 +28,15 @@ body {
     padding: 10px;
 }
 
+.space-1 {
+    margin-bottom: auto;
+}
+
 .content {
-    border: 1px solid gray;
+    border: 2px solid gray;
     box-shadow: 10px 5px 5px black;
-    @media only screen and (min-width: 768px) {
-        //animation: slideDown 2s 0s ease forwards;
+    @media only screen and (min-width: 990px) {
+        animation: slideDown 2s 0s ease forwards;
     }
     &:hover {
         cursor: pointer;
@@ -33,27 +46,25 @@ body {
     }
 }
 
-.row {
-    min-height: 100%;
-    @media only screen and (max-width: 768px) {
-        //animation: slideDown 2s 0s ease forwards;
+.border-bbw {
+    border-color: #e30613;
+    &:hover {
+        box-shadow: 10px 5px 5px #e30613;
     }
 }
 
-.c_border-0 {
-    border-radius: 0px;
+.border-bs24 {
+    border-color: #85b004;
+    &:hover {
+        box-shadow: 10px 5px 5px #85b004;
+    }
 }
 
-.c_border-10 {
-    border-radius: 10px;
-}
-
-.c_border-25 {
-    border-radius: 25px;
-}
-
-.inherit {
-    border-radius: inherit;
+.content-main {
+    min-height: 100%;
+    @media only screen and (max-width: 990px) {
+        animation: slideDown 2s 0s ease forwards;
+    }
 }
 
 .content-body {
@@ -127,8 +138,22 @@ iframe {
     }
 }
 
-.dd_placeholder {
-    border: 1px solid red;
+a {
+    color: #000000;
+    font-style: italic;
+    text-decoration: none;
+    &:hover {
+        color: #000;
+        text-decoration: underline;
+        font-size-adjust: 0.5;
+        text-shadow: 1px 0px #000000;
+    }
+    &:visited {
+        color: #000000;
+    }
+    &:active {
+        color: #000000;
+    }
 }
 
 
@@ -150,4 +175,8 @@ Impressum
 .card-header {
     background-color: rgba(255, 255, 255, 0.75) !important;
     margin-right: 50px;
+}
+
+.card-logo {
+    width: 10rem;
 }
