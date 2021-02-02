@@ -127,7 +127,7 @@ body {
 .link-container {
     background-color: rgba(211, 211, 211, 0.75);
     border-radius: 25px;
-    width: fit-content;
+    width: max-content;
 }
 
 .link {
@@ -137,7 +137,7 @@ body {
 @media only screen and (min-width: 990px) {
     .content-animation {
         //animation: slideDown 2s 0s ease forwards;
-        //animation: none;
+        animation: none;
     }
 }
 
@@ -218,6 +218,14 @@ Impressum
     }
 }
 
+input {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
 .imp-link-bbw,
 .imp-link-bs24,
 .imp-link {
@@ -242,5 +250,11 @@ Impressum
 .imp-link-bs24 {
     &:hover {
         box-shadow: 0px 0px 10px 5px #85b004;
+    }
+}
+
+.imp-link-bootstrap {
+    &:hover {
+        box-shadow: 0px 0px 10px 5px #7952b3;
     }
 }

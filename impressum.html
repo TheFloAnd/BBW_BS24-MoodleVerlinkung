@@ -15,7 +15,7 @@
     <title>BBW-BS24 Verlinkung</title>
 </head>
 
-<body onload="load_page();" onresize="swap_order();">
+<body onload="load_page();">
     <!-- Container -->
     <main class="container-fluid">
         <div class="home-link link-container d-flex justify-content-start">
@@ -47,13 +47,13 @@
                         <li class="list-group-item">
                             <div class="input-group d-flex">
                                 <a href="mailto:christine.schaerffer@pepko-hamburg.de" class="flex-grow-1">
-                                    <div class="form-floating px-1">
+                                    <div class="form-floating p-1 py-1">
                                         <input class="form-control imp-link-bbw" type="text" value="Christine Schaerffer" aria-label="default input example" disabled readonly />
                                         <label>Geschäftsführung</label>
                                     </div>
                                 </a>
                                 <a href="mailto:samuel.breisacher@cjd.de" class="flex-grow-1">
-                                    <div class="form-floating px-1">
+                                    <div class="form-floating p-1 py-1">
                                         <input class="form-control imp-link-bbw" type="text" value="Samuel Breisacher" aria-label="default input example" disabled readonly />
                                         <label>Geschäftsführung</label>
                                     </div>
@@ -64,7 +64,7 @@
                             <a href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/" target="_blank">
                                 <div class="input-group d-flex">
                                     <div class="form-floating flex-grow-1">
-                                        <input class="form-control imp-link-bbw" type="text" value="Reichsbahnstraße 53+55 - 22525 Hamburg" aria-label="default input example" disabled readonly />
+                                        <input class="form-control imp-link-bbw" type="text" value="Reichsbahnstraße 53+55, 22525 Hamburg" aria-label="default input example" disabled readonly />
                                         <label>Straße & PLZ</label>
                                     </div>
                                 </div>
@@ -74,13 +74,13 @@
                         <li class="list-group-item">
                             <div class="input-group d-flex">
                                 <a href="tel:+4904057230" class="flex-grow-1">
-                                    <div class="form-floating px-1">
+                                    <div class="form-floating p-1 py-1">
                                         <input class="form-control imp-link-bbw" type="text" value="040 5723-0" disabled readonly />
                                         <label>Telefon</label>
                                     </div>
                                 </a>
                                 <a href="fax:+490405723102" class="flex-grow-1">
-                                    <div class="form-floating px-1">
+                                    <div class="form-floating p-1 py-1">
                                         <input class="form-control imp-link-bbw" type="text" value="040 5723-102" disabled readonly />
                                         <label>Fax</label>
                                     </div>
@@ -142,7 +142,7 @@
                             <a href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/" target="_blank">
                                 <div class="input-group d-flex">
                                     <div class="form-floating flex-grow-1">
-                                        <input class="form-control imp-link-bs24" type="text" value="Reichsbahnstraße 53+55 - 22525 Hamburg" aria-label="default input example" disabled readonly />
+                                        <input class="form-control imp-link-bs24" type="text" value="Reichsbahnstraße 53+55, 22525 Hamburg" aria-label="default input example" disabled readonly />
                                         <label>Straße & PLZ</label>
                                     </div>
                                 </div>
@@ -152,13 +152,13 @@
                         <li class="list-group-item">
                             <div class="input-group d-flex">
                                 <a href="tel:+490405723125" class="flex-grow-1">
-                                    <div class="form-floating px-1">
+                                    <div class="form-floating p-1 py-1">
                                         <input class="form-control imp-link-bs24" type="text" value="040 57 23 – 125" disabled readonly />
                                         <label>Telefon</label>
                                     </div>
                                 </a>
                                 <a href="fax:+490405723370" class="flex-grow-1">
-                                    <div class="form-floating px-1">
+                                    <div class="form-floating p-1 py-1">
                                         <input class="form-control imp-link-bs24" type="text" value="0405723370" disabled readonly />
                                         <label>Fax</label>
                                     </div>
@@ -219,8 +219,8 @@
                             <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">
                                 <div class="input-group d-flex">
                                     <div class="form-floating flex-grow-1">
-                                        <input class="form-control imp-link" type="text" value="Bootstrap 5 Beta" aria-label="default input example" disabled readonly />
-                                        <label>Bilder</label>
+                                        <input class="form-control imp-link-bootstrap" type="text" value="Bootstrap 5 Beta" aria-label="default input example" disabled readonly />
+                                        <label>Framework</label>
                                     </div>
                                 </div>
                             </a>
@@ -252,7 +252,6 @@
         var el = document.getElementById("sort");
         var sortable = Sortable.create(el, {
             handle: ".move",
-            selectedClass: "selected",
             swapThreshold: 1,
             animation: 150,
             group: "store-position-impressum",
