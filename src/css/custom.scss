@@ -5,9 +5,14 @@ html {
 
 body {
     min-height: 100%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.space {
+    height: 100%;
 }
 
 .nav-link {
@@ -106,8 +111,7 @@ body {
 }
 
 .footer {
-    bottom: 0;
-    right: 0;
+    position: absolute;
     width: 100%;
     //background-color: lightgray;
     text-align: right;
@@ -115,13 +119,13 @@ body {
 }
 
 .footer>.link-container {
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.75);
     border-radius: 25px;
     width: fit-content;
 }
 
 .link-container {
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.75);
     border-radius: 25px;
     width: fit-content;
 }
@@ -202,10 +206,6 @@ Impressum
     width: 10rem;
 }
 
-input>label:hover {
-    color: #ff00ff;
-}
-
 .form-floating>label {
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
@@ -229,7 +229,7 @@ input>label:hover {
 
 .form-floating .imp-link {
     &:hover {
-        box-shadow: 0px 0px 10px 5px #0ff;
+        box-shadow: 0px 0px 10px 5px #909090;
     }
 }
 
