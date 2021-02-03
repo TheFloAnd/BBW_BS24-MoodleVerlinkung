@@ -24,7 +24,7 @@
         <!-- Row -->
         <section class="sortable d-flex flex-wrap w-auto justify-content-around m-3" id="sort" aria-dropeffect="move">
             <!-- BBW card -->
-            <div class="card border-bbw mb-5" id="card-bbw" draggable="true" role="option" aria-grabbed="false">
+            <div class="card border-bbw m-5" id="card-bbw" draggable="true" role="option" aria-grabbed="false">
                 <div class="icons d-flex justify-content-end">
                     <div class="icon move">
                         <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
@@ -36,14 +36,15 @@
                     </div>
                 </div>
 
-                <div class="card-header h3"> Berufsbildungswerk Hamburg GmbH</div>
+                <div class="card-header h3">Berufsbildungswerk Hamburg GmbH</div>
 
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
-
+                        <!--
                         <li class="list-group-item justify-content-center">
                             <img src="src/img/bbw-logo.png" class="rounded card-logo mx-auto d-block" alt="..."></img>
                         </li>
+                    -->
                         <li class="list-group-item">
                             <div class="input-group d-flex">
                                 <a href="mailto:christine.schaerffer@pepko-hamburg.de" class="flex-grow-1">
@@ -113,7 +114,7 @@
                 </div>
             </div>
             <!-- BS24 Card -->
-            <div class="card border-bs24 mb-5" id="card-bs24" draggable="true" role="option" aria-grabbed="false">
+            <div class="card border-bs24 m-5" id="card-bs24" draggable="true" role="option" aria-grabbed="false">
                 <div class="icons d-flex justify-content-end">
                     <div class="icon move">
                         <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
@@ -124,12 +125,14 @@
               </svg>
                     </div>
                 </div>
-                <div class="card-header h3"> Berufliche Schule Eidelstedt BS24</div>
+                <div class="card-header h3">Berufliche Schule Eidelstedt BS24</div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
+                        <!--
                         <li class="list-group-item justify-content-center">
                             <img src="src/img/bs24-logo.jpg" class="rounded card-logo mx-auto d-block" alt="..."></img>
                         </li>
+                    -->
                         <li class="list-group-item">
                             <div class="input-group d-flex">
                                 <div class="form-floating flex-grow-1">
@@ -138,7 +141,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item ">
+                        <li class="list-group-item">
                             <a href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/" target="_blank">
                                 <div class="input-group d-flex">
                                     <div class="form-floating flex-grow-1">
@@ -191,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="card content mb-5" draggable="true" role="option" aria-grabbed="false">
+            <div class="card content m-5" draggable="true" role="option" aria-grabbed="false">
                 <div class="icons d-flex justify-content-end">
                     <div class="icon move">
                         <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
@@ -237,11 +240,9 @@
                 </div>
             </div>
         </section>
-
     </main>
     <footer class="footer clearfix">
-        <div class="container">
-        </div>
+        <div class="container"></div>
     </footer>
     <!-- Custom JS -->
     <script src="src/js/custom.js "></script>
@@ -253,8 +254,7 @@
         var sortable = Sortable.create(el, {
             handle: ".move",
             swapThreshold: 1,
-            animation: 150,
-            group: "store-position-impressum",
+            group: "sort-position-impressum",
             store: {
                 /**
                  * Get the order of elements. Called once during initialization.
