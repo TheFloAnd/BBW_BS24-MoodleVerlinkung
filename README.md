@@ -38,6 +38,14 @@ Links to Moodle for BBW Hamburg and BS24
             │─ svg
             │   │─ arrow-down-up.svg
             │   └─ arrows-move.svg
+            │─ preview
+            │   │─ bbw
+            │   └─ bs24
+            │       │─ bs24-1.jpeg
+            │       │─ bs24-2.jpeg
+            │       │─ bs24-3.jpeg
+            │       │─ bs24-4.jpeg
+            │       └─ bs24-5.jpeg
             └─ background
                 │─ bg-1.jpg
                 │─ bg-10.jpg
