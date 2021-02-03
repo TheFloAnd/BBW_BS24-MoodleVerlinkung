@@ -5,8 +5,27 @@ html {
 
 body {
     min-height: 100%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    overflow: hidden;
+}
+
+.space {
+    height: 100%;
+}
+
+.nav-link {
+    position: absolute;
+}
+
+.home-link {
+    position: relative;
+    font-size: 120%;
 }
 
 .icon-swap {
@@ -19,44 +38,46 @@ body {
 }
 
 .content {
-    border: 1px solid gray;
-    box-shadow: 10px 5px 5px black;
-    @media only screen and (min-width: 768px) {
-        //animation: slideDown 2s 0s ease forwards;
-    }
+    border: 2px solid gray;
     &:hover {
-        cursor: pointer;
         border-color: gray;
         border-width: 5px;
         border-style: outset;
+        box-shadow: 10px 5px 10px gray;
     }
 }
 
-.row {
-    min-height: 100%;
-    @media only screen and (max-width: 768px) {
-        //animation: slideDown 2s 0s ease forwards;
+#content-bbw,
+#content-bs24 {
+    overflow: hidden;
+}
+
+.border-bbw {
+    transition: all 0.3s ease;
+    border: 2px solid #e30613;
+    &:hover {
+        cursor: pointer;
+        border-color: #e30613;
+        border-width: 5px;
+        border-style: outset;
+        box-shadow: 5px 5px 10px 3px #e30613;
     }
 }
 
-.c_border-0 {
-    border-radius: 0px;
-}
-
-.c_border-10 {
-    border-radius: 10px;
-}
-
-.c_border-25 {
-    border-radius: 25px;
-}
-
-.inherit {
-    border-radius: inherit;
+.border-bs24 {
+    transition: all 0.3s ease;
+    border: 2px solid #85b004;
+    &:hover {
+        cursor: pointer;
+        border-color: #85b004;
+        border-width: 5px;
+        border-style: outset;
+        box-shadow: 5px 5px 10px 3px #85b004;
+    }
 }
 
 .content-body {
-    padding: 5px;
+    padding: 0px;
 }
 
 .icons {
@@ -93,22 +114,42 @@ body {
     height: 100%;
 }
 
-iframe {
-    width: 100%;
-    height: 100%;
-}
-
-iframe {
-    pointer-events: none;
-}
-
 .footer {
-    bottom: 0;
+    position: absolute;
     width: 100%;
-    background-color: none;
-    color: white;
+    //background-color: lightgray;
     text-align: right;
     font-size: 1.5rem;
+}
+
+.footer>.link-container {
+    background-color: rgba(211, 211, 211, 0.75);
+    border-radius: 25px;
+    width: fit-content;
+}
+
+.link-container {
+    background-color: rgba(211, 211, 211, 0.75);
+    border-radius: 25px;
+    width: max-content;
+}
+
+.link {
+    padding: 10px;
+}
+
+@media only screen and (min-width: 990px) {
+    .content-animation {
+        //animation: slideDown 2s 0s ease forwards;
+        animation: none;
+    }
+}
+
+.content-main {
+    min-height: 100%;
+    @media only screen and (max-width: 990px) {
+        animation: slideDown 2s 0s ease forwards;
+    }
 }
 
 @keyframes slideDown {
@@ -126,8 +167,22 @@ iframe {
     }
 }
 
-.dd_placeholder {
-    border: 1px solid red;
+a {
+    color: #000000;
+    font-style: italic;
+    text-decoration: none;
+    &:hover {
+        color: #000;
+        text-decoration: underline;
+        font-size-adjust: 0.5;
+        text-shadow: 1px 0px #000000;
+    }
+    &:visited {
+        color: #000000;
+    }
+    &:active {
+        color: #000000;
+    }
 }
 
 
@@ -148,4 +203,62 @@ Impressum
 
 .card-header {
     background-color: rgba(255, 255, 255, 0.75) !important;
+    margin-right: 50px;
+}
+
+.card-logo {
+    width: 10rem;
+}
+
+.form-floating>label {
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.form-floating>.form-control~label {
+    color: #000;
+    opacity: 0.75 !important;
+    &:hover {
+        transform: scale(1) translateY(0rem) translateX(0.2rem);
+    }
+}
+
+input {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.imp-link-bbw,
+.imp-link-bs24,
+.imp-link {
+    transition: all 0.6s ease;
+    &:hover {
+        background: lightgray;
+    }
+}
+
+.form-floating .imp-link {
+    &:hover {
+        box-shadow: 0px 0px 10px 5px #909090;
+    }
+}
+
+.imp-link-bbw {
+    &:hover {
+        box-shadow: 0px 0px 10px 5px #e30613;
+    }
+}
+
+.imp-link-bs24 {
+    &:hover {
+        box-shadow: 0px 0px 10px 5px #85b004;
+    }
+}
+
+.imp-link-bootstrap {
+    &:hover {
+        box-shadow: 0px 0px 10px 5px #7952b3;
+    }
 }

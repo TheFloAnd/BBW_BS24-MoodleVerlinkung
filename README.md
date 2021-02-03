@@ -8,26 +8,28 @@ Links to Moodle for BBW Hamburg and BS24
 
 - 2 Links
 - Drag&Drop
-- Position Switch button for mobile view
 - Preview (Image or Iframe)
 - ~~Animation~~
 
 # File_Structure
 
     │─ .gitignore
-    │─ Index.html
+    │─ index.html
+    │─ impressum.html
     │─ README.md
     └─ src
         │─ css
         │   │─ bootstrap.min.css
+        │   │─ bootstrap.min.css.map
         │   │─ custom.css
         │   │─ custom.min.css
         │   └─ custom.scss
         │─ js
-        │   │─ background.js
-        │   │─ swap.js
-        │   │─ html5sortable.min.js
-        │   └─ bootstrap.min.js
+        │   │─ custom.js
+        │   │─ Sortable.js
+        │   │─ Sortable.min.js
+        │   │─ bootstrap.bundle.min.js
+        │   └─ bootstrap.bundle.min.js.map
         └─ img
             │─ bbw-hamburg-Logo-RGB.png
             │─ BS24 boller[1] .jpg
@@ -36,6 +38,14 @@ Links to Moodle for BBW Hamburg and BS24
             │─ svg
             │   │─ arrow-down-up.svg
             │   └─ arrows-move.svg
+            │─ preview
+            │   │─ bbw
+            │   └─ bs24
+            │       │─ bs24-1.jpeg
+            │       │─ bs24-2.jpeg
+            │       │─ bs24-3.jpeg
+            │       │─ bs24-4.jpeg
+            │       └─ bs24-5.jpeg
             └─ background
                 │─ bg-1.jpg
                 │─ bg-10.jpg
