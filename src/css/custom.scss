@@ -23,10 +23,6 @@ main {
     height: 100%;
 }
 
-.nav-link {
-    position: absolute;
-}
-
 .home-link {
     position: relative;
     font-size: 120%;
@@ -41,7 +37,7 @@ main {
     padding: 10px;
 }
 
-.content {
+.my-content {
     border: 2px solid gray;
     &:hover {
         border-color: gray;
@@ -78,10 +74,6 @@ main {
         border-style: outset;
         box-shadow: 5px 5px 10px 3px #85b004;
     }
-}
-
-.content-body {
-    padding: 0px;
 }
 
 .icons {
@@ -196,29 +188,29 @@ Impressum
 
 */
 
-.card {
+.my-card {
     background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.list-group,
-.list-group-item {
+.my-list-group,
+.my-list-group-item {
     background: none !important;
 }
 
-.card-header {
+.my-card-header {
     background-color: rgba(255, 255, 255, 0.75) !important;
     margin-right: 50px;
 }
 
-.card-logo {
+.my-card-logo {
     width: 10rem;
 }
 
-.form-floating>label {
+.my-form-float>label {
     transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
 
-.form-floating>.form-control~label {
+.my-form-float>.my-form-control~label {
     color: #000;
     opacity: 0.75 !important;
     &:hover {
@@ -243,7 +235,7 @@ input {
     }
 }
 
-.form-floating .imp-link {
+.my-form-float .imp-link {
     &:hover {
         box-shadow: 0px 0px 10px 5px #909090;
     }
@@ -264,5 +256,13 @@ input {
 .imp-link-bootstrap {
     &:hover {
         box-shadow: 0px 0px 10px 5px #7952b3;
+    }
+}
+
+.policy-container {
+    color: #000;
+    border: 2px solid #000;
+    &:hover {
+        box-shadow: 0px 0px 10px 5px #000;
     }
 }
