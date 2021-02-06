@@ -244,49 +244,119 @@
                 </div>
             </div>
         </section>
+
         <section class="container p-5">
-            <div class="card text-center"></div>
-        </section>
+            <div class="card text-center">
+                <div class="d-flex align-items-start">
+                    <ul class="nav flex-column nav-tab me-3" id="myTab" role="tablist" aria-orientation="vertical">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  href="#profile"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                  >Profile</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="contact-tab"
+                  data-bs-toggle="tab"
+                  href="#contact"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              ...Home
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              ...Profile
+            </div>
+            <div
+              class="tab-pane fade"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              ...Contact
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer clearfix">
-        <div class="container"></div>
+      <div class="container"></div>
     </footer>
     <!-- Custom JS -->
     <script src="src/js/custom.js "></script>
 
     <!-- Drag&Drop -->
     <script src="src/js/Sortable.min.js"></script>
-    <script>
-        var el = document.getElementById("sort");
-        var sortable = Sortable.create(el, {
-            handle: ".move",
-            swapThreshold: 1,
-            group: "sort-position-impressum",
-            store: {
-                /**
-                 * Get the order of elements. Called once during initialization.
-                 * @param   {Sortable}  sortable
-                 * @returns {Array}
-                 */
-                get: function(sortable) {
-                    var order = localStorage.getItem(sortable.options.group.name);
-                    return order ? order.split("|") : [];
-                },
-
-                /**
-                 * Save the order of elements. Called onEnd (when the item is dropped).
-                 * @param {Sortable}  sortable
-                 */
-                set: function(sortable) {
-                    var order = sortable.toArray();
-                    localStorage.setItem(sortable.options.group.name, order.join("|"));
-                },
-            },
-        });
-    </script>
 
     <!-- Bootstrap JS -->
     <script src="src/js/bootstrap.min.js"></script>
-</body>
+    <script>
+      var el = document.getElementById("sort");
+      var sortable = Sortable.create(el, {
+        handle: ".move",
+        swapThreshold: 1,
+        group: "sort-position-impressum",
+        store: {
+          /**
+           * Get the order of elements. Called once during initialization.
+           * @param   {Sortable}  sortable
+           * @returns {Array}
+           */
+          get: function (sortable) {
+            var order = localStorage.getItem(sortable.options.group.name);
+            return order ? order.split("|") : [];
+          },
 
+          /**
+           * Save the order of elements. Called onEnd (when the item is dropped).
+           * @param {Sortable}  sortable
+           */
+          set: function (sortable) {
+            var order = sortable.toArray();
+            localStorage.setItem(sortable.options.group.name, order.join("|"));
+          },
+        },
+      });
+    </script>
+    <script>
+      var triggerTabList = [].slice.call(document.querySelectorAll("#myTab a"));
+      triggerTabList.forEach(function (triggerEl) {
+        var tabTrigger = new bootstrap.Tab(triggerEl);
+
+        triggerEl.addEventListener("click", function (event) {
+          event.preventDefault();
+          tabTrigger.show();
+        });
+      });
+    </script>
+  </body>
 </html>
