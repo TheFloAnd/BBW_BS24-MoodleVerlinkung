@@ -412,77 +412,292 @@
         </div>
       </section>
 
-      <section class="container p-5">
-        <div class="card text-center">
-          <div class="d-flex align-items-start">
-            <ul
-              class="nav flex-column nav-tab me-3"
-              id="myTab"
-              role="tablist"
-              aria-orientation="vertical"
-            >
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link active"
-                  id="home-tab"
-                  data-bs-toggle="tab"
-                  href="#home"
-                  role="tab"
-                  aria-controls="home"
-                  aria-selected="true"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  href="#profile"
-                  role="tab"
-                  aria-controls="profile"
-                  aria-selected="false"
-                  >Profile</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="contact-tab"
-                  data-bs-toggle="tab"
-                  href="#contact"
-                  role="tab"
-                  aria-controls="contact"
-                  aria-selected="false"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="home"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-            >
-              ...Home
+      <section class="container p-5 tab-section">
+        <div class="card text-center scroll-tabs">
+          <div class="row">
+            <div class="col-3">
+              <nav
+                id="tab-list"
+                class="navbar navbar-light bg-light flex-column"
+              >
+                <a class="navbar-brand" href="#">Navbar</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link" href="#tab-home">Home</a>
+                  <a class="nav-link" href="#tab-datenschutz">Datenschutz</a>
+                  <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-1"
+                      >Datenschutz #1</a
+                    >
+                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-2"
+                      >Datenschutz #2</a
+                    >
+                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-3"
+                      >Datenschutz #3</a
+                    >
+                  </nav>
+                  <a class="nav-link" href="#tab-policy">Rechtliche Hinweise</a>
+                  <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ms-3 my-1" href="#tab-policy-1"
+                      >Rechtliche Hinweise #1</a
+                    >
+                    <a class="nav-link ms-3 my-1" href="#tab-policy-2"
+                      >Rechtliche Hinweise #2</a
+                    >
+                    <a class="nav-link ms-3 my-1" href="#tab-policy-3"
+                      >Rechtliche Hinweise #2</a
+                    >
+                  </nav>
+                </nav>
+              </nav>
             </div>
-            <div
-              class="tab-pane fade"
-              id="profile"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
-            >
-              ...Profile
-            </div>
-            <div
-              class="tab-pane fade"
-              id="contact"
-              role="tabpanel"
-              aria-labelledby="contact-tab"
-            >
-              ...Contact
+            <div class="col-9">
+              <div
+                data-bs-spy="scroll"
+                data-bs-target="#tab-list"
+                data-bs-offset="0"
+                class="scrollspy"
+                tabindex="0"
+              >
+                <div id="tab-home" class="tab-item">
+                  <h4>Home</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, blanditiis expedita? Earum eligendi pariatur
+                    quaerat quos expedita ab quibusdam ratione veniam in,
+                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Officiis, blanditiis expedita?
+                    Earum eligendi pariatur quaerat quos expedita ab quibusdam
+                    ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Officiis,
+                    blanditiis expedita? Earum eligendi pariatur quaerat quos
+                    expedita ab quibusdam ratione veniam in, mollitia fuga
+                    repudiandae? Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Officiis, blanditiis expedita? Earum
+                    eligendi pariatur quaerat quos expedita ab quibusdam ratione
+                    veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit
+                    amet consectetur adipisicing elit. Officiis, blanditiis
+                    expedita? Earum eligendi pariatur quaerat quos expedita ab
+                    quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, blanditiis expedita? Earum eligendi pariatur
+                    quaerat quos expedita ab quibusdam ratione veniam in,
+                    mollitia fuga repudiandae?
+                  </p>
+                </div>
+                <div id="tab-datenschutz" class="tab-item">
+                  <h4>Datenschutz</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, blanditiis expedita? Earum eligendi pariatur
+                    quaerat quos expedita ab quibusdam ratione veniam in,
+                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Officiis, blanditiis expedita?
+                    Earum eligendi pariatur quaerat quos expedita ab quibusdam
+                    ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Officiis,
+                    blanditiis expedita? Earum eligendi pariatur quaerat quos
+                    expedita ab quibusdam ratione veniam in, mollitia fuga
+                    repudiandae? Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Officiis, blanditiis expedita? Earum
+                    eligendi pariatur quaerat quos expedita ab quibusdam ratione
+                    veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit
+                    amet consectetur adipisicing elit. Officiis, blanditiis
+                    expedita? Earum eligendi pariatur quaerat quos expedita ab
+                    quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, blanditiis expedita? Earum eligendi pariatur
+                    quaerat quos expedita ab quibusdam ratione veniam in,
+                    mollitia fuga repudiandae?
+                  </p>
+
+                  <div id="tab-datenschutz-1" class="sub-tab-item">
+                    <h4>Datenschutz #1</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    </p>
+                  </div>
+
+                  <div id="tab-datenschutz-2" class="sub-tab-item">
+                    <h4>Datenschutz #2</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    </p>
+                  </div>
+
+                  <div id="tab-datenschutz-3" class="sub-tab-item">
+                    <h4>Datenschutz #3</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    </p>
+                  </div>
+                </div>
+                <div id="tab-policy" class="tab-item">
+                  <h4>Rechtliche Hinweise</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, blanditiis expedita? Earum eligendi pariatur
+                    quaerat quos expedita ab quibusdam ratione veniam in,
+                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Officiis, blanditiis expedita?
+                    Earum eligendi pariatur quaerat quos expedita ab quibusdam
+                    ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Officiis,
+                    blanditiis expedita? Earum eligendi pariatur quaerat quos
+                    expedita ab quibusdam ratione veniam in, mollitia fuga
+                    repudiandae? Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Officiis, blanditiis expedita? Earum
+                    eligendi pariatur quaerat quos expedita ab quibusdam ratione
+                    veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit
+                    amet consectetur adipisicing elit. Officiis, blanditiis
+                    expedita? Earum eligendi pariatur quaerat quos expedita ab
+                    quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, blanditiis expedita? Earum eligendi pariatur
+                    quaerat quos expedita ab quibusdam ratione veniam in,
+                    mollitia fuga repudiandae?
+                  </p>
+                  <div id="tab-policy-1" class="sub-tab-item">
+                    <h4>Rechtliche Hinweise #1</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    </p>
+                  </div>
+
+                  <div id="tab-policy-2" class="sub-tab-item">
+                    <h4>Rechtliche Hinweise #2</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    </p>
+                  </div>
+
+                  <div id="tab-policy-3" class="sub-tab-item">
+                    <h4>Rechtliche Hinweise #3</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -498,7 +713,13 @@
     <script src="src/js/Sortable.min.js"></script>
 
     <!-- Bootstrap JS -->
-    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: "#tab",
+      });
+    </script>
     <script>
       var el = document.getElementById("sort");
       var sortable = Sortable.create(el, {
