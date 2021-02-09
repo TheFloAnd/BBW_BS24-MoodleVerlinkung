@@ -22,18 +22,15 @@
       </div>
       <!-- Row -->
       <section
-        class="sortable d-flex flex-wrap justify-content-evenly m-1"
-        id="sort"
-        aria-dropeffect="move"
-      >
+        class="d-flex flex-wrap justify-content-evenly m-1 p-1"
+        aria-dropeffect="move">
+      <div class="row row-cols-auto my-row info-cards sortable justify-content-center" id="sort">
         <!-- BBW card -->
-        <div
-          class="card my-card border-bbw m-3"
-          id="card-bbw"
+        <div class="col"
           draggable="true"
           role="option"
-          aria-grabbed="false"
-        >
+          aria-grabbed="false">
+        <div class="card my-card border-bbw m-3" id="card-bbw">
           <div class="icons d-flex justify-content-end">
             <div class="icon move">
               <svg
@@ -197,14 +194,11 @@
             </ul>
           </div>
         </div>
+        </div>
         <!-- BS24 Card -->
-        <div
-          class="card my-card border-bs24 m-3"
-          id="card-bs24"
-          draggable="true"
-          role="option"
-          aria-grabbed="false"
-        >
+        
+        <div class="col" draggable="true" role="option" aria-grabbed="false">
+        <div class="card my-card border-bs24 m-3" id="card-bs24">
           <div class="icons d-flex justify-content-end">
             <div class="icon move">
               <svg
@@ -343,13 +337,13 @@
             </ul>
           </div>
         </div>
+        </div>
 
-        <div
-          class="card my-card content my-content m-3"
+        <div class="col"
           draggable="true"
           role="option"
-          aria-grabbed="false"
-        >
+          aria-grabbed="false">
+        <div class="card my-card content my-content m-3">
           <div class="icons d-flex justify-content-end">
             <div class="icon move">
               <svg
@@ -425,12 +419,15 @@
             </ul>
           </div>
         </div>
+        </div>
       </section>
 
-      <section class="container-fluid p-5 tab-section">
-        <div class="card my-tab-card text-center scroll-tabs">
+      <section class="container p-3 tab-section">
+        <div
+          class="card my-tab-card text-center scroll-tabs justify-content-center"
+        >
           <div class="row">
-            <div class="col-2">
+            <div class="col-3">
               <nav
                 id="tab-list"
                 class="navbar navbar-light bg-light flex-column"
@@ -464,7 +461,7 @@
                 </nav>
               </nav>
             </div>
-            <div class="col-10">
+            <div class="col-9">
               <div
                 data-bs-spy="scroll"
                 data-bs-target="#tab-list"
@@ -483,19 +480,7 @@
                     Earum eligendi pariatur quaerat quos expedita ab quibusdam
                     ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
                     dolor sit amet consectetur adipisicing elit. Officiis,
-                    blanditiis expedita? Earum eligendi pariatur quaerat quos
-                    expedita ab quibusdam ratione veniam in, mollitia fuga
-                    repudiandae? Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Officiis, blanditiis expedita? Earum
-                    eligendi pariatur quaerat quos expedita ab quibusdam ratione
-                    veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit
-                    amet consectetur adipisicing elit. Officiis, blanditiis
-                    expedita? Earum eligendi pariatur quaerat quos expedita ab
-                    quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, blanditiis expedita? Earum eligendi pariatur
-                    quaerat quos expedita ab quibusdam ratione veniam in,
-                    mollitia fuga repudiandae?
+                    blanditiis expedita?
                   </p>
                 </div>
                 <div id="tab-datenschutz" class="tab-item">
@@ -509,38 +494,12 @@
                     Earum eligendi pariatur quaerat quos expedita ab quibusdam
                     ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
                     dolor sit amet consectetur adipisicing elit. Officiis,
-                    blanditiis expedita? Earum eligendi pariatur quaerat quos
-                    expedita ab quibusdam ratione veniam in, mollitia fuga
-                    repudiandae? Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Officiis, blanditiis expedita? Earum
-                    eligendi pariatur quaerat quos expedita ab quibusdam ratione
-                    veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit
-                    amet consectetur adipisicing elit. Officiis, blanditiis
-                    expedita? Earum eligendi pariatur quaerat quos expedita ab
-                    quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, blanditiis expedita? Earum eligendi pariatur
-                    quaerat quos expedita ab quibusdam ratione veniam in,
-                    mollitia fuga repudiandae?
+                    blanditiis expedita?
                   </p>
 
                   <div id="tab-datenschutz-1" class="sub-tab-item">
                     <h4>Datenschutz #1</h4>
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Officiis, blanditiis expedita? Earum eligendi pariatur
                       quaerat quos expedita ab quibusdam ratione veniam in,
@@ -560,41 +519,13 @@
                       mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
                       consectetur adipisicing elit. Officiis, blanditiis
                       expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?ne veniam in, mollitia fuga repudiandae?
                     </p>
                   </div>
 
                   <div id="tab-datenschutz-3" class="sub-tab-item">
                     <h4>Datenschutz #3</h4>
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Officiis, blanditiis expedita? Earum eligendi pariatur
                       quaerat quos expedita ab quibusdam ratione veniam in,
@@ -612,41 +543,12 @@
                     Officiis, blanditiis expedita? Earum eligendi pariatur
                     quaerat quos expedita ab quibusdam ratione veniam in,
                     mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Officiis, blanditiis expedita?
-                    Earum eligendi pariatur quaerat quos expedita ab quibusdam
-                    ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
-                    dolor sit amet consectetur adipisicing elit. Officiis,
-                    blanditiis expedita? Earum eligendi pariatur quaerat quos
-                    expedita ab quibusdam ratione veniam in, mollitia fuga
-                    repudiandae? Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Officiis, blanditiis expedita? Earum
-                    eligendi pariatur quaerat quos expedita ab quibusdam ratione
-                    veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit
-                    amet consectetur adipisicing elit. Officiis, blanditiis
-                    expedita? Earum eligendi pariatur quaerat quos expedita ab
-                    quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, blanditiis expedita? Earum eligendi pariatur
-                    quaerat quos expedita ab quibusdam ratione veniam in,
-                    mollitia fuga repudiandae?
+                    consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
                   </p>
                   <div id="tab-policy-1" class="sub-tab-item">
                     <h4>Rechtliche Hinweise #1</h4>
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Officiis, blanditiis expedita? Earum eligendi pariatur
                       quaerat quos expedita ab quibusdam ratione veniam in,
@@ -667,40 +569,12 @@
                       consectetur adipisicing elit. Officiis, blanditiis
                       expedita? Earum eligendi pariatur quaerat quos expedita ab
                       quibusdam ratione veniam in, mollitia fuga repudiandae?
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
                     </p>
                   </div>
 
                   <div id="tab-policy-3" class="sub-tab-item">
                     <h4>Rechtliche Hinweise #3</h4>
                     <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Officiis, blanditiis expedita? Earum eligendi pariatur
                       quaerat quos expedita ab quibusdam ratione veniam in,
@@ -730,9 +604,9 @@
     <script src="src/js/bootstrap.bundle.min.js"></script>
 
     <script>
-      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: "#tab",
-      });
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#tab'
+    });
     </script>
     <script>
       var el = document.getElementById("sort");
