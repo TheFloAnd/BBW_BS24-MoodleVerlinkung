@@ -1,11 +1,25 @@
+/* 
+
+*/
+
+$color_bbw: #e30613 !global;
+$color_bs24: #85b004 !global;
+$color_default: #909090 !global;
+$color_default-rgba: rgba(255, 255, 255, 0.75);
+$color_bootstrap: #7952b3;
+$input_shadow: 0px 0px 10px 5px;
+$opacity_default: 1;
+$opacity: 0.75;
+$max: 100%;
+
 html {
   scroll-behavior: smooth;
-  height: 100%;
-  width: 100%;
+  height: $max;
+  width: $max;
   min-height: min-content !important;
-  min-height: 100%;
+  min-height: $max;
   min-width: min-content !important;
-  min-width: 100%;
+  min-width: $max;
 }
 
 body {
@@ -20,31 +34,26 @@ main {
   overflow: hidden;
 }
 
-.space {
-  height: 100%;
+.my-space {
+  height: $max;
 }
 
 .home-link {
   position: relative;
   font-size: 120%;
 }
-
-.icon-swap {
-  padding: 10px;
-}
-
 .header-logo {
   height: 8rem;
   padding: 10px;
 }
 
 .my-content {
-  border: 2px solid gray;
+  border: 2px solid $color_default;
   &:hover {
-    border-color: gray;
+    border-color: $color_default;
     border-width: 5px;
     border-style: outset;
-    box-shadow: 10px 5px 10px gray;
+    box-shadow: 10px 5px 10px $color_default;
   }
 }
 
@@ -55,26 +64,45 @@ main {
 
 .border-bbw {
   transition: all 0.3s ease;
-  border: 2px solid #e30613;
-  &:hover {
+  border: 2px solid $color_bbw;
+  &:hover,
+  &:active,
+  &:focus {
     cursor: pointer;
-    border-color: #e30613;
+    border-color: $color_bbw;
     border-width: 5px;
     border-style: outset;
-    box-shadow: 5px 5px 10px 3px #e30613;
+    box-shadow: 5px 5px 10px 3px $color_bbw;
+  }
+  &:visited {
+    border: 2px solid $color_bbw;
   }
 }
 
 .border-bs24 {
   transition: all 0.3s ease;
-  border: 2px solid #85b004;
-  &:hover {
+  border: 2px solid $color_bs24;
+  &:hover,
+  &:active,
+  &:focus {
     cursor: pointer;
-    border-color: #85b004;
+    border-color: $color_bs24;
     border-width: 5px;
     border-style: outset;
-    box-shadow: 5px 5px 10px 3px #85b004;
+    box-shadow: 5px 5px 10px 3px $color_bs24;
   }
+  &:visited {
+    border: 2px solid $color_bs24;
+  }
+}
+
+.preview {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: $max;
+  height: $max;
 }
 
 .icons {
@@ -93,56 +121,39 @@ main {
   color: #000000;
 }
 
-/*
-.collapse:not(.show) {
-  @media only screen and (min-width: 980px) {
-    display: block;
-  }
-}
-*/
-
-.preview {
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .footer {
   position: absolute;
-  width: 100%;
+  width: $max;
   //background-color: lightgray;
   text-align: right;
   font-size: 1.5rem;
 }
 
 .footer > .link-container {
-  background-color: rgba(211, 211, 211, 0.75);
+  background-color: $color_default-rgba;
   border-radius: 25px;
   width: fit-content;
 }
 
 .link-container {
-  background-color: rgba(211, 211, 211, 0.75);
+  padding: 5px;
+  background-color: $color_default-rgba;
   border-radius: 25px;
-  width: max-content;
+  width: min-content;
+  font-size: 1.5rem;
 }
-
 .link {
-  padding: 10px;
+  margin: 5px;
 }
-
-@media only screen and (min-width: 990px) {
-  .content-animation {
+.content-animation {
+  @media only screen and (min-width: 990px) {
     //animation: slideDown 2s 0s ease forwards;
     animation: none;
   }
 }
 
 .content-main {
-  min-height: 100%;
+  min-height: $max;
   @media only screen and (max-width: 990px) {
     animation: slideDown 2s 0s ease forwards;
   }
@@ -187,6 +198,10 @@ Impressum
 
 */
 
+.my-card-header {
+  background-color: $color_default-rgba !important;
+  margin-right: 50px;
+}
 .my-card {
   background-color: rgba(255, 255, 255, 0.5) !important;
 }
@@ -197,7 +212,7 @@ Impressum
 }
 
 .my-card-header {
-  background-color: rgba(255, 255, 255, 0.75) !important;
+  background-color: rgba(255, 255, 255, $opacity) !important;
   margin-right: 50px;
 }
 
@@ -205,24 +220,15 @@ Impressum
   width: 10rem;
 }
 
-.my-form-float > label {
+.my-label {
   transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-}
-
-.my-form-float > .my-form-control ~ label {
-  color: #000;
-  opacity: 0.75 !important;
-  &:hover {
-    transform: scale(1) translateY(0rem) translateX(0.2rem);
+  transform: scale(0.85) translateY(-0.7rem) translateX(0.15rem) !important;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline !important;
+    transform: scale(0.85) translateY(-0.6rem) translateX(0.15rem) !important;
   }
-}
-
-input {
-  display: flex;
-  flex-wrap: wrap;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
 }
 
 .imp-link-bbw,
@@ -236,54 +242,39 @@ input {
 
 .my-form-float .imp-link {
   &:hover {
-    box-shadow: 0px 0px 10px 5px #909090;
+    box-shadow: $input_shadow $color_default;
   }
 }
 
 .imp-link-bbw {
   &:hover {
-    box-shadow: 0px 0px 10px 5px #e30613;
+    box-shadow: $input_shadow $color_bbw;
   }
 }
 
 .imp-link-bs24 {
   &:hover {
-    box-shadow: 0px 0px 10px 5px #85b004;
+    box-shadow: $input_shadow $color_bs24;
   }
 }
 
 .imp-link-bootstrap {
   &:hover {
-    box-shadow: 0px 0px 10px 5px #7952b3;
+    box-shadow: $input_shadow $color_bootstrap;
   }
 }
 
-.policy-container {
-  color: #000;
-  border: 2px solid #000;
-  &:hover {
-    box-shadow: 0px 0px 10px 5px #000;
-  }
-}
-
-.scrollspy {
+.my-scrollspy {
   max-height: 40rem;
   overflow: scroll;
   overflow-x: hidden;
 }
-
 .tab-item {
   padding: 1.5rem;
-
-  border-top: 1px solid gray;
-
-  border-bottom: 1px solid gray;
+  border-top: 1px solid $color_default;
+  border-bottom: 1px solid $color_default;
 }
 .sub-tab-item {
   padding-top: 10px;
-  border-top: 1px dotted gray;
-}
-.second-lvl {
-  //width: 75%;
-  //float: right;
+  border-top: 1px dotted $color_default;
 }

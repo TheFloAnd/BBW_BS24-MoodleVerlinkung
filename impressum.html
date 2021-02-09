@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,248 +12,435 @@
     <link rel="stylesheet" href="src/css/custom.min.css" />
 
     <title>BBW-BS24 Verlinkung</title>
-</head>
+  </head>
 
-<body onload="load_page();">
+  <body onload="load_page();">
     <!-- Container -->
     <main class="container-fluid">
-        <div class="home-link link-container d-flex justify-content-start">
-            <a href="index.html" class="link"> Zurück </a>
-        </div>
-        <!-- Row -->
-        <section class="sortable d-flex flex-wrap w-auto justify-content-around m-3" id="sort" aria-dropeffect="move">
-            <!-- BBW card -->
-            <div class="card my-card my-card border-bbw m-5" id="card-bbw" draggable="true" role="option" aria-grabbed="false">
-                <div class="icons d-flex justify-content-end">
-                    <div class="icon move">
-                        <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
+      <div class="link-container d-flex justify-content-start">
+        <a href="index.html" class="link"> Zurück </a>
+      </div>
+      <!-- Row -->
+      <section
+        class="sortable d-flex flex-wrap justify-content-evenly m-1"
+        id="sort"
+        aria-dropeffect="move"
+      >
+        <!-- BBW card -->
+        <div
+          class="card my-card border-bbw m-3"
+          id="card-bbw"
+          draggable="true"
+          role="option"
+          aria-grabbed="false"
+        >
+          <div class="icons d-flex justify-content-end">
+            <div class="icon move">
+              <svg
+                xmlns="src/img/svg/arrows-move.svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-arrows-move"
+                viewBox="0 0 20 20"
+              >
                 <path
                   fill-rule="evenodd"
                   d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
                 />
               </svg>
-                    </div>
-                </div>
+            </div>
+          </div>
 
-                <div class="card-header my-card-header h3">
-                    Berufsbildungswerk Hamburg GmbH
-                </div>
+          <div class="card-header my-card-header h3">
+            Berufsbildungswerk Hamburg GmbH
+          </div>
 
-                <div class="card-body">
-                    <ul class="list-group my-list-group list-group-flush">
-                        <!--
+          <div class="card-body">
+            <ul class="list-group my-list-group list-group-flush">
+              <!--
                         <li class="list-group-item my-list-group-item justify-content-center">
                             <img src="src/img/bbw-logo.png" class="rounded card-logo my-card-logo mx-auto d-block" alt="..."></img>
                         </li>
                     -->
-                        <li class="list-group-item my-list-group-item">
-                            <div class="input-group d-flex">
-                                <a href="mailto:christine.schaerffer@pepko-hamburg.de" class="flex-grow-1">
-                                    <div class="form-floating my-form-float my-form-float p-1 py-1">
-                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="Christine Schaerffer" aria-label="default input example" disabled readonly />
-                                        <label>Geschäftsführung</label>
-                                    </div>
-                                </a>
-                                <a href="mailto:samuel.breisacher@cjd.de" class="flex-grow-1">
-                                    <div class="form-floating my-form-float p-1 py-1">
-                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="Samuel Breisacher" aria-label="default input example" disabled readonly />
-                                        <label>Geschäftsführung</label>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="list-group-item my-list-group-item">
-                            <a href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/" target="_blank">
-                                <div class="input-group d-flex">
-                                    <div class="form-floating my-form-float flex-grow-1">
-                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="Reichsbahnstraße 53+55, 22525 Hamburg" aria-label="default input example" disabled readonly />
-                                        <label>Straße & PLZ</label>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="list-group-item my-list-group-item">
-                            <div class="input-group d-flex">
-                                <a href="tel:+4904057230" class="flex-grow-1">
-                                    <div class="form-floating my-form-float p-1 py-1">
-                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="040 5723-0" disabled readonly />
-                                        <label>Telefon</label>
-                                    </div>
-                                </a>
-                                <a href="fax:+490405723102" class="flex-grow-1">
-                                    <div class="form-floating my-form-float p-1 py-1">
-                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="040 5723-102" disabled readonly />
-                                        <label>Fax</label>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="list-group-item my-list-group-item">
-                            <div class="input-group">
-                                <a href="mailto:info@bbw-hamburg.de" class="w-100">
-                                    <div class="form-floating my-form-float" onclick="">
-                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="info@bbw-hamburg.de" disabled readonly />
-                                        <label>E-Mail Adresse</label>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="list-group-item my-list-group-item">
-                            <div class="input-group">
-                                <a href="http://www.bbw-hamburg.de/" target="_blank" class="w-100">
-                                    <div class="form-floating my-form-float">
-                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="www.bbw-hamburg.de" disabled readonly />
-                                        <label>Website</label>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+              <li class="list-group-item my-list-group-item">
+                <div class="row g-2">
+                  <div class="input-group d-flex">
+                    <div
+                      class="col-sm flex-grow-1 flex-grow-1 py-1 py-sm-0 pe-0 pe-sm-1"
+                    >
+                      <a href="mailto:christine.schaerffer@pepko-hamburg.de">
+                        <div class="form-floating my-form-float my-form-float">
+                          <input
+                            class="form-control my-form-control imp-link-bbw"
+                            type="text"
+                            value="Christine Schaerffer"
+                            aria-label="default input"
+                            disabled
+                            readonly
+                          />
+                          <label class="my-label">Geschäftsführung</label>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm flex-grow-1 py-1 py-sm-0 ps-0 ps-sm-1">
+                      <a href="mailto:samuel.breisacher@cjd.de">
+                        <div class="form-floating my-form-float">
+                          <input
+                            class="form-control my-form-control imp-link-bbw"
+                            type="text"
+                            value="Samuel Breisacher"
+                            aria-label="default input"
+                            disabled
+                            readonly
+                          />
+                          <label class="my-label">Geschäftsführung</label>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <!-- BS24 Card -->
-            <div class="card my-card border-bs24 m-5" id="card-bs24" draggable="true" role="option" aria-grabbed="false">
-                <div class="icons d-flex justify-content-end">
-                    <div class="icon move">
-                        <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
+              </li>
+              <li class="list-group-item my-list-group-item">
+                <a
+                  href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/"
+                  target="_blank"
+                >
+                  <div class="input-group d-flex">
+                    <div class="form-floating my-form-float flex-grow-1">
+                      <input
+                        class="form-control my-form-control imp-link-bbw"
+                        type="text"
+                        value="Reichsbahnstraße 53+55, 22525 Hamburg"
+                        aria-label="default input"
+                        disabled
+                        readonly
+                      />
+                      <label class="my-label">Straße & PLZ</label>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="list-group-item my-list-group-item">
+                <div class="row g-2">
+                  <div class="input-group d-flex">
+                    <div class="col-sm flex-grow-1 py-1 py-sm-0 pe-0 pe-sm-1">
+                      <a href="tel:+4904057230">
+                        <div class="form-floating my-form-float">
+                          <input
+                            class="form-control my-form-control imp-link-bbw"
+                            type="text"
+                            value="040 5723-0"
+                            disabled
+                            readonly
+                          />
+                          <label class="my-label">Telefon</label>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm flex-grow-1 py-1 py-sm-0 ps-0 ps-sm-1">
+                      <a href="fax:+490405723102">
+                        <div class="form-floating my-form-float">
+                          <input
+                            class="form-control my-form-control imp-link-bbw"
+                            type="text"
+                            value="040 5723-102"
+                            disabled
+                            readonly
+                          />
+                          <label class="my-label">Fax</label>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="list-group-item my-list-group-item">
+                <div class="input-group">
+                  <a href="mailto:info@bbw-hamburg.de" class="w-100">
+                    <div class="form-floating my-form-float" onclick="">
+                      <input
+                        class="form-control my-form-control imp-link-bbw"
+                        type="text"
+                        value="info@bbw-hamburg.de"
+                        disabled
+                        readonly
+                      />
+                      <label class="my-label">E-Mail Adresse</label>
+                    </div>
+                  </a>
+                </div>
+              </li>
+
+              <li class="list-group-item my-list-group-item">
+                <div class="input-group">
+                  <a
+                    href="http://www.bbw-hamburg.de/"
+                    target="_blank"
+                    class="w-100"
+                  >
+                    <div class="form-floating my-form-float">
+                      <input
+                        class="form-control my-form-control imp-link-bbw"
+                        type="text"
+                        value="www.bbw-hamburg.de"
+                        disabled
+                        readonly
+                      />
+                      <label class="my-label">Website</label>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- BS24 Card -->
+        <div
+          class="card my-card border-bs24 m-3"
+          id="card-bs24"
+          draggable="true"
+          role="option"
+          aria-grabbed="false"
+        >
+          <div class="icons d-flex justify-content-end">
+            <div class="icon move">
+              <svg
+                xmlns="src/img/svg/arrows-move.svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-arrows-move"
+                viewBox="0 0 20 20"
+              >
                 <path
                   fill-rule="evenodd"
                   d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
                 />
               </svg>
-                    </div>
-                </div>
-                <div class="card-header my-card-header h3">
-                    Berufliche Schule Eidelstedt BS24
-                </div>
-                <div class="card-body">
-                    <ul class="list-group my-list-group list-group-flush">
-                        <!--
+            </div>
+          </div>
+          <div class="card-header my-card-header h3">
+            Berufliche Schule Eidelstedt BS24
+          </div>
+          <div class="card-body">
+            <ul class="list-group my-list-group list-group-flush">
+              <!--
                         <li class="list-group-item my-list-group-item justify-content-center">
                             <img src="src/img/bs24-logo.jpg" class="rounded card-logo my-card-logo mx-auto d-block" alt="..."></img>
                         </li>
                     -->
-                        <li class="list-group-item my-list-group-item">
-                            <div class="input-group d-flex">
-                                <div class="form-floating my-form-float flex-grow-1">
-                                    <input class="form-control my-form-control" type="text" value="Ina Kyborg (Schulleiterin)" aria-label="default input example" disabled readonly />
-                                    <label>Verantwortliche BS24</label>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item my-list-group-item">
-                            <a href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/" target="_blank">
-                                <div class="input-group d-flex">
-                                    <div class="form-floating my-form-float flex-grow-1">
-                                        <input class="form-control my-form-control imp-link-bs24" type="text" value="Reichsbahnstraße 53+55, 22525 Hamburg" aria-label="default input example" disabled readonly />
-                                        <label>Straße & PLZ</label>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="list-group-item my-list-group-item">
-                            <div class="input-group d-flex">
-                                <a href="tel:+490405723125" class="flex-grow-1">
-                                    <div class="form-floating my-form-float p-1 py-1">
-                                        <input class="form-control my-form-control imp-link-bs24" type="text" value="040 57 23 – 125" disabled readonly />
-                                        <label>Telefon</label>
-                                    </div>
-                                </a>
-                                <a href="fax:+490405723370" class="flex-grow-1">
-                                    <div class="form-floating my-form-float p-1 py-1">
-                                        <input class="form-control my-form-control imp-link-bs24" type="text" value="0405723370" disabled readonly />
-                                        <label>Fax</label>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="list-group-item my-list-group-item">
-                            <div class="input-group">
-                                <a href="mailto:bs24@hibb.hamburg.de" class="w-100">
-                                    <div class="form-floating my-form-float" onclick="">
-                                        <input class="form-control my-form-control imp-link-bs24" type="text" value="bs24@hibb.hamburg.de" disabled readonly />
-                                        <label>E-Mail Adresse</label>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="list-group-item my-list-group-item">
-                            <div class="input-group">
-                                <a href="https://bs24.hamburg.de/" target="_blank" class="w-100">
-                                    <div class="form-floating my-form-float">
-                                        <input class="form-control my-form-control imp-link-bs24" type="text" value="bs24.hamburg.de" disabled readonly />
-                                        <label>Website</label>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+              <li class="list-group-item my-list-group-item">
+                <div class="input-group d-flex">
+                  <div class="form-floating my-form-float flex-grow-1">
+                    <input
+                      class="form-control my-form-control"
+                      type="text"
+                      value="Ina Kyborg (Schulleiterin)"
+                      aria-label="default input"
+                      disabled
+                      readonly
+                    />
+                    <label class="my-label">Verantwortliche BS24</label>
+                  </div>
                 </div>
-            </div>
+              </li>
+              <li class="list-group-item my-list-group-item">
+                <a
+                  href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/"
+                  target="_blank"
+                >
+                  <div class="input-group d-flex">
+                    <div class="form-floating my-form-float flex-grow-1">
+                      <input
+                        class="form-control my-form-control imp-link-bs24"
+                        type="text"
+                        value="Reichsbahnstraße 53+55, 22525 Hamburg"
+                        aria-label="default input"
+                        disabled
+                        readonly
+                      />
+                      <label class="my-label">Straße & PLZ</label>
+                    </div>
+                  </div>
+                </a>
+              </li>
 
-            <div class="card my-card content my-content m-5" draggable="true" role="option" aria-grabbed="false">
-                <div class="icons d-flex justify-content-end">
-                    <div class="icon move">
-                        <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
+              <li class="list-group-item my-list-group-item">
+                <div class="row g-2">
+                  <div class="input-group d-flex">
+                    <div class="col-sm flex-grow-1 py-1 py-sm-0 pe-0 pe-sm-1">
+                      <a href="tel:+490405723125">
+                        <div class="form-floating my-form-float">
+                          <input
+                            class="form-control my-form-control imp-link-bs24"
+                            type="text"
+                            value="040 57 23 – 125"
+                            disabled
+                            readonly
+                          />
+                          <label class="my-label">Telefon</label>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-sm flex-grow-1 py-1 py-sm-0 ps-0 ps-sm-1">
+                      <a href="fax:+490405723370">
+                        <div class="form-floating my-form-float">
+                          <input
+                            class="form-control my-form-control imp-link-bs24"
+                            type="text"
+                            value="040 57 23-370"
+                            disabled
+                            readonly
+                          />
+                          <label class="my-label">Fax</label>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="list-group-item my-list-group-item">
+                <div class="input-group">
+                  <a href="mailto:bs24@hibb.hamburg.de" class="w-100">
+                    <div class="form-floating my-form-float" onclick="">
+                      <input
+                        class="form-control my-form-control imp-link-bs24"
+                        type="text"
+                        value="bs24@hibb.hamburg.de"
+                        disabled
+                        readonly
+                      />
+                      <label class="my-label">E-Mail Adresse</label>
+                    </div>
+                  </a>
+                </div>
+              </li>
+
+              <li class="list-group-item my-list-group-item">
+                <div class="input-group">
+                  <a
+                    href="https://bs24.hamburg.de/"
+                    target="_blank"
+                    class="w-100"
+                  >
+                    <div class="form-floating my-form-float">
+                      <input
+                        class="form-control my-form-control imp-link-bs24"
+                        type="text"
+                        value="bs24.hamburg.de"
+                        disabled
+                        readonly
+                      />
+                      <label class="my-label">Website</label>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="card my-card content my-content m-3"
+          draggable="true"
+          role="option"
+          aria-grabbed="false"
+        >
+          <div class="icons d-flex justify-content-end">
+            <div class="icon move">
+              <svg
+                xmlns="src/img/svg/arrows-move.svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                class="bi bi-arrows-move"
+                viewBox="0 0 20 20"
+              >
                 <path
                   fill-rule="evenodd"
                   d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
                 />
               </svg>
-                    </div>
-                </div>
-                <div class="card-header my-card-header h3">Quellen</div>
-                <div class="card-body">
-                    <ul class="list-group my-list-group list-group-flush">
-                        <li class="list-group-item my-list-group-item">
-                            <a href="https://unsplash.com/" target="_blank">
-                                <div class="input-group d-flex">
-                                    <div class="form-floating my-form-float flex-grow-1">
-                                        <input class="form-control my-form-control imp-link" type="text" value="Unsplash" aria-label="default input example" disabled readonly />
-                                        <label>Bilder</label>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-group-item my-list-group-item">
-                            <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">
-                                <div class="input-group d-flex">
-                                    <div class="form-floating my-form-float flex-grow-1">
-                                        <input class="form-control my-form-control imp-link-bootstrap" type="text" value="Bootstrap 5 Beta" aria-label="default input example" disabled readonly />
-                                        <label>Framework</label>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-group-item my-list-group-item">
-                            <div class="input-group d-flex">
-                                <div class="form-floating my-form-float flex-grow-1">
-                                    <input class="form-control my-form-control" type="text" value="BBW Hamburg FISI-20" aria-label="default input example" disabled readonly />
-                                    <label>Geschrieben</label>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </section>
+          </div>
+          <div class="card-header my-card-header h3">Quellen</div>
+          <div class="card-body">
+            <ul class="list-group my-list-group list-group-flush">
+              <li class="list-group-item my-list-group-item">
+                <a href="https://unsplash.com/" target="_blank">
+                  <div class="input-group d-flex">
+                    <div class="form-floating my-form-float flex-grow-1">
+                      <input
+                        class="form-control my-form-control imp-link"
+                        type="text"
+                        value="Unsplash"
+                        aria-label="default input"
+                        disabled
+                        readonly
+                      />
+                      <label class="my-label">Bilder</label>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item my-list-group-item">
+                <a
+                  href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                  target="_blank"
+                >
+                  <div class="input-group d-flex">
+                    <div class="form-floating my-form-float flex-grow-1">
+                      <input
+                        class="form-control my-form-control imp-link-bootstrap"
+                        type="text"
+                        value="Bootstrap 5 Beta"
+                        aria-label="default input"
+                        disabled
+                        readonly
+                      />
+                      <label class="my-label">Framework</label>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="list-group-item my-list-group-item">
+                <div class="input-group d-flex">
+                  <div class="form-floating my-form-float flex-grow-1">
+                    <input
+                      class="form-control my-form-control"
+                      type="text"
+                      value="BBW Hamburg FISI-20"
+                      aria-label="default input"
+                      disabled
+                      readonly
+                    />
+                    <label class="my-label">Geschrieben</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-        <section class="container p-5 tab-section">
-            <div class="card text-center scroll-tabs">
-                <div class="row">
-                    <div class="col-3">
-                        <nav id="tab-list" class="navbar navbar-light bg-light flex-column">
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link" href="#tab-home">Home</a>
-                                <a class="nav-link" href="#tab-datenschutz">Datenschutz</a>
-                                <nav class="nav nav-pills flex-column">
-                                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-1">Datenschutz #1</a
+      <section class="container-fluid p-5 tab-section">
+        <div class="card text-center scroll-tabs">
+          <div class="row">
+            <div class="col-2">
+              <nav
+                id="tab-list"
+                class="navbar navbar-light bg-light flex-column"
+              >
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link" href="#tab-home">Home</a>
+                  <a class="nav-link" href="#tab-datenschutz">Datenschutz</a>
+                  <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-1"
+                      >Datenschutz #1</a
                     >
                     <a class="nav-link ms-3 my-1" href="#tab-datenschutz-2"
                       >Datenschutz #2</a
@@ -264,8 +450,9 @@
                     >
                   </nav>
                   <a class="nav-link" href="#tab-policy">Rechtliche Hinweise</a>
-                                    <nav class="nav nav-pills flex-column">
-                                        <a class="nav-link ms-3 my-1" href="#tab-policy-1">Rechtliche Hinweise #1</a
+                  <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ms-3 my-1" href="#tab-policy-1"
+                      >Rechtliche Hinweise #1</a
                     >
                     <a class="nav-link ms-3 my-1" href="#tab-policy-2"
                       >Rechtliche Hinweise #2</a
@@ -277,12 +464,12 @@
                 </nav>
               </nav>
             </div>
-            <div class="col-9">
+            <div class="col-10">
               <div
                 data-bs-spy="scroll"
                 data-bs-target="#tab-list"
                 data-bs-offset="0"
-                class="scrollspy"
+                class="scrollspy my-scrollspy"
                 tabindex="0"
               >
                 <div id="tab-home" class="tab-item">
