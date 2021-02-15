@@ -55,9 +55,9 @@ body {
         border-color: $color_default;
         border-width: 5px;
         border-style: outset;
-        box-shadow: $card_shadow-right $color_default;
         -webkit-box-shadow: $card_shadow-right $color_default;
         -moz-box-shadow: $card_shadow-right $color_default;
+        box-shadow: $card_shadow-right $color_default;
     }
     &:visited {
         border: 2px solid $color_default;
@@ -80,9 +80,9 @@ body {
         border-color: $color_bbw;
         border-width: 5px;
         border-style: outset;
-        box-shadow: $card_shadow-right $color_bbw;
         -webkit-box-shadow: $card_shadow-right $color_bbw;
         -moz-box-shadow: $card_shadow-right $color_bbw;
+        box-shadow: $card_shadow-right $color_bbw;
     }
     &:visited {
         border: 2px solid $color_bbw;
@@ -100,9 +100,9 @@ body {
         border-color: $color_bs24;
         border-width: 5px;
         border-style: outset;
-        box-shadow: $card_shadow-left $color_bs24;
         -webkit-box-shadow: $card_shadow-left $color_bs24;
         -moz-box-shadow: $card_shadow-left $color_bs24;
+        box-shadow: $card_shadow-left $color_bs24;
     }
     &:visited {
         border: 2px solid $color_bs24;
@@ -113,9 +113,9 @@ body {
         &:hover,
         &:active,
         &:focus {
-            box-shadow: $card_shadow-right $color_bs24 !important;
             -webkit-box-shadow: $card_shadow-right $color_bs24 !important;
             -moz-box-shadow: $card_shadow-right $color_bs24 !important;
+            box-shadow: $card_shadow-right $color_bs24 !important;
         }
     }
 }
@@ -223,7 +223,6 @@ Impressum
     position: relative;
     min-width: 32.5vw !important;
     padding: auto;
-    padding: 50px;
 }
 
 .my-row {
@@ -240,8 +239,6 @@ Impressum
     position: absolute;
     left: 0;
     right: 0;
-    width: 90%;
-    min-width: 90%;
     z-index: 100;
 }
 
