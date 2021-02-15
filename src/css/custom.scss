@@ -16,6 +16,10 @@ $border_radius: 10px;
 $opacity_default: 1;
 $opacity: 0.75;
 $max: 100%;
+* {
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;
     min-height: min-content !important;
@@ -387,7 +391,7 @@ Impressum
 }
 
 .my-scrollspy {
-    max-height: 40rem;
+    height: 40rem;
     overflow: scroll;
     overflow-x: hidden;
     border-radius: $border_radius;

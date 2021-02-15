@@ -1,6 +1,10 @@
 /* 
 
 */
+* {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   min-height: min-content !important;
@@ -354,7 +358,7 @@ Impressum
 }
 
 .my-scrollspy {
-  max-height: 40rem;
+  height: 40rem;
   overflow: scroll;
   overflow-x: hidden;
   border-radius: 10px;
