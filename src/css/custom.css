@@ -135,11 +135,6 @@ body {
   font-size: 1.5rem;
 }
 
-.footer > .link-container {
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 10px;
-}
-
 .link-container {
   background-color: rgba(255, 255, 255, 0.75);
   border-left: 3px solid #aaaaaa;
@@ -224,11 +219,10 @@ a {
   font-style: italic;
   text-decoration: none;
 }
-a:hover {
-  color: #000;
-  text-decoration: underline;
+a:hover, a:focus {
+  color: #000000;
   font-size-adjust: 0.5;
-  text-shadow: 1px 0px #000000;
+  text-decoration: underline;
 }
 a:visited, a:active {
   color: #000000;
@@ -262,7 +256,7 @@ Impressum
 
 .my-card {
   background-color: rgba(255, 255, 255, 0.25) !important;
-  min-width: 30rem;
+  min-width: 25rem;
   border-radius: 10px;
 }
 
@@ -279,9 +273,8 @@ Impressum
 .my-list-group {
   width: 100%;
 }
-
 .my-list-group,
-.my-list-group-item {
+.my-list-group .my-list-group-item {
   background: none !important;
 }
 
@@ -302,41 +295,62 @@ Impressum
   transform: scale(0.85) translateY(-0.6rem) translateX(0.15rem) !important;
 }
 
-.imp-link-bbw,
-.imp-link-bs24,
 .imp-link {
   transition: all 0.6s ease;
 }
-.imp-link-bbw:hover,
-.imp-link-bs24:hover,
 .imp-link:hover {
+  box-shadow: 0px 0px 10px 5px #aaaaaa;
   background: lightgray;
 }
 
-.imp-link:hover {
-  box-shadow: 0px 0px 10px 5px #aaaaaa;
+.imp-link-bbw {
+  transition: all 0.6s ease;
 }
-
 .imp-link-bbw:hover {
   box-shadow: 0px 0px 10px 5px #e30613;
+  background: lightgray;
 }
 
+.imp-link-bs24 {
+  transition: all 0.6s ease;
+}
 .imp-link-bs24:hover {
   box-shadow: 0px 0px 10px 5px #85b004;
+  background: lightgray;
 }
 
+.imp-link-bootstrap {
+  transition: all 0.6s ease;
+}
 .imp-link-bootstrap:hover {
   box-shadow: 0px 0px 10px 5px #7952b3;
-}
-
-.my-nav-pills .nav-link.active,
-.my-nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #aaaaaa;
+  background: lightgray;
 }
 
 .my-nav-pills {
   width: 100%;
+  overflow: unset;
+  word-break: break-all;
+  border: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: none;
+  border-bottom-right-radius: none;
+}
+.my-nav-pills .nav-link:hover {
+  border: 1px solid #aaaaaa;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: none;
+  border-bottom-right-radius: none;
+}
+.my-nav-pills .nav-link.active, .my-nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #aaaaaa;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: none;
+  border-bottom-right-radius: none;
 }
 
 .my-scrollspy {
@@ -353,7 +367,8 @@ Impressum
   border-radius: 10px;
   padding: 10px;
 }
-.my-scrollspy:focus, .my-scrollspy:active {
+.my-scrollspy:focus, .my-scrollspy:hover, .my-scrollspy:active {
+  outline: none;
   border-radius: 10px;
 }
 .my-scrollspy::-webkit-scrollbar {
