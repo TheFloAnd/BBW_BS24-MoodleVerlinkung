@@ -137,8 +137,8 @@ body {
 
 .link-container {
   background-color: rgba(255, 255, 255, 0.75);
-  border-left: 3px solid #aaaaaa;
-  border-top: 3px solid #aaaaaa;
+  border-left: 1px solid #aaaaaa;
+  border-top: 1px solid #aaaaaa;
   border-radius: 10px;
   width: min-content;
   font-size: 1.5rem;

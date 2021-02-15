@@ -159,8 +159,8 @@ body {
 
 .link-container {
     background-color: $color_default-rgba;
-    border-left: $border_width solid $color_default;
-    border-top: $border_width solid $color_default;
+    border-left: 1px solid $color_default;
+    border-top: 1px solid $color_default;
     border-radius: $border_radius;
     width: min-content;
     font-size: 1.5rem;
