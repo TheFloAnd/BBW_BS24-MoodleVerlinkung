@@ -19,6 +19,7 @@ body {
 
 .info-cards {
   min-height: 100%;
+  max-height: 100%;
   height: fit-content;
   min-width: fit-content;
 }
@@ -34,20 +35,20 @@ body {
 
 .border-default {
   transition: all 0.3s ease;
-  border-left: 3px solid #909090;
-  border-top: 3px solid #909090;
+  border-left: 3px solid #aaaaaa;
+  border-top: 3px solid #aaaaaa;
+  border-radius: 10px;
 }
 .border-default:hover, .border-default:active, .border-default:focus {
   cursor: pointer;
-  border-color: #909090;
-  border-width: 5px;
-  border-style: outset;
-  -webkit-box-shadow: 5px 5px 10px 3px #909090;
-  -moz-box-shadow: 5px 5px 10px 3px #909090;
-  box-shadow: 5px 5px 10px 3px #909090;
+  border-color: #aaaaaa;
+  border-width: 3px;
+  -webkit-box-shadow: 5px 5px 10px 3px #aaaaaa;
+  -moz-box-shadow: 5px 5px 10px 3px #aaaaaa;
+  box-shadow: 5px 5px 10px 3px #aaaaaa;
 }
 .border-default:visited {
-  border: 2px solid #909090;
+  border: 2px solid #aaaaaa;
 }
 
 #content-bbw,
@@ -59,12 +60,12 @@ body {
   transition: all 0.3s ease;
   border-left: 3px solid #e30613;
   border-top: 3px solid #e30613;
+  border-radius: 10px;
 }
 .border-bbw:hover, .border-bbw:active, .border-bbw:focus {
   cursor: pointer;
   border-color: #e30613;
-  border-width: 5px;
-  border-style: outset;
+  border-width: 3px;
   -webkit-box-shadow: 5px 5px 10px 3px #e30613;
   -moz-box-shadow: 5px 5px 10px 3px #e30613;
   box-shadow: 5px 5px 10px 3px #e30613;
@@ -77,12 +78,12 @@ body {
   transition: all 0.3s ease;
   border-top: 3px solid #85b004;
   border-right: 3px solid #85b004;
+  border-radius: 10px;
 }
 .border-bs24:hover, .border-bs24:active, .border-bs24:focus {
   cursor: pointer;
   border-color: #85b004;
-  border-width: 5px;
-  border-style: outset;
+  border-width: 3px;
   -webkit-box-shadow: -5px 5px 10px 3px #85b004;
   -moz-box-shadow: -5px 5px 10px 3px #85b004;
   box-shadow: -5px 5px 10px 3px #85b004;
@@ -117,7 +118,7 @@ body {
 
 .icon {
   position: absolute;
-  padding: 10px;
+  padding: 0.5rem;
   opacity: 1;
   right: 0;
   top: 0;
@@ -130,22 +131,63 @@ body {
 .footer {
   position: absolute;
   width: 100%;
-  text-align: right;
+  text-align: center;
   font-size: 1.5rem;
 }
 
 .footer > .link-container {
   background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 25px;
-  width: fit-content;
+  border-radius: 10px;
 }
 
 .link-container {
-  padding: 5px;
   background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 25px;
+  border-left: 3px solid #aaaaaa;
+  border-top: 3px solid #aaaaaa;
+  border-radius: 10px;
   width: min-content;
   font-size: 1.5rem;
+}
+.link-container > .link {
+  margin: 5px;
+}
+.link-container:hover, .link-container:active, .link-container:focus {
+  cursor: pointer;
+  border-color: #aaaaaa;
+  border-width: 3px;
+  -webkit-box-shadow: 5px 5px 10px 3px #aaaaaa;
+  -moz-box-shadow: 5px 5px 10px 3px #aaaaaa;
+  box-shadow: 5px 5px 10px 3px #aaaaaa;
+}
+.link-container:visited {
+  border: 2px solid #aaaaaa;
+}
+
+.link-container-home {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-bottom-right-radius: 10px;
+  width: min-content;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.link-container-home:hover, .link-container-home:active, .link-container-home:focus {
+  cursor: pointer;
+  border-color: #aaaaaa;
+  border-width: 3px;
+  -webkit-box-shadow: 5px 5px 10px 3px #aaaaaa;
+  -moz-box-shadow: 5px 5px 10px 3px #aaaaaa;
+  box-shadow: 5px 5px 10px 3px #aaaaaa;
+}
+.link-container-home:visited {
+  border: 3px solid #aaaaaa;
+}
+.link-container-home > .link {
+  margin: 5px;
+}
+
+.my-content {
+  border-radius: 10px;
 }
 
 @media only screen and (min-width: 990px) {
@@ -197,31 +239,45 @@ a:visited, a:active {
 Impressum
 
 */
-.imp-col {
-  position: relative;
-  min-width: 32.5vw !important;
-  padding: auto;
+.my-space-col {
+  left: 0;
+  width: 0px;
+  max-width: 0px;
+  min-height: 38rem;
+  padding: 0px;
+  margin: 0px;
 }
 
-.my-row {
-  height: fit-content !important;
+.my-col {
+  height: 100%;
+  max-height: 100%;
 }
 
 .my-card-header {
-  background-color: rgba(255, 255, 255, 0.75) !important;
+  background-color: rgba(255, 255, 255, 0.75);
   padding-right: 50px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .my-card {
   background-color: rgba(255, 255, 255, 0.25) !important;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 100;
+  min-width: 30rem;
+  border-radius: 10px;
 }
 
 .my-tab-card {
   background-color: rgba(255, 255, 255, 0.75) !important;
+  border-radius: 10px;
+}
+
+.my-navbar {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.my-list-group {
+  width: 100%;
 }
 
 .my-list-group,
@@ -243,7 +299,6 @@ Impressum
   transform: scale(0.85) translateY(-0.7rem) translateX(0.15rem) !important;
 }
 .my-label:hover, .my-label:focus, .my-label:active {
-  text-decoration: underline !important;
   transform: scale(0.85) translateY(-0.6rem) translateX(0.15rem) !important;
 }
 
@@ -259,7 +314,7 @@ Impressum
 }
 
 .imp-link:hover {
-  box-shadow: 0px 0px 10px 5px #909090;
+  box-shadow: 0px 0px 10px 5px #aaaaaa;
 }
 
 .imp-link-bbw:hover {
@@ -274,23 +329,62 @@ Impressum
   box-shadow: 0px 0px 10px 5px #7952b3;
 }
 
+.my-nav-pills .nav-link.active,
+.my-nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #aaaaaa;
+}
+
+.my-nav-pills {
+  width: 100%;
+}
+
 .my-scrollspy {
   max-height: 40rem;
   overflow: scroll;
   overflow-x: hidden;
+  border-radius: 10px;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.my-scrollspy > * {
+  border-radius: 10px;
+  padding: 10px;
+}
+.my-scrollspy:focus, .my-scrollspy:active {
+  border-radius: 10px;
+}
+.my-scrollspy::-webkit-scrollbar {
+  width: 10px;
+}
+.my-scrollspy::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background: #f1f1f1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.my-scrollspy::-webkit-scrollbar-thumb {
+  background: #888;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.my-scrollspy::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tab-section {
+  border-radius: 10px;
 }
 
 .tab-item {
   padding: 1.5rem;
-  border-top: 1px solid #909090;
-  border-bottom: 1px solid #909090;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
 }
 
 .sub-tab-item {
   padding-top: 10px;
-  border-top: 1px dotted #909090;
-}
-
-.my-navbar {
-  height: 100%;
+  border-top: 1px dotted #aaaaaa;
 }

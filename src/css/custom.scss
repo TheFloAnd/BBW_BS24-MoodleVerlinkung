@@ -4,12 +4,15 @@
 
 $color_bbw: #e30613 !global;
 $color_bs24: #85b004 !global;
-$color_default: #909090 !global;
+$color_default: #aaaaaa !global;
 $color_default-rgba: rgba(255, 255, 255, 0.75);
 $color_bootstrap: #7952b3;
 $input_shadow: 0px 0px 10px 5px;
 $card_shadow-right: 5px 5px 10px 3px;
 $card_shadow-left: -5px 5px 10px 3px;
+$border_width: 3px;
+$border_width-hover: 3px;
+$border_radius: 10px;
 $opacity_default: 1;
 $opacity: 0.75;
 $max: 100%;
@@ -31,6 +34,7 @@ body {
 
 .info-cards {
     min-height: 100%;
+    max-height: 100%;
     height: fit-content;
     min-width: fit-content;
 }
@@ -46,15 +50,15 @@ body {
 
 .border-default {
     transition: all 0.3s ease;
-    border-left: 3px solid $color_default;
-    border-top: 3px solid $color_default;
+    border-left: $border_width solid $color_default;
+    border-top: $border_width solid $color_default;
+    border-radius: $border_radius;
     &:hover,
     &:active,
     &:focus {
         cursor: pointer;
         border-color: $color_default;
-        border-width: 5px;
-        border-style: outset;
+        border-width: $border_width-hover;
         -webkit-box-shadow: $card_shadow-right $color_default;
         -moz-box-shadow: $card_shadow-right $color_default;
         box-shadow: $card_shadow-right $color_default;
@@ -71,15 +75,15 @@ body {
 
 .border-bbw {
     transition: all 0.3s ease;
-    border-left: 3px solid $color_bbw;
-    border-top: 3px solid $color_bbw;
+    border-left: $border_width solid $color_bbw;
+    border-top: $border_width solid $color_bbw;
+    border-radius: $border_radius;
     &:hover,
     &:active,
     &:focus {
         cursor: pointer;
         border-color: $color_bbw;
-        border-width: 5px;
-        border-style: outset;
+        border-width: $border_width-hover;
         -webkit-box-shadow: $card_shadow-right $color_bbw;
         -moz-box-shadow: $card_shadow-right $color_bbw;
         box-shadow: $card_shadow-right $color_bbw;
@@ -91,15 +95,15 @@ body {
 
 .border-bs24 {
     transition: all 0.3s ease;
-    border-top: 3px solid $color_bs24;
-    border-right: 3px solid $color_bs24;
+    border-top: $border_width solid $color_bs24;
+    border-right: $border_width solid $color_bs24;
+    border-radius: $border_radius;
     &:hover,
     &:active,
     &:focus {
         cursor: pointer;
         border-color: $color_bs24;
-        border-width: 5px;
-        border-style: outset;
+        border-width: $border_width-hover;
         -webkit-box-shadow: $card_shadow-left $color_bs24;
         -moz-box-shadow: $card_shadow-left $color_bs24;
         box-shadow: $card_shadow-left $color_bs24;
@@ -109,7 +113,7 @@ body {
     }
     @media only screen and (max-width: 990px) {
         border-right: none !important;
-        border-left: 3px solid $color_bs24 !important;
+        border-left: $border_width solid $color_bs24 !important;
         &:hover,
         &:active,
         &:focus {
@@ -135,7 +139,7 @@ body {
 
 .icon {
     position: absolute;
-    padding: 10px;
+    padding: 0.5rem;
     opacity: 1;
     right: 0;
     top: 0;
@@ -149,22 +153,67 @@ body {
     position: absolute;
     width: $max;
     //background-color: lightgray;
-    text-align: right;
+    text-align: center;
     font-size: 1.5rem;
 }
 
 .footer>.link-container {
     background-color: $color_default-rgba;
-    border-radius: 25px;
-    width: fit-content;
+    border-radius: $border_radius;
 }
 
 .link-container {
-    padding: 5px;
     background-color: $color_default-rgba;
-    border-radius: 25px;
+    border-left: $border_width solid $color_default;
+    border-top: $border_width solid $color_default;
+    border-radius: $border_radius;
     width: min-content;
     font-size: 1.5rem;
+    &>.link {
+        margin: 5px;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        cursor: pointer;
+        border-color: $color_default;
+        border-width: $border_width-hover;
+        -webkit-box-shadow: $card_shadow-right $color_default;
+        -moz-box-shadow: $card_shadow-right $color_default;
+        box-shadow: $card_shadow-right $color_default;
+    }
+    &:visited {
+        border: 2px solid $color_default;
+    }
+}
+
+.link-container-home {
+    background-color: $color_default-rgba;
+    border-bottom-right-radius: $border_radius;
+    width: min-content;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    &:hover,
+    &:active,
+    &:focus {
+        cursor: pointer;
+        border-color: $color_default;
+        border-width: $border_width-hover;
+        -webkit-box-shadow: $card_shadow-right $color_default;
+        -moz-box-shadow: $card_shadow-right $color_default;
+        box-shadow: $card_shadow-right $color_default;
+    }
+    &:visited {
+        border: $border_width solid $color_default;
+    }
+    &>.link {
+        margin: 5px;
+    }
+}
+
+.my-content {
+    border-radius: $border_radius;
 }
 
 .content-animation {
@@ -219,31 +268,45 @@ Impressum
 
 */
 
-.imp-col {
-    position: relative;
-    min-width: 32.5vw !important;
-    padding: auto;
+.my-space-col {
+    left: 0;
+    width: 0px;
+    max-width: 0px;
+    min-height: 38rem;
+    padding: 0px;
+    margin: 0px;
 }
 
-.my-row {
-    height: fit-content !important;
+.my-col {
+    height: $max;
+    max-height: $max;
 }
 
 .my-card-header {
-    background-color: $color_default-rgba !important;
+    background-color: $color_default-rgba;
     padding-right: 50px;
+    border-top-left-radius: $border_radius;
+    border-bottom-right-radius: $border_radius;
 }
 
 .my-card {
     background-color: rgba(255, 255, 255, 0.25) !important;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 100;
+    min-width: 30rem;
+    border-radius: $border_radius;
 }
 
 .my-tab-card {
     background-color: $color_default-rgba !important;
+    border-radius: $border_radius;
+}
+
+.my-navbar {
+    height: $max;
+    border-radius: $border_radius;
+}
+
+.my-list-group {
+    width: 100%;
 }
 
 .my-list-group,
@@ -266,7 +329,6 @@ Impressum
     &:hover,
     &:focus,
     &:active {
-        text-decoration: underline !important;
         transform: scale(0.85) translateY(-0.6rem) translateX(0.15rem) !important;
     }
 }
@@ -304,10 +366,54 @@ Impressum
     }
 }
 
+.my-nav-pills .nav-link.active,
+.my-nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: $color_default;
+}
+
+.my-nav-pills {
+    width: 100%;
+}
+
 .my-scrollspy {
     max-height: 40rem;
     overflow: scroll;
     overflow-x: hidden;
+    border-radius: $border_radius;
+    &>* {
+        border-radius: $border_radius;
+        padding: 10px;
+    }
+    &:focus,
+    &:active {
+        border-radius: $border_radius;
+    }
+    /* width */
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        background: #f1f1f1;
+        border-top-right-radius: $border_radius;
+        border-bottom-right-radius: $border_radius;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-top-right-radius: $border_radius;
+        border-bottom-right-radius: $border_radius;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+
+.tab-section {
+    border-radius: $border_radius;
 }
 
 .tab-item {
@@ -319,8 +425,4 @@ Impressum
 .sub-tab-item {
     padding-top: 10px;
     border-top: 1px dotted $color_default;
-}
-
-.my-navbar {
-    height: $max;
 }
