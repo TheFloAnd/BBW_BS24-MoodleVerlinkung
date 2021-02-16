@@ -155,10 +155,8 @@
             var el = document.getElementById("sort");
             var sortable = Sortable.create(el, {
                 handle: ".move",
-                swapThreshold: 1,
                 animation: 200,
                 group: "sort-position",
-                removeCloneOnHide: true,
                 store: {
                     /**
                      * Get the order of elements. Called once during initialization.
