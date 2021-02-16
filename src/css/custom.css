@@ -37,56 +37,46 @@ body {
   transition: all 0.3s ease;
   border-left: 3px solid #aaaaaa;
   border-top: 3px solid #aaaaaa;
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
 }
-.border-default:hover, .border-default:active, .border-default:focus {
-  cursor: pointer;
+.border-default:hover, .border-default:focus {
   border-color: #aaaaaa;
   border-width: 3px;
-  -webkit-box-shadow: 5px 5px 10px 3px #aaaaaa;
-  -moz-box-shadow: 5px 5px 10px 3px #aaaaaa;
-  box-shadow: 5px 5px 10px 3px #aaaaaa;
+  -webkit-box-shadow: 5px 5px 10px 5px #aaaaaa;
+  -moz-box-shadow: 5px 5px 10px 5px #aaaaaa;
+  box-shadow: 5px 5px 10px 5px #aaaaaa;
 }
 .border-default:visited {
   border: 2px solid #aaaaaa;
 }
-
-#content-bbw,
-#content-bs24 {
-  overflow: hidden;
-}
-
 .border-bbw {
   transition: all 0.3s ease;
   border-left: 3px solid #e30613;
   border-top: 3px solid #e30613;
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
 }
-.border-bbw:hover, .border-bbw:active, .border-bbw:focus {
-  cursor: pointer;
+.border-bbw:hover, .border-bbw:focus {
   border-color: #e30613;
   border-width: 3px;
-  -webkit-box-shadow: 5px 5px 10px 3px #e30613;
-  -moz-box-shadow: 5px 5px 10px 3px #e30613;
-  box-shadow: 5px 5px 10px 3px #e30613;
+  -webkit-box-shadow: 5px 5px 10px 5px #e30613;
+  -moz-box-shadow: 5px 5px 10px 5px #e30613;
+  box-shadow: 5px 5px 10px 5px #e30613;
 }
 .border-bbw:visited {
   border: 2px solid #e30613;
 }
-
 .border-bs24 {
   transition: all 0.3s ease;
   border-top: 3px solid #85b004;
   border-right: 3px solid #85b004;
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
 }
-.border-bs24:hover, .border-bs24:active, .border-bs24:focus {
-  cursor: pointer;
+.border-bs24:hover, .border-bs24:focus {
   border-color: #85b004;
   border-width: 3px;
-  -webkit-box-shadow: -5px 5px 10px 3px #85b004;
-  -moz-box-shadow: -5px 5px 10px 3px #85b004;
-  box-shadow: -5px 5px 10px 3px #85b004;
+  -webkit-box-shadow: -5px 5px 10px 5px #85b004;
+  -moz-box-shadow: -5px 5px 10px 5px #85b004;
+  box-shadow: -5px 5px 10px 5px #85b004;
 }
 .border-bs24:visited {
   border: 2px solid #85b004;
@@ -96,11 +86,16 @@ body {
     border-right: none !important;
     border-left: 3px solid #85b004 !important;
   }
-  .border-bs24:hover, .border-bs24:active, .border-bs24:focus {
-    -webkit-box-shadow: 5px 5px 10px 3px #85b004 !important;
-    -moz-box-shadow: 5px 5px 10px 3px #85b004 !important;
-    box-shadow: 5px 5px 10px 3px #85b004 !important;
+  .border-bs24:hover, .border-bs24:focus {
+    -webkit-box-shadow: 5px 5px 10px 5px #85b004 !important;
+    -moz-box-shadow: 5px 5px 10px 5px #85b004 !important;
+    box-shadow: 5px 5px 10px 5px #85b004 !important;
   }
+}
+
+#content-bbw,
+#content-bs24 {
+  overflow: hidden;
 }
 
 .preview {
@@ -117,11 +112,19 @@ body {
 }
 
 .icon {
+  cursor: pointer;
   position: absolute;
   padding: 0.5rem;
   opacity: 1;
   right: 0;
-  top: 0;
+}
+
+.icon-left {
+  cursor: pointer;
+  position: absolute;
+  padding: 0.5rem;
+  opacity: 1;
+  right: 0;
 }
 
 .bi {
@@ -139,50 +142,42 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
   border-left: 1px solid #aaaaaa;
   border-top: 1px solid #aaaaaa;
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
   width: min-content;
   font-size: 1.5rem;
 }
-.link-container > .link {
+.link-container > .link-imp {
   margin: 5px;
 }
-.link-container:hover, .link-container:active, .link-container:focus {
+.link-container:hover, .link-container:focus {
   cursor: pointer;
   border-color: #aaaaaa;
-  border-width: 3px;
-  -webkit-box-shadow: 5px 5px 10px 3px #aaaaaa;
-  -moz-box-shadow: 5px 5px 10px 3px #aaaaaa;
-  box-shadow: 5px 5px 10px 3px #aaaaaa;
-}
-.link-container:visited {
-  border: 2px solid #aaaaaa;
+  -webkit-box-shadow: 5px 5px 10px 5px #aaaaaa;
+  -moz-box-shadow: 5px 5px 10px 5px #aaaaaa;
+  box-shadow: 5px 5px 10px 5px #aaaaaa;
 }
 
 .link-container-home {
   background-color: rgba(255, 255, 255, 0.75);
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 0.5rem !important;
   width: min-content;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
 }
-.link-container-home:hover, .link-container-home:active, .link-container-home:focus {
+.link-container-home:hover, .link-container-home:focus {
   cursor: pointer;
-  border-color: #aaaaaa;
-  border-width: 3px;
-  -webkit-box-shadow: 5px 5px 10px 3px #aaaaaa;
-  -moz-box-shadow: 5px 5px 10px 3px #aaaaaa;
-  box-shadow: 5px 5px 10px 3px #aaaaaa;
+  -webkit-box-shadow: 5px 5px 10px 5px #aaaaaa;
+  -moz-box-shadow: 5px 5px 10px 5px #aaaaaa;
+  box-shadow: 5px 5px 10px 5px #aaaaaa;
+  text-decoration: underline;
 }
-.link-container-home:visited {
-  border: 3px solid #aaaaaa;
-}
-.link-container-home > .link {
+.link-container-home > .link-home {
   margin: 5px;
 }
 
 .my-content {
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
 }
 
 @media only screen and (min-width: 990px) {
@@ -222,7 +217,6 @@ a {
 a:hover, a:focus {
   color: #000000;
   font-size-adjust: 0.5;
-  text-decoration: underline;
 }
 a:visited, a:active {
   color: #000000;
@@ -248,26 +242,28 @@ Impressum
 }
 
 .my-card-header {
+  cursor: default;
   background-color: rgba(255, 255, 255, 0.75);
-  padding-right: 50px;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  margin-right: 0px;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.5rem !important;
 }
 
 .my-card {
   background-color: rgba(255, 255, 255, 0.25) !important;
   min-width: 25rem;
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
 }
 
 .my-tab-card {
   background-color: rgba(255, 255, 255, 0.75) !important;
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
 }
 
 .my-navbar {
   height: 100%;
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
 }
 
 .my-list-group {
@@ -276,55 +272,160 @@ Impressum
 .my-list-group,
 .my-list-group .my-list-group-item {
   background: none !important;
-}
-
-.my-card-header {
-  background-color: rgba(255, 255, 255, 0.75) !important;
-  margin-right: 50px;
+  border: none;
 }
 
 .my-card-logo {
   width: 10rem;
 }
 
-.my-label {
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  transform: scale(0.85) translateY(-0.7rem) translateX(0.15rem) !important;
-}
-.my-label:hover, .my-label:focus, .my-label:active {
-  transform: scale(0.85) translateY(-0.6rem) translateX(0.15rem) !important;
-}
-
-.imp-link {
+.link-bbw {
+  border-radius: 0.25rem !important;
   transition: all 0.6s ease;
 }
-.imp-link:hover {
+.link-bbw:focus {
+  outline: 2px #e30613;
+  box-shadow: 0px 0px 12px 7px #e30613;
+  background: lightgray;
+}
+.link-bbw > * {
+  border-radius: 0.25rem;
+}
+.link-bs24 {
+  border-radius: 0.25rem !important;
+  transition: all 0.6s ease;
+}
+.link-bs24:focus {
+  outline: 2px #85b004;
+  box-shadow: 0px 0px 12px 7px #85b004;
+  background: lightgray;
+}
+.link-bs24 > * {
+  border-radius: 0.25rem;
+}
+.link-default {
+  border-radius: 0.25rem !important;
+  transition: all 0.6s ease;
+}
+.link-default:focus {
+  outline: 2px #aaaaaa;
+  box-shadow: 0px 0px 12px 7px #aaaaaa;
+  background: lightgray;
+}
+.link-default > * {
+  border-radius: 0.25rem;
+}
+.link-bootstrap {
+  border-radius: 0.25rem;
+  transition: all 0.6s ease;
+}
+.link-bootstrap:focus {
+  outline: 2px #7952b3;
+  box-shadow: 0px 0px 12px 7px #7952b3;
+  background: lightgray;
+}
+.link-bootstrap > * {
+  border-radius: 0.25rem;
+}
+
+.index-link-bbw {
+  border-radius: 0.25rem !important;
+  transition: all 0.6s ease;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #e30613 !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+}
+.index-link-bbw:hover, .index-link-bbw:focus {
+  outline: 2px #e30613;
+  box-shadow: 0px 0px 10px 5px #e30613;
+}
+.index-link-bs24 {
+  border-radius: 0.25rem !important;
+  transition: all 0.6s ease;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #85b004 !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+}
+.index-link-bs24:hover, .index-link-bs24:focus {
+  outline: 2px #85b004;
+  box-shadow: 0px 0px 10px 5px #85b004;
+}
+
+.imp-link,
+.link {
+  transition: all 0.6s ease;
+}
+.imp-link-none,
+.link-none {
+  outline: none;
+  box-shadow: none !important;
+  border: 1px solid #ccc !important;
+}
+.imp-link-none:hover, .imp-link-none:focus, .imp-link-none:visited, .imp-link-none:active,
+.link-none:hover,
+.link-none:focus,
+.link-none:visited,
+.link-none:active {
+  box-shadow: inset 0 -1px 0 #ddd;
+  outline: 0px !important;
+  -webkit-appearance: none !important;
+  box-shadow: none !important;
+}
+.imp-link:hover, .imp-link:focus,
+.link:hover,
+.link:focus {
+  outline: 2px #aaaaaa;
   box-shadow: 0px 0px 10px 5px #aaaaaa;
   background: lightgray;
 }
-
-.imp-link-bbw {
+.imp-link-bbw,
+.link-bbw {
+  border-radius: 0.25rem !important;
   transition: all 0.6s ease;
 }
-.imp-link-bbw:hover {
+.imp-link-bbw:hover, .imp-link-bbw:focus,
+.link-bbw:hover,
+.link-bbw:focus {
+  outline: 2px #e30613;
   box-shadow: 0px 0px 10px 5px #e30613;
   background: lightgray;
 }
-
-.imp-link-bs24 {
+.imp-link-bs24,
+.link-bs24 {
+  border-radius: 0.25rem !important;
   transition: all 0.6s ease;
 }
-.imp-link-bs24:hover {
+.imp-link-bs24:hover, .imp-link-bs24:focus,
+.link-bs24:hover,
+.link-bs24:focus {
+  outline: 2px #85b004;
   box-shadow: 0px 0px 10px 5px #85b004;
   background: lightgray;
 }
-
-.imp-link-bootstrap {
+.imp-link-bootstrap,
+.link-bootstrap {
+  border-radius: 0.25rem !important;
   transition: all 0.6s ease;
 }
-.imp-link-bootstrap:hover {
+.imp-link-bootstrap:hover, .imp-link-bootstrap:focus,
+.link-bootstrap:hover,
+.link-bootstrap:focus {
+  outline: 2px #7952b3;
   box-shadow: 0px 0px 10px 5px #7952b3;
   background: lightgray;
+}
+.imp-link > *,
+.link > * {
+  border-radius: 0.25rem;
+}
+
+input[value] {
+  z-index: 9999;
+  font-size: 110%;
 }
 
 .my-nav-pills {
@@ -332,23 +433,30 @@ Impressum
   overflow: unset;
   word-break: break-all;
   border: none;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   border-top-right-radius: none;
   border-bottom-right-radius: none;
 }
 .my-nav-pills .nav-link:hover {
-  border: 1px solid #aaaaaa;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  outline: 2px #aaaaaa;
+  background: lightgray;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   border-top-right-radius: none;
   border-bottom-right-radius: none;
+}
+.my-nav-pills .nav-link:focus, .my-nav-pills .nav-link:active {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  outline: 2px #aaaaaa;
+  background: lightgray;
 }
 .my-nav-pills .nav-link.active, .my-nav-pills .show > .nav-link {
   color: #fff;
   background-color: #aaaaaa;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   border-top-right-radius: none;
   border-bottom-right-radius: none;
 }
@@ -357,19 +465,19 @@ Impressum
   height: 40rem;
   overflow: scroll;
   overflow-x: hidden;
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
   /* width */
   /* Track */
   /* Handle */
   /* Handle on hover */
 }
 .my-scrollspy > * {
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
   padding: 10px;
 }
 .my-scrollspy:focus, .my-scrollspy:hover, .my-scrollspy:active {
   outline: none;
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
 }
 .my-scrollspy::-webkit-scrollbar {
   width: 10px;
@@ -377,20 +485,20 @@ Impressum
 .my-scrollspy::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   background: #f1f1f1;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
 }
 .my-scrollspy::-webkit-scrollbar-thumb {
   background: #888;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
 }
 .my-scrollspy::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
 .tab-section {
-  border-radius: 10px;
+  border-radius: 0.5rem !important;
 }
 
 .tab-item {
