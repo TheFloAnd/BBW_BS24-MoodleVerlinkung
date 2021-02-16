@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="shortcut icon" href="#">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="src/css/bootstrap.min.css" />
 
@@ -12,498 +13,476 @@
     <link rel="stylesheet" href="src/css/custom.min.css" />
 
     <title>BBW-BS24 Verlinkung</title>
-  </head>
+</head>
 
-  <body onload="load_page();">
+<body onload="load_page();">
     <!-- Container -->
+
+    <div class="link-container-home d-flex justify-content-start">
+        <a href="index.html" class="link-home"> Zurück </a>
+    </div>
     <main class="container-fluid">
-      <div class="home-link link-container d-flex justify-content-start">
-        <a href="index.html" class="link"> Zurück </a>
-      </div>
-      <!-- Row -->
-      <section
-        class="sortable d-flex flex-wrap w-auto justify-content-around m-3"
-        id="sort"
-        aria-dropeffect="move"
-      >
-        <!-- BBW card -->
-        <div
-          class="card my-card my-card border-bbw m-5"
-          id="card-bbw"
-          draggable="true"
-          role="option"
-          aria-grabbed="false"
-        >
-          <div class="icons d-flex justify-content-end">
-            <div class="icon move">
-              <svg
-                xmlns="src/img/svg/arrows-move.svg"
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="bi bi-arrows-move"
-                viewBox="0 0 20 20"
-              >
+        <!-- Row -->
+        <section class="flex-wrap justify-content-evenly" aria-dropeffect="move">
+            <div class="row my-row d-flex g-2 info-cards sortable" id="sort">
+                <!-- BBW card -->
+                <div class="col-md imp-col d-flex justify-content-center" draggable="true" role="option" aria-grabbed="false" id="col-bbw">
+
+                    <div class="my-space-col"></div>
+                    <div class="card my-card border-bbw m-3" id="card-bbw">
+                        <div class="icons d-flex justify-content-end move-svg d-none">
+                            <div class="icon move">
+                                <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
                 <path
                   fill-rule="evenodd"
                   d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
                 />
               </svg>
-            </div>
-          </div>
+                            </div>
+                        </div>
 
-          <div class="card-header my-card-header h3">
-            Berufsbildungswerk Hamburg GmbH
-          </div>
+                        <div class="card-header my-card-header h3">
+                            Berufsbildungswerk Hamburg GmbH
+                        </div>
 
-          <div class="card-body">
-            <ul class="list-group my-list-group list-group-flush">
-              <!--
+                        <div class="card-body d-flex">
+                            <div class="list-group justify-content-evenly
+                            my-list-group list-group-flush">
+                                <!--
                         <li class="list-group-item my-list-group-item justify-content-center">
                             <img src="src/img/bbw-logo.png" class="rounded card-logo my-card-logo mx-auto d-block" alt="..."></img>
                         </li>
                     -->
-              <li class="list-group-item my-list-group-item">
-                <div class="input-group d-flex">
-                  <a
-                    href="mailto:christine.schaerffer@pepko-hamburg.de"
-                    class="flex-grow-1"
-                  >
-                    <div
-                      class="form-floating my-form-float my-form-float p-1 py-1"
-                    >
-                      <input
-                        class="form-control my-form-control imp-link-bbw"
-                        type="text"
-                        value="Christine Schaerffer"
-                        aria-label="default input example"
-                        disabled
-                        readonly
-                      />
-                      <label>Geschäftsführung</label>
+                                <fieldset readonly disabled draggable="false">
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="row g-2">
+                                            <div class="input-group d-flex">
+                                                <a href="mailto:christine.schaerffer@pepko-hamburg.de" class="col-md flex-grow-1 my-1 my-md-0 me-0 me-md-1 link-bbw">
+                                                    <div class="form-floating my-form-float">
+                                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="Christine Schaerffer" aria-label="default input" draggable="false" />
+                                                        <label class="my-label">Geschäftsführung</label>
+                                                    </div>
+                                                </a>
+                                                <a href="mailto:samuel.breisacher@cjd.de" class="col-md flex-grow-1 my-1 my-md-0 ms-0 ms-md-1 link-bbw">
+                                                    <div class="form-floating my-form-float">
+                                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="Samuel Breisacher" aria-label="default input" />
+                                                        <label class="my-label">Geschäftsführung</label>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="input-group">
+                                            <a href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/" target="_blank" class="flex-grow-1 link-bbw">
+                                                <div class="form-floating my-form-float flex-grow-1">
+                                                    <input class="form-control my-form-control imp-link-bbw" type="text" value="Reichsbahnstraße 53+55, 22525 Hamburg" />
+                                                    <label class="my-label">Straße & PLZ</label>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="row g-2">
+                                            <div class="input-group d-flex">
+                                                <a href="tel:+4904057230" class="col-md flex-grow-1 my-1 my-md-0 me-0 me-md-1 link-bbw">
+                                                    <div class="form-floating my-form-float">
+                                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="040 5723-0" />
+                                                        <label class="my-label">Telefon</label>
+                                                    </div>
+                                                </a>
+                                                <a href="fax:+490405723102" class="col-md flex-grow-1 my-1 my-md-0 ms-0 ms-md-1 link-bbw">
+                                                    <div class="form-floating my-form-float">
+                                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="040 5723-102" />
+                                                        <label class="my-label">Fax</label>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="input-group">
+                                            <a href="mailto:info@bbw-hamburg.de" class="flex-grow-1 link-bbw">
+                                                <div class="form-floating my-form-float" onclick="">
+                                                    <input class="form-control my-form-control imp-link-bbw" type="text" value="info@bbw-hamburg.de" />
+                                                    <label class="my-label">E-Mail Adresse</label>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="input-group">
+                                            <a href="http://www.bbw-hamburg.de/" target="_blank" class="flex-grow-1 link-bbw">
+                                                <div class="form-floating my-form-float">
+                                                    <input class="form-control my-form-control imp-link-bbw" type="text" value="www.bbw-hamburg.de" />
+                                                    <label class="my-label">Website</label>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
                     </div>
-                  </a>
-                  <a href="mailto:samuel.breisacher@cjd.de" class="flex-grow-1">
-                    <div class="form-floating my-form-float p-1 py-1">
-                      <input
-                        class="form-control my-form-control imp-link-bbw"
-                        type="text"
-                        value="Samuel Breisacher"
-                        aria-label="default input example"
-                        disabled
-                        readonly
-                      />
-                      <label>Geschäftsführung</label>
-                    </div>
-                  </a>
                 </div>
-              </li>
-              <li class="list-group-item my-list-group-item">
-                <a
-                  href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/"
-                  target="_blank"
-                >
-                  <div class="input-group d-flex">
-                    <div class="form-floating my-form-float flex-grow-1">
-                      <input
-                        class="form-control my-form-control imp-link-bbw"
-                        type="text"
-                        value="Reichsbahnstraße 53+55, 22525 Hamburg"
-                        aria-label="default input example"
-                        disabled
-                        readonly
-                      />
-                      <label>Straße & PLZ</label>
-                    </div>
-                  </div>
-                </a>
-              </li>
+                <!-- BS24 Card -->
 
-              <li class="list-group-item my-list-group-item">
-                <div class="input-group d-flex">
-                  <a href="tel:+4904057230" class="flex-grow-1">
-                    <div class="form-floating my-form-float p-1 py-1">
-                      <input
-                        class="form-control my-form-control imp-link-bbw"
-                        type="text"
-                        value="040 5723-0"
-                        disabled
-                        readonly
-                      />
-                      <label>Telefon</label>
-                    </div>
-                  </a>
-                  <a href="fax:+490405723102" class="flex-grow-1">
-                    <div class="form-floating my-form-float p-1 py-1">
-                      <input
-                        class="form-control my-form-control imp-link-bbw"
-                        type="text"
-                        value="040 5723-102"
-                        disabled
-                        readonly
-                      />
-                      <label>Fax</label>
-                    </div>
-                  </a>
-                </div>
-              </li>
+                <div class="col-md imp-col  d-flex justify-content-center" draggable="true" role="option" aria-grabbed="false" id="col-bs24">
 
-              <li class="list-group-item my-list-group-item">
-                <div class="input-group">
-                  <a href="mailto:info@bbw-hamburg.de" class="w-100">
-                    <div class="form-floating my-form-float" onclick="">
-                      <input
-                        class="form-control my-form-control imp-link-bbw"
-                        type="text"
-                        value="info@bbw-hamburg.de"
-                        disabled
-                        readonly
-                      />
-                      <label>E-Mail Adresse</label>
-                    </div>
-                  </a>
-                </div>
-              </li>
-
-              <li class="list-group-item my-list-group-item">
-                <div class="input-group">
-                  <a
-                    href="http://www.bbw-hamburg.de/"
-                    target="_blank"
-                    class="w-100"
-                  >
-                    <div class="form-floating my-form-float">
-                      <input
-                        class="form-control my-form-control imp-link-bbw"
-                        type="text"
-                        value="www.bbw-hamburg.de"
-                        disabled
-                        readonly
-                      />
-                      <label>Website</label>
-                    </div>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- BS24 Card -->
-        <div
-          class="card my-card border-bs24 m-5"
-          id="card-bs24"
-          draggable="true"
-          role="option"
-          aria-grabbed="false"
-        >
-          <div class="icons d-flex justify-content-end">
-            <div class="icon move">
-              <svg
-                xmlns="src/img/svg/arrows-move.svg"
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="bi bi-arrows-move"
-                viewBox="0 0 20 20"
-              >
+                    <div class="my-space-col"></div>
+                    <div class="card my-card border-bs24 m-3" id="card-bs24">
+                        <div class="icons d-flex justify-content-end move-svg d-none">
+                            <div class="icon move">
+                                <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
                 <path
                   fill-rule="evenodd"
                   d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
                 />
               </svg>
-            </div>
-          </div>
-          <div class="card-header my-card-header h3">
-            Berufliche Schule Eidelstedt BS24
-          </div>
-          <div class="card-body">
-            <ul class="list-group my-list-group list-group-flush">
-              <!--
+                            </div>
+                        </div>
+                        <div class="card-header my-card-header h3">
+                            Berufliche Schule Eidelstedt BS24
+                        </div>
+                        <div class="card-body d-flex">
+                            <div class="list-group my-list-group justify-content-evenly list-group-flush">
+                                <!--
                         <li class="list-group-item my-list-group-item justify-content-center">
                             <img src="src/img/bs24-logo.jpg" class="rounded card-logo my-card-logo mx-auto d-block" alt="..."></img>
                         </li>
                     -->
-              <li class="list-group-item my-list-group-item">
-                <div class="input-group d-flex">
-                  <div class="form-floating my-form-float flex-grow-1">
-                    <input
-                      class="form-control my-form-control"
-                      type="text"
-                      value="Ina Kyborg (Schulleiterin)"
-                      aria-label="default input example"
-                      disabled
-                      readonly
-                    />
-                    <label>Verantwortliche BS24</label>
-                  </div>
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="input-group d-flex">
+                                            <div class="form-floating my-form-float flex-grow-1">
+                                                <input class="form-control my-form-control imp-link-none" type="text" value="Ina Kyborg (Schulleiterin)" aria-label="default input" />
+                                                <label class="my-label">Verantwortliche BS24</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="input-group">
+                                            <a href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/" target="_blank" class="flex-grow-1 link-bs24">
+                                                <div class="form-floating my-form-float flex-grow-1">
+                                                    <input class="form-control my-form-control imp-link-bs24" type="text" value="Reichsbahnstraße 53+55, 22525 Hamburg" />
+                                                    <label class="my-label">Straße & PLZ</label>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="row g-2">
+                                            <div class="input-group d-flex">
+                                                <a href="tel:+490405723125" class="col-md flex-grow-1 my-1 my-md-0 me-0 me-md-1 link-bs24">
+                                                    <div class="form-floating my-form-float">
+                                                        <input class="form-control my-form-control imp-link-bs24" type="text" value="040 57 23 – 125" />
+                                                        <label class="my-label">Telefon</label>
+                                                    </div>
+                                                </a>
+                                                <a href="fax:+490405723370" class="col-md flex-grow-1 my-1 my-md-0 ms-0 ms-md-1 link-bs24">
+                                                    <div class="form-floating my-form-float">
+                                                        <input class="form-control my-form-control imp-link-bs24" type="text" value="040 57 23-370" />
+                                                        <label class="my-label">Fax</label>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="input-group">
+                                            <a href="mailto:bs24@hibb.hamburg.de" class="flex-grow-1 link-bs24">
+                                                <div class="form-floating my-form-float" onclick="">
+                                                    <input class="form-control my-form-control imp-link-bs24" type="text" value="bs24@hibb.hamburg.de" />
+                                                    <label class="my-label">E-Mail Adresse</label>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="input-group">
+                                            <a href="https://bs24.hamburg.de/" target="_blank" class="flex-grow-1 link-bs24">
+                                                <div class="form-floating my-form-float">
+                                                    <input class="form-control my-form-control imp-link-bs24" type="text" value="bs24.hamburg.de" />
+                                                    <label class="my-label">Website</label>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </li>
-              <li class="list-group-item my-list-group-item">
-                <a
-                  href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/"
-                  target="_blank"
-                >
-                  <div class="input-group d-flex">
-                    <div class="form-floating my-form-float flex-grow-1">
-                      <input
-                        class="form-control my-form-control imp-link-bs24"
-                        type="text"
-                        value="Reichsbahnstraße 53+55, 22525 Hamburg"
-                        aria-label="default input example"
-                        disabled
-                        readonly
-                      />
-                      <label>Straße & PLZ</label>
-                    </div>
-                  </div>
-                </a>
-              </li>
 
-              <li class="list-group-item my-list-group-item">
-                <div class="input-group d-flex">
-                  <a href="tel:+490405723125" class="flex-grow-1">
-                    <div class="form-floating my-form-float p-1 py-1">
-                      <input
-                        class="form-control my-form-control imp-link-bs24"
-                        type="text"
-                        value="040 57 23 – 125"
-                        disabled
-                        readonly
-                      />
-                      <label>Telefon</label>
-                    </div>
-                  </a>
-                  <a href="fax:+490405723370" class="flex-grow-1">
-                    <div class="form-floating my-form-float p-1 py-1">
-                      <input
-                        class="form-control my-form-control imp-link-bs24"
-                        type="text"
-                        value="0405723370"
-                        disabled
-                        readonly
-                      />
-                      <label>Fax</label>
-                    </div>
-                  </a>
-                </div>
-              </li>
+                <div class="col-md imp-col  d-flex justify-content-center" draggable="true" role="option" aria-grabbed="false" id="col-default">
 
-              <li class="list-group-item my-list-group-item">
-                <div class="input-group">
-                  <a href="mailto:bs24@hibb.hamburg.de" class="w-100">
-                    <div class="form-floating my-form-float" onclick="">
-                      <input
-                        class="form-control my-form-control imp-link-bs24"
-                        type="text"
-                        value="bs24@hibb.hamburg.de"
-                        disabled
-                        readonly
-                      />
-                      <label>E-Mail Adresse</label>
-                    </div>
-                  </a>
-                </div>
-              </li>
-
-              <li class="list-group-item my-list-group-item">
-                <div class="input-group">
-                  <a
-                    href="https://bs24.hamburg.de/"
-                    target="_blank"
-                    class="w-100"
-                  >
-                    <div class="form-floating my-form-float">
-                      <input
-                        class="form-control my-form-control imp-link-bs24"
-                        type="text"
-                        value="bs24.hamburg.de"
-                        disabled
-                        readonly
-                      />
-                      <label>Website</label>
-                    </div>
-                  </a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="card my-card content my-content m-5"
-          draggable="true"
-          role="option"
-          aria-grabbed="false"
-        >
-          <div class="icons d-flex justify-content-end">
-            <div class="icon move">
-              <svg
-                xmlns="src/img/svg/arrows-move.svg"
-                width="30"
-                height="30"
-                fill="currentColor"
-                class="bi bi-arrows-move"
-                viewBox="0 0 20 20"
-              >
+                    <div class="my-space-col"></div>
+                    <div class="card my-card border-default m-3" id="card-default-1">
+                        <div class="icons d-flex justify-content-end move-svg d-none">
+                            <div class="icon move">
+                                <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
                 <path
                   fill-rule="evenodd"
                   d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
                 />
               </svg>
+                            </div>
+                        </div>
+                        <div class="card-header my-card-header h3">Quellen</div>
+                        <div class="card-body d-flex">
+                            <div class="list-group my-list-group justify-content-evenly list-group-flush">
+
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="input-group d-flex">
+                                            <a href="https://unsplash.com/" target="_blank" class="flex-grow-1 link-default">
+                                                <div class="form-floating my-form-float">
+                                                    <input class="form-control my-form-control imp-link" type="text" value="Unsplash" aria-label="default input" />
+                                                    <label class="my-label">Bilder</label>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="input-group d-flex">
+                                            <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank" class="flex-grow-1 link-bootstrap">
+                                                <div class="form-floating my-form-float">
+                                                    <input class="form-control my-form-control imp-link-bootstrap" type="text" value="Bootstrap 5 Beta" aria-label="default input" />
+                                                    <label class="my-label">Framework</label>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset readonly disabled>
+                                    <div class="list-group-item my-list-group-item">
+                                        <div class="input-group d-flex">
+                                            <div class="form-floating my-form-float flex-grow-1">
+                                                <input class="form-control my-form-control" type="text" value="BBW Hamburg FISI-20" aria-label="default input" />
+                                                <label class="my-label">Geschrieben</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="container p-3 tab-section">
+            <div class="row imp-row">
+                <div class="col imp-col">
+                    <div class="card my-tab-card text-center scroll-tabs justify-content-center">
+                        <div class="row">
+                            <div class="col-3">
+                                <nav id="tab-list" class="navbar my-navbar navbar-light bg-light flex-column">
+                                    <nav class="nav nav-pills my-nav-pills flex-column">
+                                        <a class="nav-link" href="#tab-home">Home</a>
+                                        <a class="nav-link" href="#tab-datenschutz">Datenschutz</a>
+                                        <nav class="nav nav-pills flex-column">
+                                            <a class="nav-link ms-3 my-1" href="#tab-datenschutz-1">Datenschutz #1</a
+                    >
+                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-2"
+                      >Datenschutz #2</a
+                    >
+                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-3"
+                      >Datenschutz #3</a
+                    >
+                  </nav>
+                  <a class="nav-link" href="#tab-policy">Rechtliche Hinweise</a>
+                                            <nav class="nav nav-pills flex-column">
+                                                <a class="nav-link ms-3 my-1" href="#tab-policy-1">Rechtliche Hinweise #1</a
+                    >
+                    <a class="nav-link ms-3 my-1" href="#tab-policy-2"
+                      >Rechtliche Hinweise #2</a
+                    >
+                    <a class="nav-link ms-3 my-1" href="#tab-policy-3"
+                      >Rechtliche Hinweise #2</a
+                    >
+                  </nav>
+                </nav>
+              </nav>
             </div>
-          </div>
-          <div class="card-header my-card-header h3">Quellen</div>
-          <div class="card-body">
-            <ul class="list-group my-list-group list-group-flush">
-              <li class="list-group-item my-list-group-item">
-                <a href="https://unsplash.com/" target="_blank">
-                  <div class="input-group d-flex">
-                    <div class="form-floating my-form-float flex-grow-1">
-                      <input
-                        class="form-control my-form-control imp-link"
-                        type="text"
-                        value="Unsplash"
-                        aria-label="default input example"
-                        disabled
-                        readonly
-                      />
-                      <label>Bilder</label>
-                    </div>
+            <div class="col-9">
+              <div
+                data-bs-spy="scroll"
+                data-bs-target="#tab-list"
+                data-bs-offset="0"
+                class="scrollspy my-scrollspy"
+                tabindex="0"
+              >
+                <div id="tab-home" class="tab-item">
+                  <h4>Home</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, blanditiis expedita? Earum eligendi pariatur
+                    quaerat quos expedita ab quibusdam ratione veniam in,
+                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Officiis, blanditiis expedita?
+                    Earum eligendi pariatur quaerat quos expedita ab quibusdam
+                    ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Officiis,
+                    blanditiis expedita?
+                  </p>
+                </div>
+                <div id="tab-datenschutz" class="tab-item">
+                  <h4>Datenschutz</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, blanditiis expedita? Earum eligendi pariatur
+                    quaerat quos expedita ab quibusdam ratione veniam in,
+                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Officiis, blanditiis expedita?
+                    Earum eligendi pariatur quaerat quos expedita ab quibusdam
+                    ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Officiis,
+                    blanditiis expedita?
+                  </p>
+
+                  <div id="tab-datenschutz-1" class="sub-tab-item">
+                    <h4>Datenschutz #1</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    </p>
                   </div>
-                </a>
-              </li>
-              <li class="list-group-item my-list-group-item">
-                <a
-                  href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
-                  target="_blank"
-                >
-                  <div class="input-group d-flex">
-                    <div class="form-floating my-form-float flex-grow-1">
-                      <input
-                        class="form-control my-form-control imp-link-bootstrap"
-                        type="text"
-                        value="Bootstrap 5 Beta"
-                        aria-label="default input example"
-                        disabled
-                        readonly
-                      />
-                      <label>Framework</label>
-                    </div>
+
+                  <div id="tab-datenschutz-2" class="sub-tab-item">
+                    <h4>Datenschutz #2</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?ne veniam in, mollitia fuga repudiandae?
+                    </p>
                   </div>
-                </a>
-              </li>
-              <li class="list-group-item my-list-group-item">
-                <div class="input-group d-flex">
-                  <div class="form-floating my-form-float flex-grow-1">
-                    <input
-                      class="form-control my-form-control"
-                      type="text"
-                      value="BBW Hamburg FISI-20"
-                      aria-label="default input example"
-                      disabled
-                      readonly
-                    />
-                    <label>Geschrieben</label>
+
+                  <div id="tab-datenschutz-3" class="sub-tab-item">
+                    <h4>Datenschutz #3</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    </p>
                   </div>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+                <div id="tab-policy" class="tab-item">
+                  <h4>Rechtliche Hinweise</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis, blanditiis expedita? Earum eligendi pariatur
+                    quaerat quos expedita ab quibusdam ratione veniam in,
+                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                  </p>
+                  <div id="tab-policy-1" class="sub-tab-item">
+                    <h4>Rechtliche Hinweise #1</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    </p>
+                  </div>
 
-      <section class="container p-5">
-        <div class="card text-center">
-          <div class="d-flex align-items-start">
-            <ul
-              class="nav flex-column nav-tab me-3"
-              id="myTab"
-              role="tablist"
-              aria-orientation="vertical"
-            >
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link active"
-                  id="home-tab"
-                  data-bs-toggle="tab"
-                  href="#home"
-                  role="tab"
-                  aria-controls="home"
-                  aria-selected="true"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  href="#profile"
-                  role="tab"
-                  aria-controls="profile"
-                  aria-selected="false"
-                  >Profile</a
-                >
-              </li>
-              <li class="nav-item" role="presentation">
-                <a
-                  class="nav-link"
-                  id="contact-tab"
-                  data-bs-toggle="tab"
-                  href="#contact"
-                  role="tab"
-                  aria-controls="contact"
-                  aria-selected="false"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="home"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-            >
-              ...Home
-            </div>
-            <div
-              class="tab-pane fade"
-              id="profile"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
-            >
-              ...Profile
-            </div>
-            <div
-              class="tab-pane fade"
-              id="contact"
-              role="tabpanel"
-              aria-labelledby="contact-tab"
-            >
-              ...Contact
+                  <div id="tab-policy-2" class="sub-tab-item">
+                    <h4>Rechtliche Hinweise #2</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    </p>
+                  </div>
+
+                  <div id="tab-policy-3" class="sub-tab-item">
+                    <h4>Rechtliche Hinweise #3</h4>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Officiis, blanditiis expedita? Earum eligendi pariatur
+                      quaerat quos expedita ab quibusdam ratione veniam in,
+                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
+                      consectetur adipisicing elit. Officiis, blanditiis
+                      expedita? Earum eligendi pariatur quaerat quos expedita ab
+                      quibusdam ratione veniam in, mollitia fuga repudiandae?
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+          </div>
+        </div>
       </section>
+        </div>
     </main>
     <footer class="footer clearfix">
       <div class="container"></div>
     </footer>
     <!-- Custom JS -->
-    <script src="src/js/custom.js "></script>
+    <script src="src/js/custom.prod.js "></script>
+
+    
+    <!-- Bootstrap JS -->
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: '#tab'
+
+    });
+    var firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
+    firstScrollSpyEl.addEventListener('activate.bs.scrollspy', function () {
+        // do something...
+    });
+    </script>
 
     <!-- Drag&Drop -->
     <script src="src/js/Sortable.min.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="src/js/bootstrap.min.js"></script>
     <script>
       var el = document.getElementById("sort");
       var sortable = Sortable.create(el, {
         handle: ".move",
-        swapThreshold: 1,
+    animation: 200,
         group: "sort-position-impressum",
         store: {
           /**
