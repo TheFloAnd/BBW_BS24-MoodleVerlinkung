@@ -550,3 +550,28 @@ input[value] {
     padding-top: 10px;
     border-top: 1px dotted $color_default;
 }
+
+.info-banner {
+    z-index: 999;
+    position: absolute;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    min-width: 100vh !important;
+    background: $color_default-rgba;
+    min-height: 10rem;
+}
+
+.info-banner>.info-banner-close {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.info-banner>.info-banner-txt {
+    padding: 50px;
+    text-align: center;
+    font-size: 120%;
+}
