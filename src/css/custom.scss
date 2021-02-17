@@ -23,6 +23,7 @@ html {
     min-height: $max;
     min-width: min-content !important;
     min-width: $max;
+    overflow-x: hidden;
 }
 
 body {
