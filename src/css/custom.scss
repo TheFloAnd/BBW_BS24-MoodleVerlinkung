@@ -453,8 +453,8 @@ input[value] {
 }
 
 .my-nav-pills {
+    height: 80vh;
     width: 100%;
-    overflow: unset;
     word-break: break-all;
     border: none;
     border-top-left-radius: 20px;
@@ -487,10 +487,16 @@ input[value] {
         border-top-right-radius: none;
         border-bottom-right-radius: none;
     }
+    @media only screen and (max-width: 990px) {
+        overflow: auto;
+    }
+    @media only screen and (max-height: 500px) {
+        overflow: auto;
+    }
 }
 
 .my-scrollspy {
-    height: 40rem;
+    height: 80vh;
     overflow: scroll;
     overflow-x: hidden;
     border-radius: $border_radius;
@@ -529,6 +535,9 @@ input[value] {
 
 .tab-section {
     border-radius: $border_radius;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .tab-item {

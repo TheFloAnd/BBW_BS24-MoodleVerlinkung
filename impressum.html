@@ -293,218 +293,209 @@
                 <div class="col imp-col">
                     <div class="card my-tab-card text-center scroll-tabs justify-content-center">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-3 d-none d-lg-block">
                                 <nav id="tab-list" class="navbar my-navbar navbar-light bg-light flex-column">
                                     <nav class="nav nav-pills my-nav-pills flex-column">
                                         <a class="nav-link" href="#tab-home">Home</a>
-                                        <a class="nav-link" href="#tab-datenschutz">Datenschutz</a>
-                                        <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ms-3 my-1" href="#tab-datenschutz-1">Datenschutz #1</a
-                    >
-                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-2"
-                      >Datenschutz #2</a
-                    >
-                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-3"
-                      >Datenschutz #3</a
-                    >
-                  </nav>
-                  <a class="nav-link" href="#tab-policy">Rechtliche Hinweise</a>
+                                        <div class="tab-datenschutz">
+                                            <a class="nav-link" href="#tab-datenschutz">Datenschutz</a>
                                             <nav class="nav nav-pills flex-column">
-                                                <a class="nav-link ms-3 my-1" href="#tab-policy-1">Rechtliche Hinweise #1</a
-                    >
-                    <a class="nav-link ms-3 my-1" href="#tab-policy-2"
-                      >Rechtliche Hinweise #2</a
-                    >
-                    <a class="nav-link ms-3 my-1" href="#tab-policy-3"
-                      >Rechtliche Hinweise #2</a
-                    >
-                  </nav>
-                </nav>
-              </nav>
-            </div>
-            <div class="col-9">
-              <div
-                data-bs-spy="scroll"
-                data-bs-target="#tab-list"
-                data-bs-offset="0"
-                class="scrollspy my-scrollspy"
-                tabindex="0"
-              >
-                <div id="tab-home" class="tab-item">
-                  <h4>Home</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, blanditiis expedita? Earum eligendi pariatur
-                    quaerat quos expedita ab quibusdam ratione veniam in,
-                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Officiis, blanditiis expedita?
-                    Earum eligendi pariatur quaerat quos expedita ab quibusdam
-                    ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
-                    dolor sit amet consectetur adipisicing elit. Officiis,
-                    blanditiis expedita?
-                  </p>
+                                                <a class="nav-link ms-3 my-1" href="#tab-datenschutz-1">Datenschutz #1</a>
+                                                <a class="nav-link ms-3 my-1" href="#tab-datenschutz-2">Datenschutz #2</a>
+                                                <a class="nav-link ms-3 my-1" href="#tab-datenschutz-3">Datenschutz #3</a>
+                                            </nav>
+                                        </div>
+                                        <div class="tab-policy">
+                                            <a class="nav-link" href="#tab-policy">Rechtliche Hinweise</a>
+                                            <nav class="nav nav-pills flex-column">
+                                                <a class="nav-link ms-3 my-1" href="#tab-policy-1">Rechtliche Hinweise #1</a>
+                                                <a class="nav-link ms-3 my-1" href="#tab-policy-2">Rechtliche Hinweise #2</a>
+                                                <a class="nav-link ms-3 my-1" href="#tab-policy-3">Rechtliche Hinweise #2</a>
+                                            </nav>
+                                        </div>
+                                    </nav>
+                                </nav>
+                            </div>
+                            <!-- sm nav -->
+                            <div class="col-3 d-block d-lg-none">
+                                <nav id="tab-list" class="navbar my-navbar navbar-light bg-light flex-column">
+                                    <ul class="nav nav-pills" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">1</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">2</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">3</button>
+                                        </li>
+                                    </ul>
+                                    <nav class="nav nav-pills my-nav-pills flex-column">
+                                        <div class="tab-content" id="nav-tabContent">
+                                            <nav class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                <a class="nav-link" href="#tab-home">Home</a>
+                                            </nav>
+                                            <nav class="tab-datenschutz tab-pane fade" id="profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                <a class="nav-link" href="#tab-datenschutz">Datenschutz</a>
+                                                <nav class="nav nav-pills flex-column">
+                                                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-1">Datenschutz #1</a>
+                                                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-2">Datenschutz #2</a>
+                                                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-3">Datenschutz #3</a>
+                                                </nav>
+                                            </nav>
+                                            <nav class="tab-policy tab-pane fade" id="contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                                <a class="nav-link" href="#tab-policy">Rechtliche Hinweise</a>
+                                                <nav class="nav nav-pills flex-column">
+                                                    <a class="nav-link ms-3 my-1" href="#tab-policy-1">Rechtliche Hinweise #1</a>
+                                                    <a class="nav-link ms-3 my-1" href="#tab-policy-2">Rechtliche Hinweise #2</a>
+                                                    <a class="nav-link ms-3 my-1" href="#tab-policy-3">Rechtliche Hinweise #2</a>
+                                                </nav>
+                                            </nav>
+                                    </nav>
+                                </nav>
+                                </div>
+                                <div class="col-9">
+                                    <div data-bs-spy="scroll" data-bs-target="#tab-list" data-bs-offset="0" class="scrollspy my-scrollspy" tabindex="0">
+                                        <div id="tab-home" class="tab-item">
+                                            <h4>Home</h4>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                                                blanditiis expedita?
+                                            </p>
+                                        </div>
+                                        <div id="tab-datenschutz" class="tab-item">
+                                            <h4>Datenschutz</h4>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+                                                blanditiis expedita?
+                                            </p>
+
+                                            <div id="tab-datenschutz-1" class="sub-tab-item">
+                                                <h4>Datenschutz #1</h4>
+                                                <p>
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                                </p>
+                                            </div>
+
+                                            <div id="tab-datenschutz-2" class="sub-tab-item">
+                                                <h4>Datenschutz #2</h4>
+                                                <p>
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?ne veniam in, mollitia fuga repudiandae?
+                                                </p>
+                                            </div>
+
+                                            <div id="tab-datenschutz-3" class="sub-tab-item">
+                                                <h4>Datenschutz #3</h4>
+                                                <p>
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div id="tab-policy" class="tab-item">
+                                            <h4>Rechtliche Hinweise</h4>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                            </p>
+                                            <div id="tab-policy-1" class="sub-tab-item">
+                                                <h4>Rechtliche Hinweise #1</h4>
+                                                <p>
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                                </p>
+                                            </div>
+
+                                            <div id="tab-policy-2" class="sub-tab-item">
+                                                <h4>Rechtliche Hinweise #2</h4>
+                                                <p>
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                                </p>
+                                            </div>
+
+                                            <div id="tab-policy-3" class="sub-tab-item">
+                                                <h4>Rechtliche Hinweise #3</h4>
+                                                <p>
+                                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="tab-datenschutz" class="tab-item">
-                  <h4>Datenschutz</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, blanditiis expedita? Earum eligendi pariatur
-                    quaerat quos expedita ab quibusdam ratione veniam in,
-                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Officiis, blanditiis expedita?
-                    Earum eligendi pariatur quaerat quos expedita ab quibusdam
-                    ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
-                    dolor sit amet consectetur adipisicing elit. Officiis,
-                    blanditiis expedita?
-                  </p>
-
-                  <div id="tab-datenschutz-1" class="sub-tab-item">
-                    <h4>Datenschutz #1</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-
-                  <div id="tab-datenschutz-2" class="sub-tab-item">
-                    <h4>Datenschutz #2</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?ne veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-
-                  <div id="tab-datenschutz-3" class="sub-tab-item">
-                    <h4>Datenschutz #3</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-                </div>
-                <div id="tab-policy" class="tab-item">
-                  <h4>Rechtliche Hinweise</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, blanditiis expedita? Earum eligendi pariatur
-                    quaerat quos expedita ab quibusdam ratione veniam in,
-                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                  </p>
-                  <div id="tab-policy-1" class="sub-tab-item">
-                    <h4>Rechtliche Hinweise #1</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-
-                  <div id="tab-policy-2" class="sub-tab-item">
-                    <h4>Rechtliche Hinweise #2</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-
-                  <div id="tab-policy-3" class="sub-tab-item">
-                    <h4>Rechtliche Hinweise #3</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-          </div>
-        </div>
-      </section>
+        </section>
         </div>
     </main>
     <footer class="footer clearfix">
-      <div class="container"></div>
+        <div class="container"></div>
     </footer>
     <!-- Custom JS -->
     <script src="src/js/custom.prod.js "></script>
 
-    
+
     <!-- Bootstrap JS -->
     <script src="src/js/bootstrap.bundle.min.js"></script>
 
     <script>
-    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-      target: '#tab'
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#tab'
 
-    });
-    var firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
-    firstScrollSpyEl.addEventListener('activate.bs.scrollspy', function () {
-        // do something...
-    });
+        });
+        var firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
+        firstScrollSpyEl.addEventListener('activate.bs.scrollspy', function() {
+            // do something...
+        });
+
+        var triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'))
+        triggerTabList.forEach(function(triggerEl) {
+            var tabTrigger = new bootstrap.Tab(triggerEl)
+
+            triggerEl.addEventListener('click', function(event) {
+                event.preventDefault()
+                tabTrigger.show()
+            })
+        })
     </script>
 
     <!-- Drag&Drop -->
     <script src="src/js/Sortable.min.js"></script>
     <script>
-      var el = document.getElementById("sort");
-      var sortable = Sortable.create(el, {
-        handle: ".move",
-    animation: 200,
-        group: "sort-position-impressum",
-        store: {
-          /**
-           * Get the order of elements. Called once during initialization.
-           * @param   {Sortable}  sortable
-           * @returns {Array}
-           */
-          get: function (sortable) {
-            var order = localStorage.getItem(sortable.options.group.name);
-            return order ? order.split("|") : [];
-          },
+        var el = document.getElementById("sort");
+        var sortable = Sortable.create(el, {
+            handle: ".move",
+            animation: 200,
+            group: "sort-position-impressum",
+            store: {
+                /**
+                 * Get the order of elements. Called once during initialization.
+                 * @param   {Sortable}  sortable
+                 * @returns {Array}
+                 */
+                get: function(sortable) {
+                    var order = localStorage.getItem(sortable.options.group.name);
+                    return order ? order.split("|") : [];
+                },
 
-          /**
-           * Save the order of elements. Called onEnd (when the item is dropped).
-           * @param {Sortable}  sortable
-           */
-          set: function (sortable) {
-            var order = sortable.toArray();
-            localStorage.setItem(sortable.options.group.name, order.join("|"));
-          },
-        },
-      });
+                /**
+                 * Save the order of elements. Called onEnd (when the item is dropped).
+                 * @param {Sortable}  sortable
+                 */
+                set: function(sortable) {
+                    var order = sortable.toArray();
+                    localStorage.setItem(sortable.options.group.name, order.join("|"));
+                },
+            },
+        });
     </script>
-  </body>
+</body>
+
 </html>

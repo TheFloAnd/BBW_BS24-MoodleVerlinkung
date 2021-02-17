@@ -430,8 +430,8 @@ input[value] {
 }
 
 .my-nav-pills {
+  height: 80vh;
   width: 100%;
-  overflow: unset;
   word-break: break-all;
   border: none;
   border-top-left-radius: 20px;
@@ -461,9 +461,19 @@ input[value] {
   border-top-right-radius: none;
   border-bottom-right-radius: none;
 }
+@media only screen and (max-width: 990px) {
+  .my-nav-pills {
+    overflow: auto;
+  }
+}
+@media only screen and (max-height: 500px) {
+  .my-nav-pills {
+    overflow: auto;
+  }
+}
 
 .my-scrollspy {
-  height: 40rem;
+  height: 80vh;
   overflow: scroll;
   overflow-x: hidden;
   border-radius: 0.5rem !important;
@@ -500,6 +510,9 @@ input[value] {
 
 .tab-section {
   border-radius: 0.5rem !important;
+  height: 80vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .tab-item {
