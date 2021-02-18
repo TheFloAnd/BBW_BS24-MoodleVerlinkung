@@ -294,12 +294,12 @@
                     <div class="card my-tab-card text-center justify-content-center">
                         <div class="row">
 
-
+                            <!--
                             <div class="col-3 d-block d-md-block">
                                 <nav id="tab-list" class="navbar navbar-light bg-light flex-column">
                                     <nav class="nav nav-pills my-nav-pills flex-column">
                                         <a class="nav-link" href="#tab-home">Home</a>
-                                        <a class="nav-link d-block" data-bs-toggle="collapse" href="#collapse-datenschutz" role="button">Datenschutz</a>
+                                        <a class="nav-link accordion-item" data-bs-toggle="collapse" href="#collapse-datenschutz" role="button">Datenschutz</a>
                                         <div class="nav nav-pills flex-column collapse show" id="collapse-datenschutz">
                                             <div class="collapse-body">
                                                 <a class="nav-link" href="#tab-datenschutz">Datenschutz</a>
@@ -308,7 +308,7 @@
                                                 <a class="nav-link ms-3 my-1" href="#tab-datenschutz-3">Datenschutz #3</a>
                                             </div>
                                         </div>
-                                        <a class="nav-link" data-bs-toggle="collapse" href="#collapse-policy" role="button">Rechtliche Hinweise</a>
+                                        <a class="nav-link accordion-item" data-bs-toggle="collapse" href="#collapse-policy" role="button">Rechtliche Hinweise</a>
                                         <div class="nav nav-pills flex-column collapse show" id="collapse-policy">
                                             <div class="collapse-body">
                                                 <a class="nav-link" href="#tab-policy">Rechtliche Hinweise</a>
@@ -320,14 +320,13 @@
                                     </nav>
                                 </nav>
                             </div>
-                            <!--
                             <div class="col-3 d-block d-md-block">
                                 <nav id="tab-list" class="navbar my-pill-navbar navbar-light bg-light flex-column">
                                     <nav class="nav nav-pills my-nav-pills flex-column accordion" id="accordion">
                                         <a class="nav-link" href="#tab-home">Home</a>
                                         <div class="nav-item accordion-item">
-                                            <a class="nav-link" data-bs-toggle="collapse" href="#collapse-datenschutz" aria-expanded="true" aria-controls="collapse-datenschutz" role="button">Datenschutz</a>
-                                            <div class="nav nav-pills flex-column accordion-collapse collapse show d-block" data-bs-parent="#accordion" id="collapse-datenschutz">
+                                            <a class="nav-link accordion-item" data-bs-toggle="collapse" href="#collapse-datenschutz" aria-expanded="true" aria-controls="collapse-datenschutz" role="button">Datenschutz</a>
+                                            <div class="nav nav-pills flex-column accordion-collapse collapse show" data-bs-parent="#accordion" id="collapse-datenschutz">
                                                 <div class="accordion-body">
                                                     <a class="nav-link" href="#tab-datenschutz">Datenschutz</a>
                                                     <a class="nav-link ms-3 my-1" href="#tab-datenschutz-1">Datenschutz #1</a>
@@ -337,10 +336,9 @@
                                             </div>
                                         </div>
                                         <div class="nav-item accordion-item">
-                                            <a class="nav-link" data-bs-toggle="collapse" href="#collapse-policy" role="button">Rechtliche Hinweise</a>
-                                            <div class="nav nav-pills flex-column accordion-collapse collapse show d-block" id="collapse-policy" data-bs-parent="#accordion" id="collapse-policy">
+                                            <a class="nav-link accordion-item" data-bs-toggle="collapse" href="#collapse-policy" role="button">Rechtliche Hinweise</a>
+                                            <div class="nav nav-pills flex-column accordion-collapse collapse" id="collapse-policy" data-bs-parent="#accordion" id="collapse-policy">
                                                 <div class="accordion-body">
-                                                    <a class="nav-link" href="#tab-policy">Rechtliche Hinweise</a>
                                                     <a class="nav-link ms-3 my-1" href="#tab-policy-1">Rechtliche Hinweise #1</a>
                                                     <a class="nav-link ms-3 my-1" href="#tab-policy-2">Rechtliche Hinweise #2</a>
                                                     <a class="nav-link ms-3 my-1" href="#tab-policy-3">Rechtliche Hinweise #2</a>
@@ -348,12 +346,33 @@
                                             </div>
                                         </div>
                                     </nav>
+                                    <div id="accord-test"> HAllo</div>
                                 </nav>
                             </div>
 
                             -->
+
+                            <div class="col-3">
+                                <nav id="tab-list" class="navbar navbar-light bg-light flex-column text-end">
+                                    <nav class="nav nav-pills my-nav-pills flex-column">
+                                        <a class="nav-link" href="#tab-home"><strong>Home</strong></a>
+                                        <a class="nav-link" href="#tab-datenschutz"><i><strong>Datenschutz</strong></i></a>
+                                        <div class="nav nav-pills my-second-nav-pills flex-column mb-1">
+                                            <a class="nav-link ms-5 me-3" href="#tab-datenschutz-1">Datenschutz #1</a>
+                                            <a class="nav-link ms-5 me-3" href="#tab-datenschutz-2">Datenschutz #2</a>
+                                            <a class="nav-link ms-5 me-3" href="#tab-datenschutz-3">Datenschutz #3</a>
+                                        </div>
+                                        <a class="nav-link" href="#tab-policy"><strong>Rechtliche Hinweise</strong></a>
+                                        <div class="nav nav-pills my-second-nav-pills flex-column text-end">
+                                            <a class="nav-link ms-5 me-3" href="#tab-policy-1">Rechtliche Hinweise #1</a>
+                                            <a class="nav-link ms-5 me-3" href="#tab-policy-2">Rechtliche Hinweise #2</a>
+                                            <a class="nav-link ms-5 me-3" href="#tab-policy-3">Rechtliche Hinweise #2</a>
+                                        </div>
+                                    </nav>
+                                </nav>
+                            </div>
                             <div class="col-9">
-                                <div data-bs-spy="scroll" data-bs-target="#tab-list" data-bs-offset="0" class="scrollspy my-scrollspy" tabindex="0">
+                                <div data-bs-spy="scroll" data-bs-target="#tab-list" data-bs-offset="10" class="scrollspy my-scrollspy" id="my-scrollspy" tabindex="0">
                                     <div id="tab-home" class="tab-item">
                                         <h4>Home</h4>
                                         <p>
@@ -437,11 +456,15 @@
         <div class="container"></div>
     </footer>
     <!-- Custom JS -->
-    <script src="src/js/custom.prod.js "></script>
+    <script type="text/javascript" src="src/js/custom.prod.js "></script>
 
 
     <!-- Bootstrap JS -->
-    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/src/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Drag&Drop -->
+    <script type="text/javascript" src="/src/js/Sortable.min.js"></script>
 
     <script>
         var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
@@ -450,16 +473,6 @@
                 .refresh()
         })
     </script>
-    <!--
-    <script>
-        var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
-        var collapseList = collapseElementList.map(function(collapseEl) {
-            return new bootstrap.Collapse(collapseEl)
-        })
-    </script>
--->
-    <!-- Drag&Drop -->
-    <script src="src/js/Sortable.min.js"></script>
     <script>
         var el = document.getElementById("sort");
         var sortable = Sortable.create(el, {

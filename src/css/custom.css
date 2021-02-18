@@ -430,24 +430,23 @@ input[value] {
 }
 
 .my-nav-pills {
-  overflow-y: scroll;
   height: 80vh;
   width: 100%;
   max-width: 100%;
+  overflow: none;
   word-break: break-all;
   border: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  border-top-right-radius: none;
-  border-bottom-right-radius: none;
 }
 .my-nav-pills .nav-link:hover {
-  outline: 2px #aaaaaa;
-  background: lightgray;
+  outline: none;
+  border: none;
+  text-decoration: underline solid #000 2px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  border-top-right-radius: none;
-  border-bottom-right-radius: none;
+  -moz-outline-radius-bottomleft: 20px;
+  -moz-outline-radius-topleft: 20px;
 }
 .my-nav-pills .nav-link:focus, .my-nav-pills .nav-link:active {
   border-top-left-radius: 20px;
@@ -458,6 +457,26 @@ input[value] {
 .my-nav-pills .nav-link.active, .my-nav-pills .show > .nav-link {
   color: #fff;
   background-color: #aaaaaa;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: none;
+  border-bottom-right-radius: none;
+}
+
+.my-second-nav-pills:hover {
+  outline: 2px lightgray !important;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.my-second-nav-pills:focus, .my-second-nav-pills:active {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  outline: 2px rgba(255, 255, 255, 0.75) !important;
+  background: lightgray;
+}
+.my-second-nav-pills .nav-link.active, .my-second-nav-pills .show > .nav-link {
+  color: black;
+  background-color: lightgray !important;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   border-top-right-radius: none;
@@ -504,9 +523,12 @@ input[value] {
   border-radius: 0.5rem !important;
 }
 
+.col-3 > .navbar {
+  border-radius: 0.5rem !important;
+}
+
 .tab-section > * {
   height: 80vh;
-  max-height: 80vh;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }

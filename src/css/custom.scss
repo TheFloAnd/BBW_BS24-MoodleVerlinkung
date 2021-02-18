@@ -453,24 +453,23 @@ input[value] {
 }
 
 .my-nav-pills {
-    overflow-y: scroll;
     height: 80vh;
     width: 100%;
     max-width: 100%;
+    overflow: none;
     word-break: break-all;
     border: none;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border-top-right-radius: none;
-    border-bottom-right-radius: none;
     & .nav-link {
         &:hover {
-            outline: 2px $color_default;
-            background: lightgray;
+            outline: none;
+            border: none;
+            text-decoration: underline solid #000 2px;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            border-top-right-radius: none;
-            border-bottom-right-radius: none;
+            -moz-outline-radius-bottomleft: 20px;
+            -moz-outline-radius-topleft: 20px;
         }
         &:focus,
         &:active {
@@ -484,6 +483,30 @@ input[value] {
     & .show>.nav-link {
         color: #fff;
         background-color: $color_default;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: none;
+        border-bottom-right-radius: none;
+    }
+}
+
+.my-second-nav-pills {
+    &:hover {
+        outline: 2px lightgray !important;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    &:focus,
+    &:active {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        outline: 2px $color_default-rgba !important;
+        background: lightgray;
+    }
+    & .nav-link.active,
+    & .show>.nav-link {
+        color: rgb(0, 0, 0);
+        background-color: lightgray !important;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         border-top-right-radius: none;
@@ -533,9 +556,12 @@ input[value] {
     border-radius: $border_radius;
 }
 
+.col-3>.navbar {
+    border-radius: $border_radius;
+}
+
 .tab-section>* {
     height: 80vh;
-    max-height: 80vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
