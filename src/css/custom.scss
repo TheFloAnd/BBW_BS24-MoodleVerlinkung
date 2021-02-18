@@ -451,7 +451,6 @@ input[value] {
 .my-nav-pills {
     height: 80vh;
     width: 100%;
-    max-width: 100%;
     overflow: none;
     word-break: break-all;
     border: none;
@@ -492,12 +491,10 @@ input[value] {
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
-    &:focus,
-    &:active {
+    &:focus {
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
         outline: 2px $color_default-rgba !important;
-        background: lightgray;
     }
     & .nav-link.active,
     & .show>.nav-link {

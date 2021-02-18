@@ -429,7 +429,6 @@ input[value] {
 .my-nav-pills {
   height: 80vh;
   width: 100%;
-  max-width: 100%;
   overflow: none;
   word-break: break-all;
   border: none;
@@ -465,11 +464,10 @@ input[value] {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-.my-second-nav-pills:focus, .my-second-nav-pills:active {
+.my-second-nav-pills:focus {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   outline: 2px rgba(255, 255, 255, 0.75) !important;
-  background: lightgray;
 }
 .my-second-nav-pills .nav-link.active, .my-second-nav-pills .show > .nav-link {
   color: black;
