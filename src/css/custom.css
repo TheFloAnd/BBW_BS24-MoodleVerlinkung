@@ -1,6 +1,3 @@
-/* 
-
-*/
 html {
   scroll-behavior: smooth;
   min-height: min-content !important;
@@ -192,7 +189,7 @@ body {
 }
 @media only screen and (max-width: 990px) {
   .content-main {
-    animation: slideDown 2s 0s ease forwards;
+    animation: slideDown 1.5s 0s ease forwards;
   }
 }
 
@@ -552,7 +549,7 @@ input[value] {
   right: 0 !important;
   min-width: 100vh !important;
   background: rgba(255, 255, 255, 0.75);
-  min-height: 10rem;
+  height: 15rem;
 }
 
 .info-banner > .info-banner-close {
@@ -562,9 +559,14 @@ input[value] {
   right: 0;
   padding: 10px;
 }
-
-.info-banner > .info-banner-txt {
-  padding: 50px;
+.info-banner.info-banner-body {
   text-align: center;
+}
+.info-banner.info-banner-body > .info-banner-txt {
+  text-align: center;
+  padding: 50px;
   font-size: 120%;
+}
+.info-banner.info-banner-body > .info-banner-txt > .accept-cookie {
+  padding: 5px;
 }

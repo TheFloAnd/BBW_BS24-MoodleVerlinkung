@@ -1,7 +1,3 @@
-/* 
-
-*/
-
 $color_bbw: #e30613 !global;
 $color_bs24: #85b004 !global;
 $color_default: #aaaaaa !global;
@@ -214,7 +210,7 @@ body {
 .content-main {
     max-height: $max;
     @media only screen and (max-width: 990px) {
-        animation: slideDown 2s 0s ease forwards;
+        animation: slideDown 1.5s 0s ease forwards;
     }
 }
 
@@ -585,19 +581,26 @@ input[value] {
     right: 0 !important;
     min-width: 100vh !important;
     background: $color_default-rgba;
-    min-height: 10rem;
+    height: 15rem;
 }
 
-.info-banner>.info-banner-close {
-    z-index: 1000;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-}
-
-.info-banner>.info-banner-txt {
-    padding: 50px;
-    text-align: center;
-    font-size: 120%;
+.info-banner {
+    &>.info-banner-close {
+        z-index: 1000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px;
+    }
+    &.info-banner-body {
+        text-align: center;
+        &>.info-banner-txt {
+            text-align: center;
+            padding: 50px;
+            font-size: 120%;
+            &>.accept-cookie {
+                padding: 5px;
+            }
+        }
+    }
 }

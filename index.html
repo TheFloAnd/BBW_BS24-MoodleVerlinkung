@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="#" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="src/css/bootstrap.min.css" />
@@ -99,7 +100,7 @@
                             <div class="link-box">
                                 <div>
                                     <header class="d-flex my-header justify-content-center">
-                                        <img src="src/img/bs24-logo(FullHD).jpeg" class="header-logo img-fluid" />
+                                        <img src="src/img/bs24-logo.jpeg" class="header-logo img-fluid" />
                                     </header>
                                 </div>
                             </div>
@@ -135,16 +136,21 @@
         </main>
 
 
-        <footer class="info-banner d-flex justify-content-center d-none" id="info-banner">
+        <footer class="info-banner d-none" id="info-banner">
             <button type="button" class="btn-close info-banner-close" data-bs-dismiss="info-banner" aria-label="Close"></button>
-            <div class="info-banner-txt container">
-                <div class="info-banner-head h3"> INFO!!!</div>
-                <div class="info-banner-body">
-                    <p class="txt">Das ist eine warnung!!</p>
+            <div class="info-banner-body container">
+                <div class="info-banner-txt">
+                    <div class="info-banner-head h3"> INFO!!!</div>
+                    <div class="info-banner-body">
+                        <p class="txt">Das ist eine warnung!!</p>
+                    </div>
+                </div>
+                <div class="accept-cookie d-flex justify-content-end">
+                    <button type="button" class="btn btn-success btn-lg close justify-content-end" data-dismiss="info-banner"> Accept</button>
                 </div>
             </div>
-
         </footer>
+
         <footer class="footer d-flex m-auto p-auto justify-content-center">
             <div class="container link-container">
                 <span>
@@ -153,16 +159,6 @@
             </div>
         </footer>
         </div>
-
-        <!-- Custom JS -->
-
-        <script src="src/js/custom.prod.js"></script>
-
-        <!-- Bootstrap JS -->
-        <script src="src/js/bootstrap.bundle.min.js"></script>
-
-        <!-- Drag&Drop -->
-        <script src="src/js/Sortable.min.js"></script>
         <script>
             var el = document.getElementById("sort");
             var sortable = Sortable.create(el, {
@@ -192,6 +188,15 @@
             });
         </script>
 
+        <!-- Custom JS -->
+
+        <script src="src/js/custom.dev.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="src/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Drag&Drop -->
+        <script src="src/js/Sortable.min.js"></script>
 </body>
 
 </html>
