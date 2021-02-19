@@ -11,6 +11,10 @@ Links to Moodle for BBW Hamburg and BS24
 - Preview (Image or Iframe)
 - ~~Animation~~
 
+#
+
+![Preview](/git/Screenshot_2021-02-19%20BBW-BS24%20Verlinkung-min.jpeg)
+
 # File_Structure
 
     │─ .gitignore
