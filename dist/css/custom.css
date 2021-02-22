@@ -9927,10 +9927,6 @@ a:visited, a:active {
   color: #000000;
 }
 
-article {
-  width: 100%;
-}
-
 .my-card-header {
   cursor: default;
   background-color: rgba(255, 255, 255, 0.75);
@@ -9941,12 +9937,19 @@ article {
 }
 
 .my-card {
-  position: absolute;
-  top: 0;
   background-color: rgba(255, 255, 255, 0.25) !important;
-  min-width: 25rem;
-  margin: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 35rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   border-radius: 0.5rem !important;
+  position: static;
 }
 
 .my-navbar {
@@ -9976,8 +9979,8 @@ article {
 
 .link-bbw:focus {
   outline: 2px #e30613;
-  -webkit-box-shadow: 0px 0px 12px 7px #e30613;
-          box-shadow: 0px 0px 12px 7px #e30613;
+  -webkit-box-shadow: 0px 0px 10px 5px #e30613;
+          box-shadow: 0px 0px 10px 5px #e30613;
   background: lightgray;
 }
 
@@ -9993,8 +9996,8 @@ article {
 
 .link-bs24:focus {
   outline: 2px #85b004;
-  -webkit-box-shadow: 0px 0px 12px 7px #85b004;
-          box-shadow: 0px 0px 12px 7px #85b004;
+  -webkit-box-shadow: 0px 0px 10px 5px #85b004;
+          box-shadow: 0px 0px 10px 5px #85b004;
   background: lightgray;
 }
 
@@ -10010,8 +10013,8 @@ article {
 
 .link-default:focus {
   outline: 2px #aaaaaa;
-  -webkit-box-shadow: 0px 0px 12px 7px #aaaaaa;
-          box-shadow: 0px 0px 12px 7px #aaaaaa;
+  -webkit-box-shadow: 0px 0px 10px 5px #aaaaaa;
+          box-shadow: 0px 0px 10px 5px #aaaaaa;
   background: lightgray;
 }
 
@@ -10027,8 +10030,8 @@ article {
 
 .link-bootstrap:focus {
   outline: 2px #7952b3;
-  -webkit-box-shadow: 0px 0px 12px 7px #7952b3;
-          box-shadow: 0px 0px 12px 7px #7952b3;
+  -webkit-box-shadow: 0px 0px 10px 5px #7952b3;
+          box-shadow: 0px 0px 10px 5px #7952b3;
   background: lightgray;
 }
 
@@ -10162,7 +10165,6 @@ article {
 }
 
 input[value] {
-  z-index: 9999;
   font-size: 110%;
 }
 
@@ -10270,7 +10272,6 @@ input[value] {
 }
 
 .tab-section {
-  margin-top: 100vh;
   border-radius: 0.5rem !important;
 }
 
