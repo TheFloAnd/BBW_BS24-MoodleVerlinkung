@@ -171,6 +171,12 @@
         var sortable = Sortable.create(el, {
             handle: ".move",
             animation: 200,
+            forceFallback: false,
+            scroll: true,
+            scrollSensitivity: 30,
+            scrollSpeed: 15,
+            bubbleScroll: true,
+            scrollFn: function(offsetX, offsetY, originalEvent, touchEvt, hoverTargetEl) {},
             group: "sort-position",
             store: {
                 /**

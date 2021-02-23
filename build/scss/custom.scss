@@ -19,6 +19,7 @@
 @import "../../node_modules/bootstrap/scss/card";
 @import "../../node_modules/bootstrap/scss/list-group";
 @import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/accordion";
 // Helpers
 @import "../../node_modules/bootstrap/scss/helpers";
 // Utilities
@@ -179,7 +180,7 @@ body {
     border-top: 1px solid $color_default;
     border-radius: $border_radius;
     width: min-content;
-    font-size: 1.5rem;
+    //font-size: 1.5rem;
     &>.link-imp {
         margin: 5px;
     }
@@ -449,7 +450,8 @@ input[value] {
 .my-nav-pills {
     height: 80vh;
     width: 100%;
-    overflow: none;
+    overflow: scroll;
+    overflow-y: hidden;
     word-break: break-all;
     border: none;
     border-top-left-radius: 20px;
