@@ -13,7 +13,7 @@ Links to Moodle for BBW Hamburg and BS24
 
 #
 
-![Preview](/git/Screenshot_2021-02-19%20BBW-BS24%20Verlinkung-min.jpeg)
+![Preview](/Screenshot_2021-02-19%20BBW-BS24%20Verlinkung-min.jpeg)
 
 # File_Structure
 
