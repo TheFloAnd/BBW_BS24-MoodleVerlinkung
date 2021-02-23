@@ -30,9 +30,9 @@ $color_default: #aaaaaa;
 $color_default-rgba: rgba(255, 255, 255, 0.75);
 $color_bootstrap: #7952b3;
 $input_shadow: 0px 0px 10px 5px;
-$input_shadow-link: 0px 0px 10px 5px;
-$card_shadow-right: 5px 5px 14px 3px;
-$card_shadow-left: -5px 5px 14px 3px;
+$input_shadow-link: 0px 0px 10px 7px;
+$card_shadow-right: 5px 5px 10px 5px;
+$card_shadow-left: -5px 5px 10px 5px;
 $border_width: 3px;
 $border_width-hover: 3px;
 $border_radius: 0.5rem !important;
@@ -150,17 +150,10 @@ body {
 .icon {
     cursor: pointer;
     position: absolute;
-    padding: 0.5rem;
+    padding: 0.75rem;
     opacity: 1;
     right: 0;
-}
-
-.icon-left {
-    cursor: pointer;
-    position: absolute;
-    padding: 0.5rem;
-    opacity: 1;
-    right: 0;
+    background: none !important;
 }
 
 .bi {
@@ -264,22 +257,28 @@ a {
 }
 
 // Impressum
-.my-card-header {
+.article-card {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.impressum-card-header {
     cursor: default;
     background-color: $color_default-rgba;
     margin-right: 0px;
+    padding-right: 50px;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: $border_radius;
 }
 
-.my-card {
+.impressum-card {
     background-color: rgba(255, 255, 255, 0.25) !important;
     //min-width: 25rem;
     height: fit-content;
-    min-height: 35rem;
     width: fit-content;
     min-width: fit-content;
+    max-width: 100%;
     border-radius: $border_radius;
     position: static;
     //position: absolute;
@@ -300,7 +299,7 @@ a {
     }
 }
 
-.my-card-logo {
+.impressum-card-logo {
     width: 10rem;
 }
 
@@ -386,7 +385,6 @@ a {
     }
 }
 
-.imp-link,
 .link {
     transition: all 0.6s ease;
     &-none {
