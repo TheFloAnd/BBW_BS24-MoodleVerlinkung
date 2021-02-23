@@ -150,7 +150,7 @@ body {
 .icon {
     cursor: pointer;
     position: absolute;
-    padding: 0.75rem;
+    padding: 0.25rem;
     opacity: 1;
     right: 0;
     background: none !important;
@@ -158,6 +158,11 @@ body {
 
 .bi {
     color: #000000;
+    &>* {
+        justify-self: center;
+        justify-content: center;
+        align-self: center;
+    }
 }
 
 .footer {
@@ -274,15 +279,10 @@ a {
 
 .impressum-card {
     background-color: rgba(255, 255, 255, 0.25) !important;
-    //min-width: 25rem;
+    min-width: 25rem;
     height: fit-content;
-    width: fit-content;
-    min-width: fit-content;
-    max-width: 100%;
+    //max-width: 100%;
     border-radius: $border_radius;
-    position: static;
-    //position: absolute;
-    //top: 0;
 }
 
 .my-navbar {

@@ -12,7 +12,7 @@ function load_page(page) {
         move_icon[i].classList.remove("d-none");
     }
 
-    var icon_space = document.getElementsByClassName("my-card-header");
+    var icon_space = document.getElementsByClassName("impressum-card-header");
     var j;
     for (j = 0; j < icon_space.length; j++) {
         icon_space[j].style.marginRight = "50px";

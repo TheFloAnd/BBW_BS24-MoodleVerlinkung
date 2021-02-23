@@ -9782,7 +9782,7 @@ body {
 .icon {
   cursor: pointer;
   position: absolute;
-  padding: 0.75rem;
+  padding: 0.25rem;
   opacity: 1;
   right: 0;
   background: none !important;
@@ -9790,6 +9790,17 @@ body {
 
 .bi {
   color: #000000;
+}
+
+.bi > * {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .footer {
@@ -9937,18 +9948,11 @@ a:visited, a:active {
 
 .impressum-card {
   background-color: rgba(255, 255, 255, 0.25) !important;
+  min-width: 25rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  max-width: 100%;
   border-radius: 0.5rem !important;
-  position: static;
 }
 
 .my-navbar {
