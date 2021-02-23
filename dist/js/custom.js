@@ -5,7 +5,6 @@ function load_page(page) {
     } else {
         random_background();
     }
-    //swap_order();
     var move_icon = document.getElementsByClassName("move-svg");
     var i;
     for (i = 0; i < move_icon.length; i++) {
@@ -19,24 +18,7 @@ function load_page(page) {
         icon_space[j].style.marginRight = "50px";
     }
 }
-/*
-function get_img() {
-    const fs = require("fs");
 
-    var img = [""];
-
-    fs.readdir(testFolder, function(err, files) {
-        if (err) {
-            return console.log("Unable to scan directory: " + err);
-        }
-        files.forEach(function(file) {
-            img.push("url('../img/background/bg-" + file + ".jpg')");
-        });
-    });
-    console.log(img);
-    return img;
-}
-*/
 function random_background() {
     var img = [
         "url('/dist/img/background/bg-1.jpg')",
