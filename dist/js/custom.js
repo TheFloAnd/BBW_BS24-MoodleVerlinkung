@@ -21,36 +21,37 @@ function load_page(page) {
 
 function random_background() {
     var img = [
-        "url('/dist/img/background/bg-1.jpg')",
-        "url('/dist/img/background/bg-2.jpg')",
-        "url('/dist/img/background/bg-3.jpg')",
-        "url('/dist/img/background/bg-4.jpg')",
-        "url('/dist/img/background/bg-5.jpg')",
-        "url('/dist/img/background/bg-6.jpg')",
-        "url('/dist/img/background/bg-7.jpg')",
-        "url('/dist/img/background/bg-8.jpg')",
-        "url('/dist/img/background/bg-9.jpg')",
-        "url('/dist/img/background/bg-10.jpg')",
+        "bg-1.jpg",
+        "bg-2.jpg",
+        "bg-3.jpg",
+        "bg-4.jpg",
+        "bg-5.jpg",
+        "bg-6.jpg",
+        "bg-7.jpg",
+        "bg-8.jpg",
+        "bg-9.jpg",
+        "bg-10.jpg",
     ];
 
     var random = Math.floor(Math.random() * img.length);
-    document.body.style.backgroundImage = img[random];
+    document.body.style.backgroundImage =
+        "url('/dist/img/background/" + img[random] + "')";
 }
 
 function random_preview() {
-    var bbw = ["/dist/img/preview/bbw/bbw.jpeg"];
+    var bbw = ["bbw.jpeg"];
     var bs24 = [
-        "/dist/img/preview/bs24/bs24-1.jpeg",
-        "/dist/img/preview/bs24/bs24-2.jpeg",
-        "/dist/img/preview/bs24/bs24-3.jpeg",
-        "/dist/img/preview/bs24/bs24-4.jpeg",
-        "/dist/img/preview/bs24/bs24-5.jpeg",
+        "bs24-1.jpeg",
+        "bs24-2.jpeg",
+        "bs24-3.jpeg",
+        "bs24-4.jpeg",
+        "bs24-5.jpeg",
     ];
     var img_bbw = document.getElementById("preview-img-bbw");
     var img_bs24 = document.getElementById("preview-img-bs24");
 
     var random_bbw = Math.floor(Math.random() * bbw.length);
     var random_bs24 = Math.floor(Math.random() * bs24.length);
-    img_bbw.src = bbw[random_bbw];
-    img_bs24.src = bs24[random_bs24];
+    img_bbw.src = "/dist/img/preview/bbw/" + bbw[random_bbw];
+    img_bs24.src = "/dist/img/preview/bs24/" + bs24[random_bs24];
 }
