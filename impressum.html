@@ -6,11 +6,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="#">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="src/css/bootstrap.min.css" />
 
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+-->
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="src/css/custom.min.css" />
+    <link rel="stylesheet" href="dist/css/custom.min.css" />
 
     <title>BBW-BS24 Verlinkung</title>
 </head>
@@ -22,489 +23,548 @@
         <a href="index.html" class="link-home"> Zurück </a>
     </div>
     <main class="container-fluid">
-        <!-- Row -->
-        <section class="flex-wrap justify-content-evenly" aria-dropeffect="move">
-            <div class="row my-row d-flex g-2 info-cards sortable" id="sort">
-                <!-- BBW card -->
-                <div class="col-md imp-col d-flex justify-content-center" draggable="true" role="option" aria-grabbed="false" id="col-bbw">
-
-                    <div class="my-space-col"></div>
-                    <div class="card my-card border-bbw m-3" id="card-bbw">
-                        <div class="icons d-flex justify-content-end move-svg d-none">
-                            <div class="icon move">
-                                <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
+        <article class="d-flex flex-wrap g-2 justify-content-evenly sortable article-card" id="sort" aria-dropeffect="move">
+            <!-- BBW card -->
+            <section class="p-2 d-flex justify-content-center" id="col-bbw">
+                <div class="card impressum-card border-bbw m-3" id="card-bbw" draggable="true" role="option" aria-grabbed="false">
+                    <div class="icons justify-content-end move-svg d-none">
+                        <div class="icon move">
+                            <svg xmlns="dist/img/svg/arrows-move.svg" width="40" height="40" fill="currentColor" class="bi bi-arrows-move" viewBox="-2 -2 25 25">
                 <path
                   fill-rule="evenodd"
                   d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
                 />
               </svg>
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="card-header my-card-header h3">
-                            Berufsbildungswerk Hamburg GmbH
-                        </div>
+                    <div class="card-header impressum-card-header h3">
+                        Berufsbildungswerk Hamburg GmbH
+                    </div>
 
-                        <div class="card-body d-flex">
-                            <div class="list-group justify-content-evenly
+                    <div class="card-body d-flex">
+                        <div class="list-group justify-content-evenly
                             my-list-group list-group-flush">
-                                <!--
+                            <!--
                         <li class="list-group-item my-list-group-item justify-content-center">
-                            <img src="src/img/bbw-logo.png" class="rounded card-logo my-card-logo mx-auto d-block" alt="..."></img>
+                            <img src="dist/img/bbw-logo.png" class="rounded card-logo impressum-card-logo mx-auto d-block" alt="..."></img>
                         </li>
                     -->
-                                <fieldset readonly disabled draggable="false">
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="row g-2">
-                                            <div class="input-group d-flex">
-                                                <a href="mailto:christine.schaerffer@pepko-hamburg.de" class="col-md flex-grow-1 my-1 my-md-0 me-0 me-md-1 link-bbw">
-                                                    <div class="form-floating my-form-float">
-                                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="Christine Schaerffer" aria-label="default input" draggable="false" />
-                                                        <label class="my-label">Geschäftsführung</label>
-                                                    </div>
-                                                </a>
-                                                <a href="mailto:samuel.breisacher@cjd.de" class="col-md flex-grow-1 my-1 my-md-0 ms-0 ms-md-1 link-bbw">
-                                                    <div class="form-floating my-form-float">
-                                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="Samuel Breisacher" aria-label="default input" />
-                                                        <label class="my-label">Geschäftsführung</label>
-                                                    </div>
-                                                </a>
+                            <fieldset readonly disabled draggable="false">
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group">
+                                        <a href="mailto:christine.schaerffer@pepko-hamburg.de" class="flex-grow-1 my-1 my-md-0 me-0 me-sm-1 link-bbw">
+                                            <div class="form-floating my-form-float">
+                                                <input class="form-control my-form-control link-bbw" type="text" value="Christine Schaerffer" aria-label="default input" draggable="false" />
+                                                <label class="my-label">Geschäftsführung</label>
                                             </div>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="input-group">
-                                            <a href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/" target="_blank" class="flex-grow-1 link-bbw">
-                                                <div class="form-floating my-form-float flex-grow-1">
-                                                    <input class="form-control my-form-control imp-link-bbw" type="text" value="Reichsbahnstraße 53+55, 22525 Hamburg" />
-                                                    <label class="my-label">Straße & PLZ</label>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="row g-2">
-                                            <div class="input-group d-flex">
-                                                <a href="tel:+4904057230" class="col-md flex-grow-1 my-1 my-md-0 me-0 me-md-1 link-bbw">
-                                                    <div class="form-floating my-form-float">
-                                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="040 5723-0" />
-                                                        <label class="my-label">Telefon</label>
-                                                    </div>
-                                                </a>
-                                                <a href="fax:+490405723102" class="col-md flex-grow-1 my-1 my-md-0 ms-0 ms-md-1 link-bbw">
-                                                    <div class="form-floating my-form-float">
-                                                        <input class="form-control my-form-control imp-link-bbw" type="text" value="040 5723-102" />
-                                                        <label class="my-label">Fax</label>
-                                                    </div>
-                                                </a>
+                                        </a>
+                                        <a href="mailto:samuel.breisacher@cjd.de" class="flex-grow-1 my-1 my-md-0 ms-0 ms-sm-1 link-bbw">
+                                            <div class="form-floating my-form-float">
+                                                <input class="form-control my-form-control link-bbw" type="text" value="Samuel Breisacher" aria-label="default input" />
+                                                <label class="my-label">Geschäftsführung</label>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                </fieldset>
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="input-group">
-                                            <a href="mailto:info@bbw-hamburg.de" class="flex-grow-1 link-bbw">
-                                                <div class="form-floating my-form-float" onclick="">
-                                                    <input class="form-control my-form-control imp-link-bbw" type="text" value="info@bbw-hamburg.de" />
-                                                    <label class="my-label">E-Mail Adresse</label>
-                                                </div>
-                                            </a>
-                                        </div>
+                                </div>
+                            </fieldset>
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group">
+                                        <a href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/" target="_blank" class="flex-grow-1 link-bbw">
+                                            <div class="form-floating my-form-float flex-grow-1">
+                                                <input class="form-control my-form-control link-bbw" type="text" value="Reichsbahnstraße 53+55, 22525 Hamburg" />
+                                                <label class="my-label">Straße & PLZ</label>
+                                            </div>
+                                        </a>
                                     </div>
-                                </fieldset>
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="input-group">
-                                            <a href="http://www.bbw-hamburg.de/" target="_blank" class="flex-grow-1 link-bbw">
-                                                <div class="form-floating my-form-float">
-                                                    <input class="form-control my-form-control imp-link-bbw" type="text" value="www.bbw-hamburg.de" />
-                                                    <label class="my-label">Website</label>
-                                                </div>
-                                            </a>
-                                        </div>
+                                </div>
+                            </fieldset>
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group d-flex">
+                                        <a href="tel:+4904057230" class="flex-grow-1 my-1 my-md-0 me-0 me-sm-1 link-bbw">
+                                            <div class="form-floating my-form-float">
+                                                <input class="form-control my-form-control link-bbw" type="text" value="040 5723-0" />
+                                                <label class="my-label">Telefon</label>
+                                            </div>
+                                        </a>
+                                        <a href="fax:+490405723102" class="flex-grow-1 my-1 my-md-0 ms-0 ms-sm-1 link-bbw">
+                                            <div class="form-floating my-form-float">
+                                                <input class="form-control my-form-control link-bbw" type="text" value="040 5723-102" />
+                                                <label class="my-label">Fax</label>
+                                            </div>
+                                        </a>
                                     </div>
-                                </fieldset>
-                            </div>
+                                </div>
+                            </fieldset>
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group">
+                                        <a href="mailto:info@bbw-hamburg.de" class="flex-grow-1 link-bbw">
+                                            <div class="form-floating my-form-float" onclick="">
+                                                <input class="form-control my-form-control link-bbw" type="text" value="info@bbw-hamburg.de" />
+                                                <label class="my-label">E-Mail Adresse</label>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group">
+                                        <a href="http://www.bbw-hamburg.de/" target="_blank" class="flex-grow-1 link-bbw">
+                                            <div class="form-floating my-form-float">
+                                                <input class="form-control my-form-control link-bbw" type="text" value="www.bbw-hamburg.de" />
+                                                <label class="my-label">Website</label>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
                 </div>
-                <!-- BS24 Card -->
+            </section>
 
-                <div class="col-md imp-col  d-flex justify-content-center" draggable="true" role="option" aria-grabbed="false" id="col-bs24">
+            <!-- BS24 Card -->
 
-                    <div class="my-space-col"></div>
-                    <div class="card my-card border-bs24 m-3" id="card-bs24">
-                        <div class="icons d-flex justify-content-end move-svg d-none">
-                            <div class="icon move">
-                                <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
+            <section class="p-2 d-flex justify-content-center" id="col-bs24">
+                <div class="card impressum-card border-bs24 m-3" id="card-bs24" draggable="true" role="option" aria-grabbed="false">
+                    <div class="icons d-flex justify-content-end move-svg d-none">
+                        <div class="icon move">
+                            <svg xmlns="dist/img/svg/arrows-move.svg" width="40" height="40" fill="currentColor" class="bi bi-arrows-move" viewBox="-2 -2 25 25">
                 <path
                   fill-rule="evenodd"
                   d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
                 />
               </svg>
-                            </div>
                         </div>
-                        <div class="card-header my-card-header h3">
-                            Berufliche Schule Eidelstedt BS24
-                        </div>
-                        <div class="card-body d-flex">
-                            <div class="list-group my-list-group justify-content-evenly list-group-flush">
-                                <!--
+                    </div>
+                    <div class="card-header impressum-card-header h3">
+                        Berufliche Schule Eidelstedt BS24
+                    </div>
+                    <div class="card-body d-flex">
+                        <div class="list-group my-list-group justify-content-evenly list-group-flush">
+                            <!--
                         <li class="list-group-item my-list-group-item justify-content-center">
-                            <img src="src/img/bs24-logo.jpg" class="rounded card-logo my-card-logo mx-auto d-block" alt="..."></img>
+                            <img src="dist/img/bs24-logo.jpg" class="rounded card-logo impressum-card-logo mx-auto d-block" alt="..."></img>
                         </li>
                     -->
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="input-group d-flex">
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group d-flex">
+                                        <div class="form-floating my-form-float flex-grow-1">
+                                            <input class="form-control my-form-control link-none" type="text" value="Ina Kyborg (Schulleiterin)" aria-label="default input" />
+                                            <label class="my-label">Verantwortliche BS24</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group">
+                                        <a href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/" target="_blank" class="flex-grow-1 link-bs24">
                                             <div class="form-floating my-form-float flex-grow-1">
-                                                <input class="form-control my-form-control imp-link-none" type="text" value="Ina Kyborg (Schulleiterin)" aria-label="default input" />
-                                                <label class="my-label">Verantwortliche BS24</label>
+                                                <input class="form-control my-form-control link-bs24" type="text" value="Reichsbahnstraße 53+55, 22525 Hamburg" />
+                                                <label class="my-label">Straße & PLZ</label>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                </fieldset>
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="input-group">
-                                            <a href="https://www.google.de/maps/place/Reichsbahnstra%C3%9Fe+53,+22525+Hamburg/" target="_blank" class="flex-grow-1 link-bs24">
-                                                <div class="form-floating my-form-float flex-grow-1">
-                                                    <input class="form-control my-form-control imp-link-bs24" type="text" value="Reichsbahnstraße 53+55, 22525 Hamburg" />
-                                                    <label class="my-label">Straße & PLZ</label>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="row g-2">
-                                            <div class="input-group d-flex">
-                                                <a href="tel:+490405723125" class="col-md flex-grow-1 my-1 my-md-0 me-0 me-md-1 link-bs24">
-                                                    <div class="form-floating my-form-float">
-                                                        <input class="form-control my-form-control imp-link-bs24" type="text" value="040 57 23 – 125" />
-                                                        <label class="my-label">Telefon</label>
-                                                    </div>
-                                                </a>
-                                                <a href="fax:+490405723370" class="col-md flex-grow-1 my-1 my-md-0 ms-0 ms-md-1 link-bs24">
-                                                    <div class="form-floating my-form-float">
-                                                        <input class="form-control my-form-control imp-link-bs24" type="text" value="040 57 23-370" />
-                                                        <label class="my-label">Fax</label>
-                                                    </div>
-                                                </a>
+                                </div>
+                            </fieldset>
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group d-flex">
+                                        <a href="tel:+490405723125" class="flex-grow-1 my-1 my-md-0 me-0 me-sm-1 link-bs24">
+                                            <div class="form-floating my-form-float">
+                                                <input class="form-control my-form-control link-bs24" type="text" value="040 57 23 – 125" />
+                                                <label class="my-label">Telefon</label>
                                             </div>
-                                        </div>
+                                        </a>
+                                        <a href="fax:+490405723370" class="flex-grow-1 my-1 my-md-0 ms-0 ms-sm-1 link-bs24">
+                                            <div class="form-floating my-form-float">
+                                                <input class="form-control my-form-control link-bs24" type="text" value="040 57 23-370" />
+                                                <label class="my-label">Fax</label>
+                                            </div>
+                                        </a>
                                     </div>
-                                </fieldset>
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="input-group">
-                                            <a href="mailto:bs24@hibb.hamburg.de" class="flex-grow-1 link-bs24">
-                                                <div class="form-floating my-form-float" onclick="">
-                                                    <input class="form-control my-form-control imp-link-bs24" type="text" value="bs24@hibb.hamburg.de" />
-                                                    <label class="my-label">E-Mail Adresse</label>
-                                                </div>
-                                            </a>
-                                        </div>
+                                </div>
+                            </fieldset>
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group">
+                                        <a href="mailto:bs24@hibb.hamburg.de" class="flex-grow-1 link-bs24">
+                                            <div class="form-floating my-form-float" onclick="">
+                                                <input class="form-control my-form-control link-bs24" type="text" value="bs24@hibb.hamburg.de" />
+                                                <label class="my-label">E-Mail Adresse</label>
+                                            </div>
+                                        </a>
                                     </div>
-                                </fieldset>
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="input-group">
-                                            <a href="https://bs24.hamburg.de/" target="_blank" class="flex-grow-1 link-bs24">
-                                                <div class="form-floating my-form-float">
-                                                    <input class="form-control my-form-control imp-link-bs24" type="text" value="bs24.hamburg.de" />
-                                                    <label class="my-label">Website</label>
-                                                </div>
-                                            </a>
-                                        </div>
+                                </div>
+                            </fieldset>
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group">
+                                        <a href="https://bs24.hamburg.de/" target="_blank" class="flex-grow-1 link-bs24">
+                                            <div class="form-floating my-form-float">
+                                                <input class="form-control my-form-control link-bs24" type="text" value="bs24.hamburg.de" />
+                                                <label class="my-label">Website</label>
+                                            </div>
+                                        </a>
                                     </div>
-                                </fieldset>
-                            </div>
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="col-md imp-col  d-flex justify-content-center" draggable="true" role="option" aria-grabbed="false" id="col-default">
-
-                    <div class="my-space-col"></div>
-                    <div class="card my-card border-default m-3" id="card-default-1">
-                        <div class="icons d-flex justify-content-end move-svg d-none">
-                            <div class="icon move">
-                                <svg xmlns="src/img/svg/arrows-move.svg" width="30" height="30" fill="currentColor" class="bi bi-arrows-move" viewBox="0 0 20 20">
+            <section class="p-2 d-flex justify-content-center">
+                <div class="card impressum-card border-default m-3" id="card-default-1" draggable="true" role="option" aria-grabbed="false">
+                    <div class="icons d-flex justify-content-end move-svg d-none">
+                        <div class="icon move">
+                            <svg xmlns="dist/img/svg/arrows-move.svg" width="40" height="40" fill="currentColor" class="bi bi-arrows-move" viewBox="-2 -2 25 25">
                 <path
                   fill-rule="evenodd"
                   d="M7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10zM.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L1.707 7.5H5.5a.5.5 0 0 1 0 1H1.707l1.147 1.146a.5.5 0 0 1-.708.708l-2-2zM10 8a.5.5 0 0 1 .5-.5h3.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L14.293 8.5H10.5A.5.5 0 0 1 10 8z"
                 />
               </svg>
-                            </div>
                         </div>
-                        <div class="card-header my-card-header h3">Quellen</div>
-                        <div class="card-body d-flex">
-                            <div class="list-group my-list-group justify-content-evenly list-group-flush">
+                    </div>
+                    <div class="card-header impressum-card-header h3">Quellen</div>
+                    <div class="card-body d-flex">
+                        <div class="list-group my-list-group justify-content-evenly list-group-flush">
 
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="input-group d-flex">
-                                            <a href="https://unsplash.com/" target="_blank" class="flex-grow-1 link-default">
-                                                <div class="form-floating my-form-float">
-                                                    <input class="form-control my-form-control imp-link" type="text" value="Unsplash" aria-label="default input" />
-                                                    <label class="my-label">Bilder</label>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="input-group d-flex">
-                                            <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank" class="flex-grow-1 link-bootstrap">
-                                                <div class="form-floating my-form-float">
-                                                    <input class="form-control my-form-control imp-link-bootstrap" type="text" value="Bootstrap 5 Beta" aria-label="default input" />
-                                                    <label class="my-label">Framework</label>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset readonly disabled>
-                                    <div class="list-group-item my-list-group-item">
-                                        <div class="input-group d-flex">
-                                            <div class="form-floating my-form-float flex-grow-1">
-                                                <input class="form-control my-form-control" type="text" value="BBW Hamburg FISI-20" aria-label="default input" />
-                                                <label class="my-label">Geschrieben</label>
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group d-flex">
+                                        <a href="https://unsplash.com/" target="_blank" class="flex-grow-1 link-default">
+                                            <div class="form-floating my-form-float">
+                                                <input class="form-control my-form-control link" type="text" value="Unsplash" aria-label="default input" />
+                                                <label class="my-label">Bilder</label>
                                             </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group d-flex">
+                                        <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank" class="flex-grow-1 link-bootstrap">
+                                            <div class="form-floating my-form-float">
+                                                <input class="form-control my-form-control link-bootstrap" type="text" value="Bootstrap 5 Beta" aria-label="default input" />
+                                                <label class="my-label">Framework</label>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset readonly disabled>
+                                <div class="list-group-item my-list-group-item">
+                                    <div class="input-group d-flex">
+                                        <div class="form-floating my-form-float flex-grow-1">
+                                            <input class="form-control my-form-control" type="text" value="BBW Hamburg FISI-20" aria-label="default input" />
+                                            <label class="my-label">Geschrieben</label>
                                         </div>
                                     </div>
-                                </fieldset>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </section>
+        </article>
+        <article class="d-flex article-tabs">
+            <section class="container p-3 tab-section">
+                <div class="card my-tab-card">
+                    <div class="row justify-content-center">
+                        <div class="col-3 text-end">
+                            <nav id="tab-list" class="navbar navbar-light bg-light">
+                                <nav class="nav nav-pills my-nav-pills flex-column">
+                                    <a class="nav-link" href="#tab-home"><strong>Home</strong></a>
+                                    <a class="nav-link" href="#tab-datenschutz"><i><strong>Datenschutz</strong></i></a>
+                                    <div class="nav nav-pills my-second-nav-pills flex-column mb-1 d-none d-md-block">
+                                        <a class="nav-link mx-0 ms-lg-5 me-lg-3" href="#tab-datenschutz-1">Datenschutz #1</a>
+                                        <a class="nav-link mx-0 ms-lg-5 me-lg-3" href="#tab-datenschutz-2">Datenschutz #2</a>
+                                        <a class="nav-link mx-0 ms-lg-5 me-lg-3" href="#tab-datenschutz-3">Datenschutz #3</a>
+                                    </div>
+                                    <a class="nav-link" href="#tab-policy"><strong>Rechtliche Hinweise</strong></a>
+                                    <div class="nav nav-pills my-second-nav-pills flex-column text-end d-none d-md-block">
+                                        <a class="nav-link mx-0 ms-lg-5 me-lg-3" href="#tab-policy-1">Rechtliche Hinweise #1</a>
+                                        <a class="nav-link mx-0 ms-lg-5 me-lg-3" href="#tab-policy-2">Rechtliche Hinweise #2</a>
+                                        <a class="nav-link mx-0 ms-lg-5 me-lg-3" href="#tab-policy-3">Rechtliche Hinweise #3</a>
+                                    </div>
+                                </nav>
+                            </nav>
+                        </div>
+                        <div class="col-9 text-center">
+                            <div data-bs-spy="scroll" data-bs-target="#tab-list" data-bs-offset="10" class="scrollspy my-scrollspy" id="my-scrollspy" tabindex="0">
+                                <div id="tab-home" class="tab-item">
+                                    <h4>Home</h4>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                        expedita?
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                        expedita?
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                        expedita?
+                                    </p>
+                                </div>
+                                <div id="tab-datenschutz" class="tab-item">
+                                    <h4>Datenschutz</h4>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                        expedita?
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                        expedita?
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                        expedita?
+                                    </p>
+
+                                    <div id="tab-datenschutz-1" class="sub-tab-item">
+                                        <h4>Datenschutz #1</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                        </p>
+                                    </div>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                        expedita?
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                        expedita?
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                        expedita?
+                                    </p>
+
+                                    <div id="tab-datenschutz-2" class="sub-tab-item">
+                                        <h4>Datenschutz #2</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?ne veniam in, mollitia fuga repudiandae?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                    </div>
+
+                                    <div id="tab-datenschutz-3" class="sub-tab-item">
+                                        <h4>Datenschutz #3</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="tab-policy" class="tab-item">
+                                    <h4>Rechtliche Hinweise</h4>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                    </p>
+                                    <p>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                        expedita?
+                                    </p>
+                                    <div id="tab-policy-1" class="sub-tab-item">
+                                        <h4>Rechtliche Hinweise #1</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                    </div>
+
+                                    <div id="tab-policy-2" class="sub-tab-item">
+                                        <h4>Rechtliche Hinweise #2</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                    </div>
+
+                                    <div id="tab-policy-3" class="sub-tab-item">
+                                        <h4>Rechtliche Hinweise #3</h4>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab quibusdam ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, blanditiis
+                                            expedita?
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-        </section>
-        <section class="container p-3 tab-section">
-            <div class="row imp-row">
-                <div class="col imp-col">
-                    <div class="card my-tab-card text-center scroll-tabs justify-content-center">
-                        <div class="row">
-                            <div class="col-3">
-                                <nav id="tab-list" class="navbar my-navbar navbar-light bg-light flex-column">
-                                    <nav class="nav nav-pills my-nav-pills flex-column">
-                                        <a class="nav-link" href="#tab-home">Home</a>
-                                        <a class="nav-link" href="#tab-datenschutz">Datenschutz</a>
-                                        <nav class="nav nav-pills flex-column">
-                                            <a class="nav-link ms-3 my-1" href="#tab-datenschutz-1">Datenschutz #1</a
-                    >
-                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-2"
-                      >Datenschutz #2</a
-                    >
-                    <a class="nav-link ms-3 my-1" href="#tab-datenschutz-3"
-                      >Datenschutz #3</a
-                    >
-                  </nav>
-                  <a class="nav-link" href="#tab-policy">Rechtliche Hinweise</a>
-                                            <nav class="nav nav-pills flex-column">
-                                                <a class="nav-link ms-3 my-1" href="#tab-policy-1">Rechtliche Hinweise #1</a
-                    >
-                    <a class="nav-link ms-3 my-1" href="#tab-policy-2"
-                      >Rechtliche Hinweise #2</a
-                    >
-                    <a class="nav-link ms-3 my-1" href="#tab-policy-3"
-                      >Rechtliche Hinweise #2</a
-                    >
-                  </nav>
-                </nav>
-              </nav>
-            </div>
-            <div class="col-9">
-              <div
-                data-bs-spy="scroll"
-                data-bs-target="#tab-list"
-                data-bs-offset="0"
-                class="scrollspy my-scrollspy"
-                tabindex="0"
-              >
-                <div id="tab-home" class="tab-item">
-                  <h4>Home</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, blanditiis expedita? Earum eligendi pariatur
-                    quaerat quos expedita ab quibusdam ratione veniam in,
-                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Officiis, blanditiis expedita?
-                    Earum eligendi pariatur quaerat quos expedita ab quibusdam
-                    ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
-                    dolor sit amet consectetur adipisicing elit. Officiis,
-                    blanditiis expedita?
-                  </p>
-                </div>
-                <div id="tab-datenschutz" class="tab-item">
-                  <h4>Datenschutz</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, blanditiis expedita? Earum eligendi pariatur
-                    quaerat quos expedita ab quibusdam ratione veniam in,
-                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Officiis, blanditiis expedita?
-                    Earum eligendi pariatur quaerat quos expedita ab quibusdam
-                    ratione veniam in, mollitia fuga repudiandae? Lorem, ipsum
-                    dolor sit amet consectetur adipisicing elit. Officiis,
-                    blanditiis expedita?
-                  </p>
-
-                  <div id="tab-datenschutz-1" class="sub-tab-item">
-                    <h4>Datenschutz #1</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-
-                  <div id="tab-datenschutz-2" class="sub-tab-item">
-                    <h4>Datenschutz #2</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?ne veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-
-                  <div id="tab-datenschutz-3" class="sub-tab-item">
-                    <h4>Datenschutz #3</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-                </div>
-                <div id="tab-policy" class="tab-item">
-                  <h4>Rechtliche Hinweise</h4>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis, blanditiis expedita? Earum eligendi pariatur
-                    quaerat quos expedita ab quibusdam ratione veniam in,
-                    mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Officiis, blanditiis expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                  </p>
-                  <div id="tab-policy-1" class="sub-tab-item">
-                    <h4>Rechtliche Hinweise #1</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-
-                  <div id="tab-policy-2" class="sub-tab-item">
-                    <h4>Rechtliche Hinweise #2</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-
-                  <div id="tab-policy-3" class="sub-tab-item">
-                    <h4>Rechtliche Hinweise #3</h4>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Officiis, blanditiis expedita? Earum eligendi pariatur
-                      quaerat quos expedita ab quibusdam ratione veniam in,
-                      mollitia fuga repudiandae? Lorem, ipsum dolor sit amet
-                      consectetur adipisicing elit. Officiis, blanditiis
-                      expedita? Earum eligendi pariatur quaerat quos expedita ab
-                      quibusdam ratione veniam in, mollitia fuga repudiandae?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-          </div>
-        </div>
-      </section>
+            </section>
+        </article>
         </div>
     </main>
     <footer class="footer clearfix">
-      <div class="container"></div>
+        <div class="container"></div>
     </footer>
+
     <!-- Custom JS -->
-    <script src="src/js/custom.prod.js "></script>
+    <script type="text/javascript" src="/dist/js/custom.min.js "></script>
 
-    
+
     <!-- Bootstrap JS -->
-    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SortableJS -->
+    <script type="text/javascript" src="/dist/js/Sortable.min.js"></script>
 
     <script>
-    var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-      target: '#tab'
-
-    });
-    var firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
-    firstScrollSpyEl.addEventListener('activate.bs.scrollspy', function () {
-        // do something...
-    });
+        var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
+        dataSpyList.forEach(function(dataSpyEl) {
+            bootstrap.ScrollSpy.getInstance(dataSpyEl)
+                .refresh()
+        })
     </script>
-
-    <!-- Drag&Drop -->
-    <script src="src/js/Sortable.min.js"></script>
     <script>
-      var el = document.getElementById("sort");
-      var sortable = Sortable.create(el, {
-        handle: ".move",
-    animation: 200,
-        group: "sort-position-impressum",
-        store: {
-          /**
-           * Get the order of elements. Called once during initialization.
-           * @param   {Sortable}  sortable
-           * @returns {Array}
-           */
-          get: function (sortable) {
-            var order = localStorage.getItem(sortable.options.group.name);
-            return order ? order.split("|") : [];
-          },
+        var el = document.getElementById("sort");
+        var sortable = Sortable.create(el, {
+            handle: ".move",
+            animation: 200,
+            forceFallback: false,
+            scroll: true,
+            scrollSensitivity: 30,
+            scrollSpeed: 15,
+            bubbleScroll: true,
+            scrollFn: function(offsetX, offsetY, originalEvent, touchEvt, hoverTargetEl) {},
+            group: "sort-position-impressum",
+            store: {
+                /**
+                 * Get the order of elements. Called once during initialization.
+                 * @param   {Sortable}  sortable
+                 * @returns {Array}
+                 */
+                get: function(sortable) {
+                    var order = localStorage.getItem(sortable.options.group.name);
+                    return order ? order.split("|") : [];
+                },
 
-          /**
-           * Save the order of elements. Called onEnd (when the item is dropped).
-           * @param {Sortable}  sortable
-           */
-          set: function (sortable) {
-            var order = sortable.toArray();
-            localStorage.setItem(sortable.options.group.name, order.join("|"));
-          },
-        },
-      });
+                /**
+                 * Save the order of elements. Called onEnd (when the item is dropped).
+                 * @param {Sortable}  sortable
+                 */
+                set: function(sortable) {
+                    var order = sortable.toArray();
+                    localStorage.setItem(sortable.options.group.name, order.join("|"));
+                },
+            },
+        });
     </script>
-  </body>
+</body>
+
 </html>
