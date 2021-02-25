@@ -2,7 +2,7 @@
 
 Links to Moodle for BBW Hamburg and BS24
 
-## Features
+## _Features_
 
 ---
 
@@ -14,7 +14,9 @@ Links to Moodle for BBW Hamburg and BS24
   - Mobile
   - ~~Desktop~~
 
-#### Pages
+## _Pages_
+
+---
 
 - Index
 - Impressum
@@ -24,8 +26,6 @@ Links to Moodle for BBW Hamburg and BS24
 ![Preview](/readme-preview.jpeg)
 
 # File_Structure
-
-## structure
 
     │─ .gitignore
     │─ index.html
