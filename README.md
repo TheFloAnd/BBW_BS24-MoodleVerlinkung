@@ -21,7 +21,7 @@ Links to Moodle for BBW Hamburg and BS24
 - Index
 - Impressum
 
-#
+# Preview
 
 ![Preview](/readme-preview.jpeg)
 
