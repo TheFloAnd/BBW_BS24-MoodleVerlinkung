@@ -523,14 +523,6 @@
 
     <!-- SortableJS -->
     <script type="text/javascript" src="/dist/js/Sortable.min.js"></script>
-
-    <script>
-        var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
-        dataSpyList.forEach(function(dataSpyEl) {
-            bootstrap.ScrollSpy.getInstance(dataSpyEl)
-                .refresh()
-        })
-    </script>
     <script>
         var el = document.getElementById("sort");
         var sortable = Sortable.create(el, {
