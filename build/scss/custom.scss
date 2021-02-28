@@ -68,6 +68,7 @@ body {
 
 .header-logo {
     height: 8rem;
+    width: auto;
     padding: 10px;
 }
 
@@ -289,9 +290,9 @@ a {
 
 .impressum-card {
     background-color: rgba(255, 255, 255, 0.25) !important;
-    min-width: 25rem;
+    min-width: 20rem;
     height: fit-content;
-    //max-width: 100%;
+    max-width: 100%;
     border-radius: $border_radius;
 }
 
