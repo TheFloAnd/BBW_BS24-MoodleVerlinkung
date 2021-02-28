@@ -1,3 +1,4 @@
+// imports
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
@@ -40,6 +41,14 @@ $border_radius: 0.5rem !important;
 $opacity_default: 1;
 $opacity: 0.75;
 $max: 100%;
+:root {
+    --bs-bbw: #e30613;
+    --bs-bs24: #85b004;
+    --bs-gray: #aaaaaa;
+    --bs-gray_rgba: rgba(255, 255, 255, 0.75);
+    --bs-bootstrap: #7952b3;
+}
+
 html {
     scroll-behavior: smooth !important;
     min-height: min-content !important;

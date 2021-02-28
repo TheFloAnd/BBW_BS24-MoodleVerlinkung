@@ -9798,14 +9798,6 @@ fieldset:disabled .btn {
   }
 }
 
-:root {
-  --bs-bbw: #e30613;
-  --bs-bs24: #85b004;
-  --bs-gray: #aaaaaa;
-  --bs-gray_rgba: rgba(255, 255, 255, 0.75);
-  --bs-bootstrap: #7952b3;
-}
-
 html {
   scroll-behavior: smooth !important;
   min-height: -webkit-min-content !important;
@@ -9820,7 +9812,7 @@ html {
 }
 
 body {
-  background: url("/dist/img/background/bg-1.jpg") no-repeat center center fixed;
+  background: url("/src/img/background/bg-1.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
