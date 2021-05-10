@@ -1,10 +1,10 @@
 function load_page(page) {
-    if (page == "index") {
-        random_background();
-        random_preview();
-    } else {
-        random_background();
-    }
+    // if (page == "index") {
+    //     random_background();
+    //     random_preview();
+    // } else {
+    //     random_background();
+    // }
     var move_icon = document.getElementsByClassName("move-svg");
     var i;
     for (i = 0; i < move_icon.length; i++) {
