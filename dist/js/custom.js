@@ -1,10 +1,7 @@
 function load_page(page) {
-    // if (page == "index") {
-    //     random_background();
-    //     random_preview();
-    // } else {
-    //     random_background();
-    // }
+    if (page == "index") {
+        random_preview();
+    }
     var move_icon = document.getElementsByClassName("move-svg");
     var i;
     for (i = 0; i < move_icon.length; i++) {
@@ -17,25 +14,6 @@ function load_page(page) {
     for (j = 0; j < icon_space.length; j++) {
         icon_space[j].style.marginRight = "50px";
     }
-}
-
-function random_background() {
-    var img = [
-        "bg-1.jpg",
-        "bg-2.jpg",
-        "bg-3.jpg",
-        "bg-4.jpg",
-        "bg-5.jpg",
-        "bg-6.jpg",
-        "bg-7.jpg",
-        "bg-8.jpg",
-        "bg-9.jpg",
-        "bg-10.jpg",
-    ];
-
-    var random = Math.floor(Math.random() * img.length);
-    document.body.style.backgroundImage =
-        "url('/dist/img/background/" + img[random] + "')";
 }
 
 function random_preview() {
