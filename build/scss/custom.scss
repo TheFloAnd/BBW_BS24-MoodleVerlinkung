@@ -616,3 +616,9 @@ input[value] {
     }
   }
 }
+.my-textarea{
+  overflow: hidden;
+  resize: none;
+  height: max-content !important;
+  word-wrap: break-word;
+}
