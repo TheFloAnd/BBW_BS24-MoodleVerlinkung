@@ -47,11 +47,10 @@
                                 <div class="list-group-item my-list-group-item">
                                     <div class="input-group">
                                             <div class="form-group my-form-float flex-grow-1">
-                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" rows="4" cols="10" wrap="hard">
+                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" wrap="hard">
 Umsatzsteuer-ID
 Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:
-DE 17/453/03052
-</textarea>
+DE 17/453/03052</textarea>
                                             </div>
                                     </div>
                                 </div>
@@ -60,10 +59,9 @@ DE 17/453/03052
                                 <div class="list-group-item my-list-group-item">
                                     <div class="input-group">
                                             <div class="form-group my-form-float flex-grow-1">
-                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" rows="2" cols="10" wrap="hard">
+                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" wrap="hard">
 Inhaltlich Verantwortlicher gemäß § 55 RStV
-Christine Schaerffer
-</textarea>
+Christine Schaerffer</textarea>
                                             </div>
                                     </div>
                                 </div>
@@ -72,11 +70,9 @@ Christine Schaerffer
                                 <div class="list-group-item my-list-group-item">
                                     <div class="input-group">
                                             <div class="form-group my-form-float flex-grow-1">
-                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" rows="5" cols="10" wrap="hard">
-Streitbeilegung
+                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" wrap="hard">Streitbeilegung
 
-Die Berufsbildungswerk Hamburg gGmbH nimmt nicht an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil.
-</textarea>
+Die Berufsbildungswerk Hamburg gGmbH nimmt nicht an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil.</textarea>
                                             </div>
                                     </div>
                                 </div>
@@ -85,11 +81,9 @@ Die Berufsbildungswerk Hamburg gGmbH nimmt nicht an Streitbeilegungsverfahren vo
                                 <div class="list-group-item my-list-group-item">
                                     <div class="input-group">
                                             <div class="form-group my-form-float flex-grow-1">
-                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" rows="3" cols="10" wrap="hard">
+                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" wrap="hard">
 Gestaltung, technische Umsetzung
-Ausbildungsbereich IT
-Büro für Öffentlichkeitsarbeit e.K.
-</textarea>
+Ausbildungsbereich IT</textarea>
                                             </div>
                                     </div>
                                 </div>
@@ -99,9 +93,7 @@ Büro für Öffentlichkeitsarbeit e.K.
                                 <div class="list-group-item my-list-group-item">
                                     <div class="input-group">
                                             <div class="form-group my-form-float flex-grow-1">
-                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" rows="1" cols="10" wrap="hard">
-© Berufsbildungswerk Hamburg gGmbH, 2021
-</textarea>
+                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" wrap="hard">© Berufsbildungswerk Hamburg gGmbH, 2021</textarea>
                                             </div>
                                     </div>
                                 </div>
@@ -137,13 +129,12 @@ Büro für Öffentlichkeitsarbeit e.K.
                                     <div class="input-group">
                                         <a href="mailto:christine.schaerffer@pepko-hamburg.de" target="_blank" class="flex-grow-1 link-bbw">
                                             <div class="form-floating my-form-float flex-grow-1">
-                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" rows="5" cols="10" wrap="hard">
+                                                <textarea class="form-control my-form-control link-bbw my-textarea" type="text" rows="5" wrap="hard">
 Christine Schaerffer
 christine.schaerffer@pepko-hamburg.de
 
 Samuel Breisacher
-samuel.breisacher@cjd.de
-</textarea>
+samuel.breisacher@cjd.de</textarea>
                                                 <label class="my-label">Geschäftsführung & Email</label>
                                             </div>
                                         </a>
@@ -391,6 +382,13 @@ samuel.breisacher@cjd.de
                     localStorage.setItem(sortable.options.group.name, order.join("|"));
                 },
             },
+        });
+    </script>
+    <script>
+        textarea = document.querySelectorAll("textarea");
+        textarea.forEach((element) => {
+            element.style.height = element.scrollHeight + "px";
+            element.style.overflow = "hidden";
         });
     </script>
 </body>
