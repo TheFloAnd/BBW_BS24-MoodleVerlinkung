@@ -586,35 +586,28 @@ input[value] {
 }
 
 .info-banner {
+  border-radius: $border_radius;
   z-index: 999;
-  position: absolute;
-  bottom: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  min-width: 100vh !important;
-  background: $color_default-rgba;
-  height: 15rem;
+  left: 50%;
+  transform: translate(-50%);
+  background: $color_default;
+  height: auto;
+  color: #fff;
 }
 
 .info-banner {
   & > .info-banner-close {
     z-index: 1000;
     position: absolute;
-    top: 0;
     right: 0;
     padding: 10px;
+    margin: 10px;
   }
-  &.info-banner-body {
-    text-align: center;
-    & > .info-banner-txt {
+}
+.info-banner .info-banner-txt > .info-banner-head{
       text-align: center;
-      padding: 50px;
+      margin: 10px;
       font-size: 120%;
-      & > .accept-cookie {
-        padding: 5px;
-      }
-    }
-  }
 }
 .my-textarea{
   resize: none;

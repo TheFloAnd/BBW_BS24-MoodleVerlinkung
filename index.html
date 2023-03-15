@@ -132,20 +132,22 @@
     </main>
 
 
-    <footer class="info-banner d-none" id="info-banner">
-        <button type="button" class="btn-close info-banner-close" data-bs-dismiss="info-banner" aria-label="Close"></button>
+    <div class="info-banner m-2 w-auto d-none fixed-bottom container" id="info-banner">
+        <button type="button" class="btn-close info-banner-close" onclick="hide_banner()" aria-label="Close"></button>
         <div class="info-banner-body container">
             <div class="info-banner-txt">
                 <div class="info-banner-head h3"> INFO!!!</div>
                 <div class="info-banner-body">
-                    <p class="txt">Das ist eine warnung!!</p>
+                    <p class="txt">Es werden keine Cookies verwendet!<br>
+                        Die Positionen nach dem Verschieben von Boxen werden im Internen Speicher des Browsers gespeichert!
+                    </p>
                 </div>
             </div>
-            <div class="accept-cookie d-flex justify-content-end">
-                <button type="button" class="btn btn-success btn-lg close justify-content-end" data-dismiss="info-banner"> Accept</button>
+            <div class="accept-cookie d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary w-100 m-2" onclick="setCookie('accept_banner', 'true');"> Accept</button>
             </div>
         </div>
-    </footer>
+    </div>
 
     <footer class="footer d-flex m-auto p-auto justify-content-center">
         <div class="container link-container">
@@ -166,6 +168,10 @@
 
     <!-- Drag&Drop -->
     <script src="/dist/js/Sortable.min.js"></script>
+
+    <script>
+
+    </script>
     <script>
         var el = document.getElementById("sort");
         var sortable = Sortable.create(el, {
