@@ -34,8 +34,8 @@ function random_preview() {
 
 	var random_bbw = Math.floor(Math.random() * bbw.length);
 	var random_bs24 = Math.floor(Math.random() * bs24.length);
-	img_bbw.src = "/dist/img/preview/bbw/" + bbw[random_bbw];
-	img_bs24.src = "/dist/img/preview/bs24/" + bs24[random_bs24];
+	img_bbw.src = "dist/img/preview/bbw/" + bbw[random_bbw];
+	img_bs24.src = "dist/img/preview/bs24/" + bs24[random_bs24];
 }
 
 function setCookie(cname, cvalue) {
